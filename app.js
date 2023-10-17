@@ -7,6 +7,7 @@ app.get("/as", function (req, res) {
   res.send("Hello students!");
 });
 
+// npm run dev
 app.listen(port, () => {
   console.log("listerning on", port, "port");
 });
