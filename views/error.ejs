@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Error</title>
+  </head>
+  <body>
+    <div>
+      <div>
+        <h1>ERROR</h1>
+        <p>
+          Error code: <% if (status) { %>
+          <span class="err"> <%= status%> </span> <% } %> That's an error.
+        </p>
+        <p>The requested URL was not found on this server.</p>
+      </div>
+      <div>
+        <% if (status) { %> <img src="favicon.png" alt="Error img" /> <% } %>
+      </div>
+    </div>
+  </body>
+</html>
