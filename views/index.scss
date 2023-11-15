@@ -1,0 +1,20 @@
+@import "./partials/header.scss";
+@import "./partials/footer.scss";
+@import "./../public/css/bootstrap-5.3.2/scss/vendor/";
+@import "./../public/css/bootstrap-5.3.2/scss/utilities/";
+@import "./../public/css/bootstrap-5.3.2/scss/tests/";
+@import "./../public/css/bootstrap-5.3.2/scss/mixins/";
+@import "./../public/css/bootstrap-5.3.2/scss/helpers/";
+@import "./../public/css/bootstrap-5.3.2/scss/forms/";
+@import "./../public/css/bootstrap-5.3.2/scss/variables";
+@import "./../public/css/bootstrap-5.3.2/scss/maps";
+
+$primary: #0074d9;
+
+.btn-outline-success {
+  background-color: $indigo-600;
+}
+
+.bg-dark {
+  background-color: $primary;
+}

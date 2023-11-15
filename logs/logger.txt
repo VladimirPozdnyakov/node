@@ -149,3 +149,6 @@ Server started 03.11.2023, 10:04:23 : Логгируем ping по адресу:
 10.11.2023, 14:34:14 :: Логгируем ping по адресу: localhost:3000 Server started
 10.11.2023, 14:48:35 :: Логгируем ping по адресу: localhost:3000 Server started
 10.11.2023, 14:52:47 :: Логгируем ping по адресу: localhost:3000 Server started
+15.11.2023, 14:39:56 :: Логгируем ping по адресу: localhost:3000 Server started
+15.11.2023, 14:40:15 :: Логгируем ping по адресу: localhost:3000 Server started
+15.11.2023, 14:40:15 :: Логгируем ping по адресу: localhost:3000/as

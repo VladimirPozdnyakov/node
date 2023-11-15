@@ -32,7 +32,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/as", (req, res) => {
-  res.sendFile(__dirname + "/public/main.html");
+  res.sendFile(__dirname + "/public/index.html");
   addLine("/as");
 });
 
