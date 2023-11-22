@@ -19,6 +19,19 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(join(__dirname, "public")));
 app.use(favicon(join(__dirname, "/public/favicon.png")));
 
+app.use(
+  "/bootstrap.css",
+  express.static(
+    join(__dirname, "./public/css/bootstrap-5.3.2/dist/css/bootstrap.min.css")
+  )
+);
+app.use(
+  "/bootstrap.js",
+  express.static(
+    join(__dirname, "./public/css/bootstrap-5.3.2/dist/js/bootstrap.min.js")
+  )
+);
+
 function addLine(line) {
   line = `${currentTime} :: Логгируем ping по адресу: localhost:3000` + line;
   fs.appendFile(__dirname + "/logs/logger.txt", line + "\n", function (err) {
