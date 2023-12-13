@@ -1,3 +1,4 @@
+import { create } from "domain";
 import express from "express";
 import favicon from "express-favicon";
 import { join } from "path";
@@ -5,94 +6,83 @@ import { dirname } from "path";
 import { fileURLToPath } from "url";
 import fs from "fs";
 import ejs from "ejs";
+import myRoutes from "./routers/index_routers.js";
+import session from "express-session";
+import user_session from "./middleware/user_session.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
-const port = 3000;
+const port = "3000";
 const currentTime = new Date().toLocaleString();
 
 app.set("view engine", "ejs");
-app.set("\view", __dirname + "views");
+app.set("\views", __dirname + "views");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(join(__dirname, "public")));
-app.use(favicon(join(__dirname, "/public/favicon.png")));
-
 app.use(
   "/bootstrap.css",
   express.static(
-    join(__dirname, "./public/css/bootstrap-5.3.2/dist/css/bootstrap.min.css")
+    join(__dirname, "public/css/bootstrap-5.3.2/dist/css/bootstrap.css")
   )
 );
+app.use("publics", express.static(join(__dirname, "public/")));
 app.use(
   "/bootstrap.js",
   express.static(
-    join(__dirname, "./public/css/bootstrap-5.3.2/dist/js/bootstrap.min.js")
+    join(__dirname, "public/css/bootstrap-5.3.2/dist/js/bootstrap.js")
   )
 );
-
-function addLine(line) {
-  line = `${currentTime} :: Логгируем ping по адресу: localhost:3000` + line;
-  fs.appendFile(__dirname + "/logs/logger.txt", line + "\n", function (err) {
-    if (err) console.log(err);
-  });
-}
-
-app.get("/", (req, res) => {
-  res.end("dea ex machina");
-  addLine("/");
-});
-
-app.get("/as", (req, res) => {
-  res.sendFile(__dirname + "/public/index.html");
-  addLine("/as");
-});
-
-app.get("/test", (req, res) => {
-  res.end("deus (dea is better) ex machina");
-  addLine("/test");
-});
-
-app.post("/as", (req, res) => {
-  console.log("Проверка post пройдена");
-  console.log(req.body);
-  res.end("! !.. !!! ? ?.. ??? ?!");
-});
+app.use(session({ secret: "Hollo", resave: false, saveUninitialized: true }));
+app.use(favicon(join(__dirname, "/public/img/ico.png")));
+app.use(user_session);
+app.use(myRoutes);
 
 app.listen(port, () => {
-  addLine(" Server started");
+  console.log("...");
+  console.log("проверка console.log пройдена");
+  console.log("...");
+  console.log("начинается логгирование");
+  console.log("...");
+  addline("server started");
+  console.log("логгирование завершено");
+  console.log("...");
+  console.log("в данный момент используется версия " + app.get("env"));
 });
 
-// * error handler
-app.use((req, res, next) => {
-  const err = new Error("asd");
-  err.status = 404;
-  console.log(err);
-  next(err);
-});
-
-// * production error handler
-app.get("env") == "production";
-console.log(app.get("env"));
-if (app.get("env") == "production") {
-  app.use((err, req, res) => {
-    res.status(err.status);
-    res.send(err.message);
+function addline(line) {
+  line = line + " timestamp: " + currentTime + "\n";
+  fs.appendFile(__dirname + "/logger/logger.txt", line, (err) => {
+    if (err) return console.log(err);
   });
 }
+// error handler
+app.use((req, res, next) => {
+  const err = new Error("какая-то непонятная ошибка ошибка");
+  err.status = 404;
+  next(err);
+});
+//production error handler
+app.get("env") == "production";
+console.log("переход на " + app.get("env"));
 
 if (app.get("env") != "development") {
   app.use((err, req, res, next) => {
-    res.status = 404;
-    res.render("error.ejs", err);
+    // err.status = 400;
+    res.render("error.ejs", { error: err.message, status: err.status });
   });
 } else {
   app.use((err, req, res, next) => {
     res.status = 404;
-    console.log("Development");
-    console.log(res.status + " Not Found");
-    console.log("Твой код — U+1FA7C");
-    res.end("SHIT CODE - U+1FA7C");
+    console.log("! ! !");
+    console.log("! ! !");
+    console.log("! ! !");
+    console.log("ошибка " + res.status);
+    console.log("! ! !");
+    console.log(app.get);
+    console.log("! ! !");
+    console.log(err.message);
+    res.end("GOVNOKOD!");
   });
 }

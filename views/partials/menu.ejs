@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand navbar-light bg-light justify-content-end">
+    <div class="nav navbar-nav ">
+   <% if (locals.user) { %> 
+<div  id="menu"> <%#   меню пользователей выполнивших вход%>
+ <span class="name"><%= user.email %> </span>  <%#   user.name для браузера то что пользователь послал в requeste%>
+<a class="badge rounded-pill bg-primary " href="/post" aria-current="page">Post<span class="visually-hidden">(current)</span></a>
+<a class="badge rounded-pill bg-warning " href="/logout">Logout</a>
+</div>
+<% } else { %>
+    <div  class='' id="menu"> <%# //меню анонимных пользователей %> 
+        <a class="badge rounded-pill bg-info " href="/login" aria-current="page">Login<span class="visually-hidden">(current)</span></a>
+        <a class="badge rounded-pill bg-info " href="/register">Register</a>
+        </div>
+        <% } %> 
+    </div>
+    </nav>
+        

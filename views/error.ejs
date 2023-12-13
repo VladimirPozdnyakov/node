@@ -1,28 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/bootstrap.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="./css/bootstrap-5.3.2/dist/css/bootstrap.css"
+    /> -->
+    <link rel="stylesheet" href="./bootstrap.css" />
+    <script src="/bootstrap.js"></script>
     <link rel="stylesheet" href="./css/index.css" />
-    <title>Error</title>
+    <title>errors</title>
   </head>
-  <header><%- include('./partials/header.ejs'); -%></header>
-  <body>
-    <div>
-      <div>
-        <h1>ERROR</h1>
-        <p>
-          Error code: <% if (status) { %>
-          <span class="err"> <%= status%> </span> <% } %> That's an error.
-        </p>
-        <p>The requested URL was not found on this server.</p>
-      </div>
-      <div>
-        <% if (status) { %> <img src="favicon.png" alt="Error img" /> <% } %>
-      </div>
-    </div>
+  <!-- <header><%- include('partials/header.ejs'); -%></header> -->
+  <body
+    background="https://agentestudio.com/uploads/post/image/69/main_how_to_design_404_page.png"
+  >
+    <h1 class="err">ERROR <% if(status){ %><%= status %> <% } %></h1>
+    <h1><% if(error){ %><span> <%= error %></span> <% } %></h1>
   </body>
-  <footer><%- include('./partials/footer.ejs'); -%></footer>
-  <script src="/bootstrap.js"></script>
+  <!-- <%- include('partials/footer.ejs'); -%> -->
 </html>

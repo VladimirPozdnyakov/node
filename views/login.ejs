@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href="./bootstrap.css" />
+    <script src="./bootstrap.js"></script>
+  </head>
+  <body>
+    <h1 class="text-center">Форма входа</h1>
+    <form action="/login" class="container" method="post">
+      <div class="row my-3">
+        <div class="col-sm-4 col-12">
+          <div class="form-floating mb-3">
+            <input
+              name="loginform[email]"
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInput">Введите адрес электронной почты</label>
+          </div>
+        </div>
+      </div>
+      <div class="row my-3">
+        <div class="col-sm-6 col-12">
+          <div class="form-floating">
+            <input
+              name="loginForm[password]"
+              type="password"
+              class="form-control"
+              id="floatingPassword"
+              placeholder="password"
+            />
+            <label for="floatingPassword">Введите пароль</label>
+          </div>
+        </div>
+      </div>
+      <div class="row my-3">
+        <div class="col-sm-6 col-12">
+          <button type="submit" class="btn btn-success">Войти</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
