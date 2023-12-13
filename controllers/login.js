@@ -1,4 +1,5 @@
 import User from "../models/user.js";
+
 const form = (req, res) => {
   res.render("login", { title: "chepokrashka" });
   console.log("...");
@@ -10,8 +11,8 @@ const submit = (req, res, next) => {
     if (err) return next(err);
     if (!data) {
       console.log("...");
-      console.log("Имя или пароль не верны!");
-      redirect("back");
+      console.log("Имя или пароль неверны!");
+      res.redirect("back");
     }
     if (data) {
       // req.session.userEmail = data.email;
@@ -20,8 +21,11 @@ const submit = (req, res, next) => {
       req.session.name = data.name;
       // req.session.userPassword = data.password;
       req.session.password = data.password;
+      console.log("...");
+      console.log("Всё верно!");
       res.redirect("/");
     }
   });
 };
+
 export default { form, submit };

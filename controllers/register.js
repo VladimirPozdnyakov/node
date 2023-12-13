@@ -12,13 +12,13 @@ const submit = (req, res, next) => {
       User.create(req.body, (err) => {
         if (err) return next(err);
       });
+      res.redirect("/");
     } else {
       console.log("...");
       console.log("Такой пользователь уже существует!");
       res.redirect("back");
     }
   });
-  res.redirect("/");
 };
 
 export default { form, submit };

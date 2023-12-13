@@ -34,7 +34,7 @@ app.use(
     join(__dirname, "public/css/bootstrap-5.3.2/dist/js/bootstrap.js")
   )
 );
-app.use(session({ secret: "Hollo", resave: false, saveUninitialized: true }));
+app.use(session({ secret: "TenSura", resave: false, saveUninitialized: true }));
 app.use(favicon(join(__dirname, "/public/img/ico.png")));
 app.use(user_session);
 app.use(myRoutes);
@@ -59,7 +59,7 @@ function addline(line) {
 }
 // error handler
 app.use((req, res, next) => {
-  const err = new Error("какая-то непонятная ошибка ошибка");
+  const err = new Error("какая-то непонятная ошибка");
   err.status = 404;
   next(err);
 });
