@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <%- include ('./partials/menu') %>
+      <h1><%= title %></h1>
+      <%- include ('./partials/messages') %>
+      <p>Заполните форму ниже чтобы добавить новый пост</p>
+      <form action="/post" method="post">
+        <div class="mb-3">
+          <label for="z" class="form-label">Title</label>
+          <input
+            type="text"
+            class="form-control"
+            name="entry[title]"
+            id="z"
+            aria-describedby="helpId"
+            placeholder="Title"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="s" class="form-label">Текст заметки</label>
+          <textarea
+            class="form-control"
+            name="entry[content]"
+            id="s"
+            rows="3"
+          ></textarea>
+        </div>
+        <button type="submit" value="Post" class="btn btn-primary">
+          Submit
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

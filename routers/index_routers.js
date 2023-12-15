@@ -18,6 +18,11 @@ router.use(favicon(__dirname + "/favicon.ico"));
 router.get("/", entries.list);
 // router.post("/entry", entry);
 
+router.get("/logout", login.logout);
+
+router.get("/entries", entries.form);
+router.post("/entries", entries.submit);
+
 router.get("/login", login.form);
 router.post("/login", login.submit);
 

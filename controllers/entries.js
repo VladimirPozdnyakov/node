@@ -1,7 +1,35 @@
-const list = (req, res) => {
-  res.render("main", { title: "chepokrashka" });
-  console.log("...");
-  console.log("заход на /");
+import Entry from "../models/entry.js";
+
+const list = (req, res, next) => {
+  Entry.selectall((err, entries) => {
+    if (err) return next(err);
+    res.render("entries", { title: "List", entries: entries });
+    res.render("main", { title: "chepokrashka" });
+    console.log("...");
+    console.log("заход на /");
+  });
 };
 
-export default { list };
+const form = (req, res, next) => {
+  res.render("post", { title: "Post" });
+};
+
+const submit = (req, res, next) => {
+  try {
+    const username = req.user ? req.user.name : null;
+    const data = req.body.entry;
+
+    const entry = {
+      username: username,
+      title: data.title,
+      content: data.content,
+    };
+
+    Entry.create(entry);
+    res.redirect("/");
+  } catch (err) {
+    return next(err);
+  }
+};
+
+export default { list, form, submit };

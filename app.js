@@ -1,4 +1,3 @@
-import { create } from "domain";
 import express from "express";
 import favicon from "express-favicon";
 import { join } from "path";

@@ -27,5 +27,8 @@ const submit = (req, res, next) => {
     }
   });
 };
-
-export default { form, submit };
+const logout = (req, res, err, next) =>
+  req.session.destroy((req, res, err) => {
+    if (err) return next(err);
+  });
+export default { form, submit, logout };
