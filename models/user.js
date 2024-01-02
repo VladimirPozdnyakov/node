@@ -14,13 +14,30 @@ db.run(sql, (err) => {
 class User {
   constructor() {}
 
+  // static async create(dataForm, cb) {
+  //   try {
+  //     const salt = await bcrypt.genSalt(10);
+  //     const hash = await bcrypt.hash(dataForm.password, salt);
+  //     const sql1 =
+  //       "INSERT INTO user (name, email, password, age) VALUES (?, ?, ?, ?)";
+  //     db.run(sql1, dataForm.name, dataForm.email, hash, dataForm.age, cb);
+  //   } catch (err) {
+  //     cb(err);
+  //   }
+  // }
+
   static async create(dataForm, cb) {
     try {
-      const salt = await bcrypt.genSalt(10);
-      const hash = await bcrypt.hash(dataForm.password, salt);
       const sql1 =
         "INSERT INTO user (name, email, password, age) VALUES (?, ?, ?, ?)";
-      db.run(sql1, dataForm.name, dataForm.email, hash, dataForm.age, cb);
+      db.run(
+        sql1,
+        dataForm.name,
+        dataForm.email,
+        dataForm.password,
+        dataForm.age,
+        cb
+      );
     } catch (err) {
       cb(err);
     }
