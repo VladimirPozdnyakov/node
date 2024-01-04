@@ -1,7 +1,7 @@
 import Entry from "../models/entry.js";
 
 const list = (req, res, next) => {
-  Entry.selectall((err, entries) => {
+  Entry.selectAll((err, entries) => {
     if (err) return next(err);
     res.render("entries", { title: "List", entries: entries });
     res.render("main", { title: "chepokrashka" });

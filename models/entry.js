@@ -1,11 +1,10 @@
-import sqlite3 from "sqlite3";
-import bcrypt from "bcrypt";
+import connection from "./db.js";
 
-const db = new sqlite3.Database("./test.sqlite");
+// Создание таблицы, если её нет
 const sql =
-  "CREATE TABLE IF NOT EXISTS user (id INTEGER PRIMARY KEY AUTOINCREMENT, userName TEXT(255) NOT NULL, title TEXT(255) NOT NULL, content TEXT(200))";
+  "CREATE TABLE IF NOT EXISTS user (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL, password VARCHAR(50), age INT NOT NULL)";
 
-db.run(sql, (err) => {
+connection.query(sql, (err) => {
   if (err) {
     console.log(err);
   }
@@ -15,11 +14,25 @@ class Entry {
   constructor() {}
 
   static create(data) {
-    const sql = "INSERT INTO posts (userName, title, content) VALUES (?,?,?)";
-    db.run(sql, data.username, data.title, data.content);
+    const sql =
+      "INSERT INTO user (name, email, password, age) VALUES (?, ?, ?, ?)";
+    connection.query(sql, [data.username, data.title, data.content], (err) => {
+      if (err) {
+        console.log(err);
+      }
+    });
   }
-  static selectall(cb) {
-    db.all("SELECT * FROM user", cb);
+
+  static selectAll(cb) {
+    const sql = "SELECT * FROM nodeproject.user";
+    connection.query(sql, (err, rows) => {
+      if (err) {
+        console.log(err);
+        cb(err, null);
+      } else {
+        cb(null, rows);
+      }
+    });
   }
 }
 
