@@ -8,6 +8,7 @@ import ejs from "ejs";
 import myRoutes from "./routers/index_routers.js";
 import session from "express-session";
 import user_session from "./middleware/user_session.js";
+import User from "./models/user.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -34,6 +35,34 @@ app.use(
   )
 );
 app.use(session({ secret: "TenSura", resave: false, saveUninitialized: true }));
+
+let guestUser = null;
+
+// Создаем пользователя-гостя при старте приложения
+User.create(
+  {
+    name: "Guest",
+    email: "guest@example.com",
+    password: "guest",
+    age: 0,
+    role: "guest",
+  },
+  (err, user) => {
+    if (err) {
+      console.log(err);
+    } else {
+      guestUser = user;
+    }
+  }
+);
+
+app.use((req, res, next) => {
+  if (!req.session.user) {
+    req.session.user = guestUser;
+  }
+  next();
+});
+
 app.use(favicon(join(__dirname, "/public/img/Fox(ElectroNic).ico")));
 app.use(user_session);
 app.use(myRoutes);
