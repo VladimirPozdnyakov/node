@@ -13,7 +13,7 @@ const form = (req, res) => {
 const submit = [
   validatePassword,
   (req, res, next) => {
-    if (res.locals.errorMessage) {
+    if (res.locals.errorMessage && res.locals.errorMessage.length > 0) {
       return form(req, res);
     }
 
@@ -27,7 +27,7 @@ const submit = [
       } else {
         console.log("...");
         console.log("Такой пользователь уже существует!");
-        res.redirect("back");
+        res.redirect("/");
       }
     });
   },
