@@ -6,7 +6,7 @@ const form = (req, res) => {
   console.log("заход на /login");
 };
 const submit = (req, res, next) => {
-  User.authentificate(req.body.loginForm, (err, data) => {
+  User.authenticate(req.body.loginForm, (err, data) => {
     //data is user
     if (err) return next(err);
     if (!data) {
