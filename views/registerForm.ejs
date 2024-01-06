@@ -3,12 +3,17 @@
   <head>
     <link rel="stylesheet" href="./bootstrap.css" />
     <script src="/bootstrap.js"></script>
+    <style>
+      .error-message {
+        color: red;
+      }
+    </style>
     <!-- <link rel="stylesheet" href="./css/index.css" /> -->
     <title><%= title %></title>
   </head>
   <body>
     <h1 class="text-center">Форма регистрации</h1>
-    <form action="/register" class="container" method="post">
+    <form action="/register" class="container" id="registerForm" method="post">
       <div class="row my-3 g-3">
         <div class="col-sm-6 сol-12">
           <div class="form-floating">
@@ -42,10 +47,10 @@
               name="age"
               type="number"
               class="form-control"
-              id="floatingPassword1"
+              id="floatingAge"
               placeholder="age"
             />
-            <label for="floatingPassword1">Введите Ваш полный возраст</label>
+            <label for="floatingAge">Введите Ваш полный возраст</label>
           </div>
         </div>
       </div>
@@ -61,11 +66,17 @@
             />
             <label for="floatingPassword">Введите пароль</label>
           </div>
+          <% if (errorMessage && Array.isArray(errorMessage)) { %> <%
+          errorMessage.forEach(function(error) { %>
+          <p class="error-message"><%= error %></p>
+          <% }) %> <% } %>
         </div>
       </div>
       <div class="row my-3">
         <div class="col-sm-6 col-12">
-          <button type="submit" class="btn btn-success">какая-то кнопка</button>
+          <button type="submit" class="btn btn-success">
+            Зарегестрироваться
+          </button>
         </div>
       </div>
     </form>

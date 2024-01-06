@@ -16,7 +16,6 @@ const router = express.Router();
 router.use(favicon(__dirname + "/favicon.ico"));
 
 router.get("/", entries.list);
-// router.post("/entry", entry);
 
 router.get("/logout", login.logout);
 

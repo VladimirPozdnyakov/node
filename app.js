@@ -8,7 +8,6 @@ import ejs from "ejs";
 import myRoutes from "./routers/index_routers.js";
 import session from "express-session";
 import user_session from "./middleware/user_session.js";
-import validatePassword from "./middleware/password_valid.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -35,9 +34,8 @@ app.use(
   )
 );
 app.use(session({ secret: "TenSura", resave: false, saveUninitialized: true }));
-app.use(favicon(join(__dirname, "/public/img/ico.png")));
+app.use(favicon(join(__dirname, "/public/img/Fox(ElectroNic).ico")));
 app.use(user_session);
-// app.use(validatePassword);
 app.use(myRoutes);
 
 app.listen(port, () => {
@@ -58,12 +56,14 @@ function addline(line) {
     if (err) return console.log(err);
   });
 }
+
 // error handler
 app.use((req, res, next) => {
   const err = new Error("какая-то непонятная ошибка");
   err.status = 404;
   next(err);
 });
+
 //production error handler
 app.get("env") == "production";
 console.log("переход на " + app.get("env"));
