@@ -6,9 +6,13 @@ import { dirname } from "path";
 import { fileURLToPath } from "url";
 import fs from "fs";
 import ejs from "ejs";
+import pkg from "method-override";
+const { MethodOverride } = pkg;
 import register from "../controllers/register.js";
 import entries from "../controllers/entries.js";
 import login from "../controllers/login.js";
+import posts from "../controllers/posts.js";
+import connection from "../models/db.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const router = express.Router();
@@ -19,7 +23,18 @@ router.get("/", entries.list);
 
 router.get("/logout", login.logout);
 
-router.get("/entries", entries.form);
+router.get("/entries", entries.form, (req, res) => {
+  posts.getPosts((err, posts) => {
+    if (err) {
+      // Обработка ошибки
+    } else {
+      res.render("main", {
+        title: "Главная страница",
+        posts: posts,
+      });
+    }
+  });
+});
 router.post("/entries", entries.submit);
 
 router.get("/login", login.form);
@@ -28,36 +43,36 @@ router.post("/login", login.submit);
 router.get("/register", register.form);
 router.post("/register", register.submit);
 
-router.get("/as", (req, res) => {
-  res.sendFile(__dirname + "/vremenno/index.html");
-  console.log("...");
-  console.log("заход на /as");
-});
-router.post("/as", (req, res) => {
-  console.log("...");
-  console.log("проверка post пройдена");
-  console.log("...");
-  console.log(req.body);
-  console.log("password: " + req.body.pass);
-  console.log("name: " + req.body.name);
-  res.end("проверка post пройдена.");
-});
+router.get("/new", posts.form);
+router.post("/new", posts.addPost);
 
-router.get("/test", (req, res) => {
-  res.end("deus ex machina");
-  console.log("...");
-  console.log("заход на /test");
+router.get("/posts/edit/:id", (req, res) => {
+  const sql = "SELECT * FROM posts WHERE id = ?";
+  connection.query(sql, [req.params.id], (err, results) => {
+    if (err) {
+      // обработайте ошибку
+      console.error(err);
+      res.status(500).send("Server error");
+    } else {
+      res.render("posts/edit", { post: results[0] });
+    }
+  });
 });
-router.post("/test", (req, res) => {
-  console.log("...");
-  console.log("проверка post пройдена");
-  console.log("...");
-  console.log(req.body);
-  console.log(req.url);
-  console.log("password: " + req.body.pass);
-  console.log("name: " + req.body.name);
-  res.end("проверка post пройдена.");
+router.post("/posts/edit/:id", (req, res) => {
+  const sql = "UPDATE posts SET title = ?, body = ? WHERE id = ?";
+  connection.query(
+    sql,
+    [req.body.title, req.body.body, req.params.id],
+    (err, result) => {
+      if (err) {
+        // обработайте ошибку
+        console.error(err);
+        res.status(500).send("Server error");
+      } else {
+        res.redirect("/");
+      }
+    }
+  );
 });
 
 export default router;
-// 0177 - ±

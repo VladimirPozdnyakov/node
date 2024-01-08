@@ -28,13 +28,22 @@ class Entry {
   }
 
   static selectAll(cb) {
-    const sql = "SELECT * FROM user";
-    connection.query(sql, (err, rows) => {
+    const sqlPosts = "SELECT * FROM posts";
+    const sqlUsers = "SELECT * FROM user";
+
+    connection.query(sqlPosts, (err, posts) => {
       if (err) {
         console.log(err);
         cb(err, null);
       } else {
-        cb(null, rows);
+        connection.query(sqlUsers, (err, users) => {
+          if (err) {
+            console.log(err);
+            cb(err, null);
+          } else {
+            cb(null, { posts, users });
+          }
+        });
       }
     });
   }

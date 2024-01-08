@@ -1,7 +1,7 @@
 import User from "../models/user.js";
 
 const form = (req, res) => {
-  res.render("login", { title: "chepokrashka" });
+  res.render("login", { title: "Login" });
   console.log("...");
   console.log("заход на /login");
 };
@@ -27,8 +27,14 @@ const submit = (req, res, next) => {
     }
   });
 };
-const logout = (req, res, err, next) =>
-  req.session.destroy((req, res, err) => {
-    if (err) return next(err);
+
+const logout = (req, res) => {
+  req.session.destroy((err) => {
+    if (err) {
+      return res.redirect("/error"); // перенаправляем на страницу ошибки, если есть ошибка
+    }
+    return res.redirect("/"); // перенаправляем на главную страницу после выхода
   });
+};
+
 export default { form, submit, logout };

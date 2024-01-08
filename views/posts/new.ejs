@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href="/bootstrap.css" />
+    <script src="/bootstrap.js"></script>
+  </head>
+  <body>
+    <h1 class="text-center">Создать пост</h1>
+    <form action="/new" class="container" method="post">
+      <div class="row my-3">
+        <div class="col-sm-4 col-12">
+          <div class="form-floating mb-3">
+            <input
+              name="title"
+              type="text"
+              class="form-control"
+              id="title"
+              placeholder="Title"
+            />
+            <label for="title">Введите название поста</label>
+          </div>
+        </div>
+      </div>
+      <div class="row my-3">
+        <div class="col-sm-6 col-12">
+          <div class="form-floating">
+            <textarea
+              class="form-control"
+              name="body"
+              id="body"
+              placeholder="Content"
+            ></textarea>
+            <label for="body">Введите содержание поста</label>
+          </div>
+        </div>
+      </div>
+      <div class="row my-3">
+        <div class="col-sm-6 col-12">
+          <button type="submit" class="btn btn-success">Запостить</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

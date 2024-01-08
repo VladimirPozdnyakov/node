@@ -3,8 +3,11 @@ import Entry from "../models/entry.js";
 const list = (req, res, next) => {
   Entry.selectAll((err, entries) => {
     if (err) return next(err);
-    res.render("entries", { title: "List", entries: entries });
-    res.render("main", { title: "chepokrashka" });
+    res.render("entries", {
+      title: "Main",
+      email: req.session.email,
+      entries: entries,
+    });
     console.log("...");
     console.log("заход на /");
   });
