@@ -4,7 +4,7 @@ const list = (req, res, next) => {
   Entry.selectAll((err, entries) => {
     if (err) return next(err);
     res.render("entries", {
-      title: "Main",
+      title: "Главная страница",
       email: req.session.email,
       entries: entries,
     });

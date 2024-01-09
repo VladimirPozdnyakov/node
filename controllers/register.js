@@ -4,7 +4,7 @@ import validator from "validator";
 
 const form = (req, res) => {
   res.render("registerForm", {
-    title: "Register",
+    title: "Регистрация",
     errorMessage: res.locals.errorMessage,
   });
   console.log("...");
