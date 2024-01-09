@@ -21,8 +21,6 @@ router.use(favicon(__dirname + "/favicon.ico"));
 
 router.get("/", entries.list);
 
-router.get("/logout", login.logout);
-
 router.get("/entries", entries.form, (req, res) => {
   posts.getPosts((err, posts) => {
     if (err) {
@@ -37,11 +35,13 @@ router.get("/entries", entries.form, (req, res) => {
 });
 router.post("/entries", entries.submit);
 
+router.get("/register", register.form);
+router.post("/register", register.submit);
+
 router.get("/login", login.form);
 router.post("/login", login.submit);
 
-router.get("/register", register.form);
-router.post("/register", register.submit);
+router.get("/logout", login.logout);
 
 router.get("/new", posts.form);
 router.post("/new", posts.addPost);
@@ -73,6 +73,18 @@ router.post("/posts/edit/:id", (req, res) => {
       }
     }
   );
+});
+router.get("/posts/delete/:id", (req, res) => {
+  const sql = "DELETE FROM posts WHERE id = ?";
+  connection.query(sql, [req.params.id], (err, result) => {
+    if (err) {
+      // обработайте ошибку
+      console.error(err);
+      res.status(500).send("Server error");
+    } else {
+      res.redirect("/");
+    }
+  });
 });
 
 export default router;

@@ -23,6 +23,7 @@
         <br>
         <% if (email === entry.author) { %>
             <a href="posts/edit/<%= entry.id %>" class="btn btn-primary">Редактировать</a>
+            <a href="posts/delete/<%= entry.id %>" class="btn btn-danger">Удалить</a>
         <% } %>
         </div>
     </div>

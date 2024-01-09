@@ -34,9 +34,10 @@ const submit = [
           res.redirect("/");
         });
       } else {
+        res.locals.errorMessage.push("Такой пользователь уже существует!");
         console.log("...");
         console.log("Такой пользователь уже существует!");
-        res.redirect("/");
+        return form(req, res);
       }
     });
   },

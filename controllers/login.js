@@ -12,7 +12,7 @@ const submit = (req, res, next) => {
     if (!data) {
       console.log("...");
       console.log("Имя или пароль неверны!");
-      res.redirect("back");
+      return form(req, res);
     }
     if (data) {
       // req.session.userEmail = data.email;
