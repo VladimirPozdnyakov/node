@@ -6,17 +6,19 @@
       <span class="name"><%= user.email %> </span> <%# user.name для браузера
       то, что пользователь послал в requeste%>
       <a class="badge rounded-pill bg-primary" href="/new" aria-current="page"
-        >Post<span class="visually-hidden">(current)</span></a
+        >Создать пост<span class="visually-hidden">(current)</span></a
       >
-      <a class="badge rounded-pill bg-warning" href="/logout">Logout</a>
+      <a class="badge rounded-pill bg-warning" href="/logout">Выйти</a>
     </div>
     <% } else { %>
     <div class="" id="menu">
       <%# //меню анонимных пользователей %>
       <a class="badge rounded-pill bg-info" href="/login" aria-current="page"
-        >Login<span class="visually-hidden">(current)</span></a
+        >Войти<span class="visually-hidden">(current)</span></a
       >
-      <a class="badge rounded-pill bg-info" href="/register">Register</a>
+      <a class="badge rounded-pill bg-info" href="/register"
+        >Зарегистрироваться</a
+      >
     </div>
     <% } %>
   </div>
