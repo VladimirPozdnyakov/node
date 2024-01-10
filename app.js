@@ -86,6 +86,6 @@ if (app.get("env") != "development") {
     console.log(app.get);
     console.log("! ! !");
     console.log(err.message);
-    res.end("GOVNOKOD!");
+    res.end("ПЛОХОЙ КОД!");
   });
 }
