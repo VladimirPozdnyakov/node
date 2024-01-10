@@ -15,12 +15,10 @@ const submit = (req, res, next) => {
       return form(req, res);
     }
     if (data) {
-      // req.session.userEmail = data.email;
       req.session.email = data.email;
-      // req.session.userName = data.name;
       req.session.name = data.name;
-      // req.session.userPassword = data.password;
       req.session.password = data.password;
+      req.session.role = data.role;
       console.log("...");
       console.log("Всё верно!");
       res.redirect("/");

@@ -2,11 +2,11 @@ import mysql from "mysql";
 
 // Создание подключения к БД
 const connection = mysql.createConnection({
-  host: "localhost", // Имя хоста БД
+  host: "sql11.freemysqlhosting.net", // Имя хоста БД
   port: "3306", // Порт хоста ДБ
-  user: "root", // Имя пользователя БД
-  password: "13151211", // Пароль пользователя БД
-  database: "nodeproject", // Имя БД
+  user: "sql11675940", // Имя пользователя БД
+  password: "xhrT5pKC8w", // Пароль пользователя БД
+  database: "sql11675940", // Имя БД
 });
 
 // Подключение к БД
@@ -15,7 +15,7 @@ connection.connect((err) => {
   console.log("Соединение с БД установлено!");
 
   let sql =
-    "CREATE TABLE IF NOT EXISTS posts( id INT PRIMARY KEY AUTO_INCREMENT, title VARCHAR(255) NOT NULL, body TEXT,author VARCHAR(255) DEFAULT 'Гость')";
+    "CREATE TABLE IF NOT EXISTS posts( id INT PRIMARY KEY AUTO_INCREMENT, title VARCHAR(255) NOT NULL, body TEXT,author VARCHAR(255) DEFAULT 'guest')";
   connection.query(sql, function (err, result) {
     if (err) throw err;
   });

@@ -6,6 +6,7 @@ const list = (req, res, next) => {
     res.render("entries", {
       title: "Главная страница",
       email: req.session.email,
+      role: req.session.role,
       entries: entries,
     });
     console.log("...");
