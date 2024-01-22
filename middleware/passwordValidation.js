@@ -23,7 +23,7 @@ const validatePassword = (req, res, next) => {
     );
   }
 
-  // Если есть ошибка, добавляем ее на страницу
+  // Если есть ошибка, добавляем её на страницу
   if (errorMessage !== "") {
     res.locals.errorMessage = errorMessage;
   }
