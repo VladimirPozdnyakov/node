@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title><%= title %> </title>
-    <link rel="stylesheet" href="/bootstrap.css" />
-    <script src="/bootstrap.js"></script>
-</head>
-<body>
-    <div class="container">
-<%- include ('./partials/menu') %>
-<% entries.posts.forEach((entry)=>{ %>
-    <div class="card entry" style="width: 66rem;">
-        <div class="card-body ">
-            <h6>Запостил: <%= entry.author ? entry.author : 'Гость' %> </h6>
-            <br>
-          <h5 class="card-title"><%= entry.title %></h5>
-
-        <p class="card-text">
-            <%= entry.body %>
-            <!-- Здесь контент будет -->
-        </p>
-        <br>
-        <% if (email === entry.author || role === 'admin') { %>
-            <a href="posts/edit/<%= entry.id %>" class="btn btn-primary">Редактировать</a>
-            <a href="posts/delete/<%= entry.id %>" class="btn btn-danger">Удалить</a>
-        <% } %>
+    <head>
+        <title><%= title %> </title>
+        <link rel="stylesheet" href="/bootstrap.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+        <script src="/bootstrap.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <%- include ('./partials/menu') %>
+            <% entries.posts.forEach((entry)=>{ %>
+                <div class="card entry" style="width: 66rem;">
+                    <div class="card-body ">
+                        <h6>Запостил: <%= entry.author ? entry.author : 'Гость' %>
+                            <% if (email === entry.author || role === 'admin') { %>
+                            <a href="posts/edit/<%= entry.id %>"><i class="fa-sharp fa-solid fa-pen" style="color: #000000;"></i></a>
+                            <a href="posts/delete/<%= entry.id %>"><i class="fa-solid fa-trash" style="color: #000000;"></i></a>
+                            <% } %>
+                        </h6>
+                        <br>
+                        <h5 class="card-title"><%= entry.title %></h5>
+                        <p class="card-text">
+                        <%= entry.body %>
+                        <!-- Здесь контент будет -->
+                        </p>
+                        <br>
+                    </div>
+                    </br>
+                </div>
+                <br>
+            <% }) %>
         </div>
-    </div>
-    </br>
-<% }) %>
-
-</div>
-</body>
+    </body>
 </html>
