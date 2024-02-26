@@ -53,8 +53,8 @@ app.use(favicon(join(__dirname, "/public/img/Fox(ElectroNic).ico")));
 app.use(user_session);
 app.use(cookieParser());
 passport.initialize();
-passportFunction(passport);
-app.use(myRoutes);
+app.use(passportFunction(passport));
+app.use(myRoutes); // У-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y
 
 app.listen(port, () => {
   console.log("...");
