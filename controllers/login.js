@@ -1,4 +1,7 @@
+import logger from "../logger/index.js";
 import User from "../models/user.js";
+import jwt from "jsonwebtoken";
+import cookieParser from "cookie-parser";
 
 const form = (req, res) => {
   res.render("login", { title: "Login" });
@@ -10,8 +13,13 @@ const submit = (req, res, next) => {
     //data is user
     if (err) return next(err);
     if (!data) {
-      console.log("...");
+      console.log("! ! !");
+      console.log("! ! !");
+      console.log("! ! !");
       console.log("Имя или пароль неверны!");
+      console.log("! ! !");
+      console.log("! ! !");
+      logger.error("Ошибка ввода пароля");
       return form(req, res);
     }
     if (data) {
@@ -21,15 +29,50 @@ const submit = (req, res, next) => {
       req.session.role = data.role;
       console.log("...");
       console.log("Всё верно!");
+      console.log("...");
+      logger.info("Заход произведён" + " " + data.name + " " + data.email);
+
+      //jwt
+      const token = jwt.sign(
+        {
+          email: data.email,
+        },
+        process.env.JWTTOKENSECRET,
+        {
+          expiresIn: process.env.JWTTOKENTIME,
+        }
+      );
+      console.log("...");
+      console.log("токен подготовлен");
+      console.log("...");
+      logger.info("токен подготовлен:" + token);
+
+      //jwt cookie
+      res.cookie("jwt", token, {
+        httpOnly: true,
+        // secure: true,
+        maxAge: 3600000,
+      });
+      console.log("...");
+      console.log("куки подготовлен");
+
       res.redirect("/");
     }
   });
 };
 
 const logout = (req, res) => {
+  res.clearCookie("jwt");
   req.session.destroy((err) => {
     if (err) {
-      return res.redirect("/error"); // перенаправляем на страницу ошибки, если есть ошибка
+      console.log("! ! !");
+      console.log("! ! !");
+      console.log("! ! !");
+      console.log("ошибка ");
+      console.log("! ! !");
+      console.log("! ! !");
+      logger.error("Ошибка выхода");
+      console.log(err.message);
     }
     return res.redirect("/"); // перенаправляем на главную страницу после выхода
   });

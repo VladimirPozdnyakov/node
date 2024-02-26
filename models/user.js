@@ -1,4 +1,5 @@
 import connection from "./db.js";
+import logger from "../logger/index.js";
 
 // Создание таблицы, если её нет
 const sql =
@@ -6,7 +7,14 @@ const sql =
 
 connection.query(sql, (err) => {
   if (err) {
-    console.log(err);
+    console.log("! ! !");
+    console.log("! ! !");
+    console.log("! ! !");
+    console.log("ошибка ");
+    console.log("! ! !");
+    console.log("! ! !");
+    logger.error("Error");
+    console.log(err.message);
   }
 });
 
@@ -19,7 +27,14 @@ class User {
     const { name, email, password, age } = dataForm;
     connection.query(sql, [name, email, password, age], (err) => {
       if (err) {
-        console.log(err);
+        console.log("! ! !");
+        console.log("! ! !");
+        console.log("! ! !");
+        console.log("ошибка ");
+        console.log("! ! !");
+        console.log("! ! !");
+        logger.error("Ошибка создания пользователя");
+        console.log(err.message);
       }
       cb(err);
     });
@@ -29,7 +44,14 @@ class User {
     const sql = "SELECT * FROM user WHERE email = ?";
     connection.query(sql, [email], (err, rows) => {
       if (err) {
-        console.log(err);
+        console.log("! ! !");
+        console.log("! ! !");
+        console.log("! ! !");
+        console.log("ошибка ");
+        console.log("! ! !");
+        console.log("! ! !");
+        logger.error("Error");
+        console.log(err.message);
         cb(err, null);
       } else {
         cb(null, rows[0]);

@@ -1,0 +1,35 @@
+{
+  message: 'Ошибка пароля - менее 8 символов',
+  level: 'error',
+  timestamp: '2024-02-26T09:14:00.645Z'
+}
+{
+  message: 'Неправильно записан email',
+  level: 'error',
+  timestamp: '2024-02-26T09:14:10.776Z'
+}
+{
+  message: 'Такой пользователь уже существует',
+  level: 'error',
+  timestamp: '2024-02-26T09:15:52.851Z'
+}
+{
+  message: 'Не заполнены поля для создания поста',
+  level: 'error',
+  timestamp: '2024-02-26T09:20:56.363Z'
+}
+{
+  message: 'alert is not defined',
+  level: 'error',
+  timestamp: '2024-02-26T09:21:35.094Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-02-26T09:33:14.817Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-02-26T09:33:40.122Z'
+}

@@ -13,14 +13,21 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dota": "^0.0.2",
+    "dotenv": "^16.4.5",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "express-favicon": "^2.0.4",
     "express-session": "^1.17.3",
     "fs-extra": "^11.1.1",
+    "jsonwebtoken": "^9.0.2",
     "method-override": "^3.0.0",
+    "morgan": "^1.10.0",
     "mysql": "^2.18.1",
-    "validator": "^13.11.0"
+    "passport": "^0.7.0",
+    "validator": "^13.11.0",
+    "winston": "^3.11.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.2"

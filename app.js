@@ -9,10 +9,16 @@ import myRoutes from "./routers/index_routers.js";
 import session from "express-session";
 import user_session from "./middleware/user_session.js";
 import User from "./models/user.js";
+import logger from "./logger/index.js";
+// import morgan from "morgan";
+import "dotenv/config.js";
+import cookieParser from "cookie-parser";
+import passport from "passport";
+import passportFunction from "./middleware/passport.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
-const port = "3000";
+const port = process.env.PORT;
 const currentTime = new Date().toLocaleString();
 
 app.set("view engine", "ejs");
@@ -34,22 +40,34 @@ app.use(
     join(__dirname, "public/css/bootstrap-5.3.2/dist/js/bootstrap.js")
   )
 );
-app.use(session({ secret: "TenSura", resave: false, saveUninitialized: true }));
+app.use(
+  session({
+    secret: process.env.SECRET,
+    resave: false,
+    saveUninitialized: true,
+  })
+);
+// app.use(morgan("tiny"));
 
 app.use(favicon(join(__dirname, "/public/img/Fox(ElectroNic).ico")));
 app.use(user_session);
+app.use(cookieParser());
+passport.initialize();
+passportFunction(passport);
 app.use(myRoutes);
 
 app.listen(port, () => {
   console.log("...");
-  console.log("проверка console.log пройдена");
+  console.log("Проверка console.log пройдена");
   console.log("...");
-  console.log("начинается логгирование");
+  console.log("Начинается логгирование");
   console.log("...");
   addline("server started");
-  console.log("логгирование завершено");
+  console.log("Логгирование завершено");
   console.log("...");
-  console.log("в данный момент используется версия " + app.get("env"));
+  console.log("В данный момент используется версия " + app.get("env"));
+  console.log("...");
+  logger.info("Запуск сервера");
 });
 
 function addline(line) {
@@ -61,7 +79,7 @@ function addline(line) {
 
 // error handler
 app.use((req, res, next) => {
-  const err = new Error("какая-то непонятная ошибка");
+  const err = new Error("Какая-то непонятная ошибка");
   err.status = 404;
   next(err);
 });
@@ -74,6 +92,7 @@ if (app.get("env") != "development") {
   app.use((err, req, res, next) => {
     // err.status = 400;
     res.render("error.ejs", { error: err.message, status: err.status });
+    logger.error(err.message);
   });
 } else {
   app.use((err, req, res, next) => {
@@ -86,6 +105,8 @@ if (app.get("env") != "development") {
     console.log(app.get);
     console.log("! ! !");
     console.log(err.message);
+    console.log("! ! !");
+    logger.error(err.message);
     res.end("ПЛОХОЙ КОД!");
   });
 }

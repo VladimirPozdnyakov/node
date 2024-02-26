@@ -12,7 +12,9 @@ import register from "../controllers/register.js";
 import entries from "../controllers/entries.js";
 import login from "../controllers/login.js";
 import posts from "../controllers/posts.js";
-import connection from "../models/db.js";
+import sqlLogic from "../middleware/sqlLogic.js";
+import logger from "../logger/index.js";
+import passport from "passport";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const router = express.Router();
@@ -24,7 +26,14 @@ router.get("/", entries.list);
 router.get("/entries", entries.form, (req, res) => {
   posts.getPosts((err, posts) => {
     if (err) {
-      // Обработка ошибки
+      console.log("! ! !");
+      console.log("! ! !");
+      console.log("! ! !");
+      console.log("ошибка ");
+      console.log("! ! !");
+      console.log("! ! !");
+      logger.error("Ошибка захода на страницу");
+      console.log(err.message);
     } else {
       res.render("main", {
         title: "Главная страница",
@@ -44,47 +53,14 @@ router.post("/login", login.submit);
 router.get("/logout", login.logout);
 
 router.get("/new", posts.form);
-router.post("/new", posts.addPost);
+router.post(
+  "/new",
+  passport.authenticate("jwt", { session: false }),
+  posts.addPost
+);
 
-router.get("/posts/edit/:id", (req, res) => {
-  const sql = "SELECT * FROM posts WHERE id = ?";
-  connection.query(sql, [req.params.id], (err, results) => {
-    if (err) {
-      // обработайте ошибку
-      console.error(err);
-      res.status(500).send("Server error");
-    } else {
-      res.render("posts/edit", { post: results[0] });
-    }
-  });
-});
-router.post("/posts/edit/:id", (req, res) => {
-  const sql = "UPDATE posts SET title = ?, body = ? WHERE id = ?";
-  connection.query(
-    sql,
-    [req.body.title, req.body.body, req.params.id],
-    (err, result) => {
-      if (err) {
-        // обработайте ошибку
-        console.error(err);
-        res.status(500).send("Server error");
-      } else {
-        res.redirect("/");
-      }
-    }
-  );
-});
-router.get("/posts/delete/:id", (req, res) => {
-  const sql = "DELETE FROM posts WHERE id = ?";
-  connection.query(sql, [req.params.id], (err, result) => {
-    if (err) {
-      // обработайте ошибку
-      console.error(err);
-      res.status(500).send("Server error");
-    } else {
-      res.redirect("/");
-    }
-  });
-});
+router.get("/posts/edit/:id", sqlLogic.edit);
+router.post("/posts/edit/:id", sqlLogic.update);
+router.get("/posts/delete/:id", sqlLogic.deleted);
 
 export default router;
