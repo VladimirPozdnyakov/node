@@ -33,3 +33,8 @@
   level: 'error',
   timestamp: '2024-02-26T09:33:40.122Z'
 }
+{
+  message: 'req.cookies is not a function',
+  level: 'error',
+  timestamp: '2024-03-05T06:57:41.918Z'
+}
