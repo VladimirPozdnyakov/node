@@ -14,7 +14,8 @@ import logger from "./logger/index.js";
 import "dotenv/config.js";
 import cookieParser from "cookie-parser";
 import passport from "passport";
-import passportFunction from "./middleware/passport.js";
+// import passportFunction from "./middleware/passport_jwt.js";
+import passportFunction from "./middleware/passport_yandex.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -52,7 +53,8 @@ app.use(
 app.use(favicon(join(__dirname, "/public/img/Fox(ElectroNic).ico")));
 app.use(user_session);
 app.use(cookieParser());
-passport.initialize();
+app.use(passport.initialize());
+app.use(passport.session());
 passportFunction(passport);
 app.use(myRoutes); // У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-у
 
