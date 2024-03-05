@@ -38,3 +38,13 @@
   level: 'error',
   timestamp: '2024-03-05T06:57:41.918Z'
 }
+{
+  message: 'Unknown authentication strategy "jwt"',
+  level: 'error',
+  timestamp: '2024-03-05T11:45:24.787Z'
+}
+{
+  message: 'Unknown authentication strategy "jwt"',
+  level: 'error',
+  timestamp: '2024-03-05T11:48:24.040Z'
+}
