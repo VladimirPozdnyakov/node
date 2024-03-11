@@ -41,10 +41,18 @@
 {
   message: 'Unknown authentication strategy "jwt"',
   level: 'error',
+<<<<<<< HEAD
   timestamp: '2024-03-11T06:02:54.820Z'
+=======
+  timestamp: '2024-03-05T11:45:24.787Z'
+>>>>>>> 66c3e6656d23061199beaac47807004a8920cb81
 }
 {
   message: 'Unknown authentication strategy "jwt"',
   level: 'error',
+<<<<<<< HEAD
   timestamp: '2024-03-11T06:26:52.153Z'
+=======
+  timestamp: '2024-03-05T11:48:24.040Z'
+>>>>>>> 66c3e6656d23061199beaac47807004a8920cb81
 }
