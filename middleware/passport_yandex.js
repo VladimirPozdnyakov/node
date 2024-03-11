@@ -2,7 +2,7 @@ import { Strategy as YandexStrategy } from "passport-yandex";
 import logger from "../logger/index.js";
 import "dotenv/config.js";
 
-function passportFunction(passport) {
+function passportFunctionYandex(passport) {
   passport.serializeUser(function (user, done) {
     done(null, user);
   });
@@ -33,4 +33,4 @@ function passportFunction(passport) {
   );
 }
 
-export default passportFunction;
+export default passportFunctionYandex;

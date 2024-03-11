@@ -50,7 +50,7 @@ const submit = (req, res, next) => {
       //jwt cookie
       res.cookie("jwt", token, {
         httpOnly: true,
-        // secure: true,
+        secure: true,
         maxAge: 3600000,
       });
       console.log("...");

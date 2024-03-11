@@ -14,8 +14,8 @@ import logger from "./logger/index.js";
 import "dotenv/config.js";
 import cookieParser from "cookie-parser";
 import passport from "passport";
-// import passportFunction from "./middleware/passport_jwt.js";
-import passportFunction from "./middleware/passport_yandex.js";
+import passportFunctionJWT from "./middleware/passport_jwt.js";
+import passportFunctionYandex from "./middleware/passport_yandex.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -55,7 +55,8 @@ app.use(user_session);
 app.use(cookieParser());
 app.use(passport.initialize());
 app.use(passport.session());
-passportFunction(passport);
+passportFunctionJWT(passport);
+passportFunctionYandex(passport);
 app.use(myRoutes); // У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-у
 
 app.listen(port, () => {

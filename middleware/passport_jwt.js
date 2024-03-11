@@ -16,7 +16,7 @@ const options = {
   secretOrKey: process.env.JWTTOKENSECRET,
 };
 
-function passportFunction(passport) {
+function passportFunctionJWT(passport) {
   passport.use(
     new JwtStrategy(options, function (jwt_payload, done) {
       User.findByEmail(jwt_payload.name, (err, user) => {
@@ -33,4 +33,4 @@ function passportFunction(passport) {
   );
 }
 
-export default passportFunction;
+export default passportFunctionJWT;
