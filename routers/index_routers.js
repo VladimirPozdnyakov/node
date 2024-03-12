@@ -47,13 +47,8 @@ router.post("/login", login.submit);
 
 router.get("/logout", login.logout);
 
-router.get("/new", ensureAuthenticated, posts.form);
-router.post(
-  "/new",
-  ensureAuthenticated,
-  passport.authenticate("jwt", { session: false }),
-  posts.addPost
-);
+router.get("/new", posts.form);
+router.post("/new", posts.addPost);
 
 router.get("/posts/edit/:id", sqlLogic.edit);
 router.post("/posts/edit/:id", sqlLogic.update);
@@ -68,6 +63,23 @@ router.get(
 router.get(
   "/auth/yandex/callback",
   passport.authenticate("yandex", { failureRedirect: "/login" }),
+  function (req, res, next) {
+    res.redirect("/");
+  }
+);
+
+router.get(
+  "/auth/google",
+  passport.authenticate("google", { scope: ["email", "profile"] }),
+  function (req, res, next) {}
+);
+
+router.get(
+  "/auth/google/callback",
+  passport.authenticate("google", {
+    successRedirect: "/",
+    failureRedirect: "/login",
+  }),
   function (req, res, next) {
     res.redirect("/");
   }

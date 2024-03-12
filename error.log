@@ -101,3 +101,111 @@
   level: 'error',
   timestamp: '2024-03-11T08:50:17.198Z'
 }
+{
+  message: 'res.isAuthenticated is not a function',
+  level: 'error',
+  timestamp: '2024-03-12T06:04:41.613Z'
+}
+{
+  message: 'res.isAuthenticated is not a function',
+  level: 'error',
+  timestamp: '2024-03-12T06:05:54.355Z'
+}
+{
+  message: 'res.IsAuthenticated is not a function',
+  level: 'error',
+  timestamp: '2024-03-12T06:06:41.201Z'
+}
+{
+  message: 'res.isAuthenticated is not a function',
+  level: 'error',
+  timestamp: '2024-03-12T06:09:11.677Z'
+}
+{
+  message: 'res.isAuthenticated is not a function',
+  level: 'error',
+  timestamp: '2024-03-12T06:10:39.561Z'
+}
+{
+  message: 'Unknown authentication strategy "jwt"',
+  level: 'error',
+  timestamp: '2024-03-12T07:00:10.326Z'
+}
+{
+  message: "Cannot read properties of undefined (reading '0')",
+  level: 'error',
+  timestamp: '2024-03-12T07:22:01.461Z'
+}
+{
+  message: 'C:\\Users\\pozdn\\Desktop\\interp\\node\\views\\entries.ejs:15\n' +
+    '    13|                 <div class="card entry" style="width: 66rem;">\r\n' +
+    '    14|                     <div class="card-body ">\r\n' +
+    " >> 15|                         <h6>Запостил: <%= user.author ? user.author : 'Гость' %>\r\n" +
+    "    16|                             <% if (email === entry.author || role === 'admin') { %>\r\n" +
+    '    17|                             <a href="posts/edit/<%= entry.id %>"><i class="fa-sharp fa-solid fa-pen" style="color: #000000;"></i></a>\r\n' +
+    '    18|                             <a href="posts/delete/<%= entry.id %>"><i class="fa-solid fa-trash" style="color: #000000;"></i></a>\r\n' +
+    '\n' +
+    'user is not defined',
+  level: 'error',
+  timestamp: '2024-03-12T07:37:08.178Z'
+}
+{
+  message: 'locals is not defined',
+  level: 'error',
+  timestamp: '2024-03-12T07:48:45.697Z'
+}
+{
+  message: 'Ошибка создания поста',
+  level: 'error',
+  timestamp: '2024-03-12T07:49:41.091Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'user')",
+  level: 'error',
+  timestamp: '2024-03-12T07:51:04.129Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'user')",
+  level: 'error',
+  timestamp: '2024-03-12T07:51:14.501Z'
+}
+{
+  message: 'Ошибка создания поста',
+  level: 'error',
+  timestamp: '2024-03-12T07:51:33.202Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'user')",
+  level: 'error',
+  timestamp: '2024-03-12T07:52:00.702Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-12T08:10:20.174Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-12T08:10:20.457Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-12T08:10:20.548Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-12T08:13:21.646Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-12T08:13:21.875Z'
+}
+{
+  message: 'Ошибка создания поста',
+  level: 'error',
+  timestamp: '2024-03-12T08:29:15.885Z'
+}

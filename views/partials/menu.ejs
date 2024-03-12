@@ -3,8 +3,8 @@
     <% if (locals.user) { %>
     <div id="menu">
       <%# меню пользователей выполнивших вход%>
-      <span class="name"><%= user.email %> </span> <%# user.name для браузера
-      то, что пользователь послал в requeste%>
+      <span class="name"><%= user.email || locals.user %> </span> <%# user.name
+      для браузера то, что пользователь послал в requeste%>
       <a class="badge rounded-pill bg-primary" href="/new" aria-current="page"
         >Создать пост<span class="visually-hidden">(current)</span></a
       >

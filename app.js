@@ -16,6 +16,7 @@ import cookieParser from "cookie-parser";
 import passport from "passport";
 import passportFunctionJWT from "./middleware/passport_jwt.js";
 import passportFunctionYandex from "./middleware/passport_yandex.js";
+import passportFunctionGoogle from "./middleware/passport_google.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -57,6 +58,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 passportFunctionJWT(passport);
 passportFunctionYandex(passport);
+passportFunctionGoogle(passport);
 app.use(myRoutes); // У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-у
 
 app.listen(port, () => {
