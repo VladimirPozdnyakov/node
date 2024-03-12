@@ -56,3 +56,48 @@
   timestamp: '2024-03-05T11:48:24.040Z'
 >>>>>>> 66c3e6656d23061199beaac47807004a8920cb81
 }
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-11T06:58:14.174Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-11T06:58:14.345Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-11T06:58:14.486Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-11T07:06:38.765Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-11T07:06:39.011Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-11T07:06:39.189Z'
+}
+{
+  message: "Cannot set properties of undefined (setting 'name')",
+  level: 'error',
+  timestamp: '2024-03-11T08:50:16.677Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-11T08:50:16.995Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-11T08:50:17.198Z'
+}

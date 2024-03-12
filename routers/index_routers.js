@@ -1,13 +1,7 @@
-import { create } from "domain";
 import express from "express";
 import favicon from "express-favicon";
-import { join } from "path";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
-import fs from "fs";
-import ejs from "ejs";
-import pkg from "method-override";
-const { MethodOverride } = pkg;
 import register from "../controllers/register.js";
 import entries from "../controllers/entries.js";
 import login from "../controllers/login.js";
@@ -15,6 +9,7 @@ import posts from "../controllers/posts.js";
 import sqlLogic from "../middleware/sqlLogic.js";
 import logger from "../logger/index.js";
 import passport from "passport";
+import ensureAuthenticated from "../middleware/isAuthenticated.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const router = express.Router();
@@ -52,9 +47,10 @@ router.post("/login", login.submit);
 
 router.get("/logout", login.logout);
 
-router.get("/new", posts.form);
+router.get("/new", ensureAuthenticated, posts.form);
 router.post(
   "/new",
+  ensureAuthenticated,
   passport.authenticate("jwt", { session: false }),
   posts.addPost
 );
@@ -63,4 +59,17 @@ router.get("/posts/edit/:id", sqlLogic.edit);
 router.post("/posts/edit/:id", sqlLogic.update);
 router.get("/posts/delete/:id", sqlLogic.deleted);
 
+router.get(
+  "/auth/yandex",
+  passport.authenticate("yandex"),
+  function (req, res, next) {}
+);
+
+router.get(
+  "/auth/yandex/callback",
+  passport.authenticate("yandex", { failureRedirect: "/login" }),
+  function (req, res, next) {
+    res.redirect("/");
+  }
+);
 export default router;

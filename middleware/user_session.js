@@ -6,5 +6,8 @@ export default (req, res, next) => {
       if (userData) req.user = res.locals.user = userData;
     });
   }
+  if (req.session.passport) {
+    res.locals.user = req.session.passport.user;
+  }
   next();
 };

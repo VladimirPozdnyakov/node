@@ -3,10 +3,16 @@
   <head>
     <link rel="stylesheet" href="/bootstrap.css" />
     <script src="/bootstrap.js"></script>
+    <!-- <script src="https://yastatic.net/s3/passport-sdk/autofill/v1/sdk-suggest-with-polyfills-latest.js"></script> -->
     <title>Вход</title>
   </head>
   <body>
     <h1 class="text-center">Форма входа</h1>
+    <div class="container">
+      <a href="/auth/yandex">
+        <button class="btn btn-success">Яндекс</button>
+      </a>
+    </div>
     <form action="/login" class="container" method="post">
       <div class="row my-3">
         <div class="col-sm-4 col-12">
