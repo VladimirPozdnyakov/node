@@ -18,6 +18,7 @@ import passportFunctionJWT from "./middleware/passport_jwt.js";
 import passportFunctionYandex from "./middleware/passport_yandex.js";
 import passportFunctionGoogle from "./middleware/passport_google.js";
 import passportFunctionGithub from "./middleware/passport_github.js";
+import passportFunctionVKontakte from "./middleware/passport_vkontakte.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -57,10 +58,11 @@ app.use(user_session);
 app.use(cookieParser());
 app.use(passport.initialize());
 app.use(passport.session());
+passportFunctionGithub(passport);
 passportFunctionJWT(passport);
 passportFunctionYandex(passport);
 passportFunctionGoogle(passport);
-passportFunctionGithub(passport);
+passportFunctionVKontakte(passport);
 app.use(myRoutes); // У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-у
 
 app.listen(port, () => {

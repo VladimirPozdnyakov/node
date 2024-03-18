@@ -1,36 +1,43 @@
-import { Strategy as GitHubStrategy } from "passport-github2";
+import { Strategy as GitHubStrategy } from "passport-github";
 import logger from "../logger/index.js";
 import "dotenv/config.js";
 
 function passportFunctionGithub(passport) {
-  passport.serializeUser(function (user, done) {
-    const newUser = {};
-    newUser.id = user.id;
-    newUser.email = email();
-    newUser.name = user.displayName;
-    done(null, newUser);
+  passport.serializeUser(function (user, doneGT) {
+    console.log(user);
+    console.log("Github serialize");
+    const email = function () {
+      if (user.provider == "google") {
+        return user.email;
+      } else if (user.provider == "yandex") {
+        return user.emails[0].value;
+      } else if (user.provider == "github") {
+        return user._json.displayName
+          ? user._json.displayName
+          : "github.email@gmail.com";
+      } else {
+        return "vk.email@gmail.com";
+      }
+    };
+    const newUser = {
+      id: user.id,
+      username: user.displayName,
+      email: email(),
+    };
+    return doneGT(null, newUser);
   });
-
-  passport.deserializeUser(function (obj, done) {
-    done(null, obj);
+  passport.deserializeUser(function (id, doneVK) {
+    return doneVK(null, id);
   });
-
   passport.use(
     new GitHubStrategy(
       {
         clientID: process.env.GITHUB_CLIENT_ID,
         clientSecret: process.env.GITHUB_CLIENT_SECRET,
-        callbackURL: "http://localhost:3000/auth/github/callback",
+        callbackURL: "http://localhost:80/auth/github/callback",
       },
-      function (accessToken, refreshToken, profile, done) {
-        process.nextTick(function () {
-          // To keep the example simple, the user's GitHub profile is returned
-          // to represent the logged-in user.  In a typical application, you would
-          // want to associate the GitHub account with a user record in your
-          // database, and return that user instead.
-          logger.info("Получили профиль от GitHub");
-          return done(null, profile);
-        });
+      function (accessToken, refreshToken, profile, doneGT) {
+        return doneGT(null, profile);
       }
     )
   );

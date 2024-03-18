@@ -85,10 +85,7 @@ router.get(
   }
 );
 
-router.get(
-  "/auth/github",
-  passport.authenticate("github", { scope: ["user:email", "profile"] })
-);
+router.get("/auth/github", passport.authenticate("github"));
 
 router.get(
   "/auth/github/callback",

@@ -694,3 +694,358 @@
   level: 'error',
   timestamp: '2024-03-18T07:46:04.542Z'
 }
+{
+  message: "Cannot read properties of undefined (reading '0')",
+  level: 'error',
+  timestamp: '2024-03-18T08:01:35.457Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:01:35.819Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:01:36.049Z'
+}
+{
+  message: "Cannot read properties of undefined (reading '0')",
+  level: 'error',
+  timestamp: '2024-03-18T08:02:12.532Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:02:12.822Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:02:13.027Z'
+}
+{
+  message: "Cannot read properties of undefined (reading '0')",
+  level: 'error',
+  timestamp: '2024-03-18T08:05:16.417Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:05:16.661Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:05:16.858Z'
+}
+{
+  message: "Cannot read properties of undefined (reading '0')",
+  level: 'error',
+  timestamp: '2024-03-18T08:05:51.695Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:05:51.943Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:05:52.081Z'
+}
+{
+  message: "Cannot read properties of undefined (reading '0')",
+  level: 'error',
+  timestamp: '2024-03-18T08:09:57.167Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:09:57.391Z'
+}
+{
+  message: "Cannot read properties of undefined (reading '0')",
+  level: 'error',
+  timestamp: '2024-03-18T08:10:33.218Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:10:33.447Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:10:33.549Z'
+}
+{
+  message: "Cannot read properties of undefined (reading '0')",
+  level: 'error',
+  timestamp: '2024-03-18T08:11:16.281Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:11:16.465Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:11:16.632Z'
+}
+{
+  message: 'The redirect_uri MUST match the registered callback URL for this application.',
+  level: 'error',
+  timestamp: '2024-03-18T08:13:27.201Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:13:27.502Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:13:27.571Z'
+}
+{
+  message: 'The redirect_uri MUST match the registered callback URL for this application.',
+  level: 'error',
+  timestamp: '2024-03-18T08:13:39.489Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:13:39.776Z'
+}
+{
+  message: "Cannot read properties of undefined (reading '0')",
+  level: 'error',
+  timestamp: '2024-03-18T08:14:04.907Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:14:05.142Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:14:05.289Z'
+}
+{
+  message: "Cannot read properties of undefined (reading '0')",
+  level: 'error',
+  timestamp: '2024-03-18T08:14:10.008Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:14:10.264Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:14:10.378Z'
+}
+{
+  message: "Cannot read properties of undefined (reading '0')",
+  level: 'error',
+  timestamp: '2024-03-18T08:15:40.809Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:15:41.226Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:15:41.419Z'
+}
+{
+  message: "Cannot read properties of undefined (reading '0')",
+  level: 'error',
+  timestamp: '2024-03-18T08:16:46.911Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:16:47.181Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:16:47.396Z'
+}
+{
+  message: "Cannot read properties of undefined (reading '0')",
+  level: 'error',
+  timestamp: '2024-03-18T08:18:19.179Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:18:19.424Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:18:19.573Z'
+}
+{
+  message: "Cannot read properties of undefined (reading '0')",
+  level: 'error',
+  timestamp: '2024-03-18T08:20:45.018Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:20:45.237Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:20:45.467Z'
+}
+{
+  message: 'Failed to serialize user into session',
+  level: 'error',
+  timestamp: '2024-03-18T08:25:09.789Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:25:10.050Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:25:10.257Z'
+}
+{
+  message: "Cannot read properties of undefined (reading '0')",
+  level: 'error',
+  timestamp: '2024-03-18T08:25:23.294Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:25:23.518Z'
+}
+{
+  message: 'Unknown authentication strategy "yandex"',
+  level: 'error',
+  timestamp: '2024-03-18T08:26:04.331Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:26:04.577Z'
+}
+{
+  message: "Cannot read properties of undefined (reading '0')",
+  level: 'error',
+  timestamp: '2024-03-18T08:28:54.241Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:28:54.456Z'
+}
+{
+  message: 'The redirect_uri MUST match the registered callback URL for this application.',
+  level: 'error',
+  timestamp: '2024-03-18T08:29:52.939Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:29:53.222Z'
+}
+{
+  message: "Cannot read properties of undefined (reading '0')",
+  level: 'error',
+  timestamp: '2024-03-18T08:33:07.735Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:33:07.966Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:33:08.332Z'
+}
+{
+  message: 'The code passed is incorrect or expired.',
+  level: 'error',
+  timestamp: '2024-03-18T08:33:14.769Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:33:14.890Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:33:14.977Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:47:22.454Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:47:22.697Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:47:22.830Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:48:51.067Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:48:51.343Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:50:14.415Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:50:14.615Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:50:14.727Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:51:25.610Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:51:25.849Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-18T08:51:25.963Z'
+}
