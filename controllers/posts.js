@@ -23,7 +23,9 @@ connection.query(sql, (err) => {
 
 const addPost = (req, res, next) => {
   const { title, body } = req.body;
-  const author = req.session.email;
+  const author = req.session.email
+    ? req.session.email
+    : req.session.passport.user.email;
 
   if (!title || !body) {
     console.log("! ! !");

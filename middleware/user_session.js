@@ -1,13 +1,15 @@
 import User from "../models/user.js";
+import logger from "../logger/index.js";
 export default (req, res, next) => {
-  if (req.session.name) {
-    User.findByEmail(req.session.email, (err, userDatas) => {
+  if (req.session.email) {
+    User.findByEmail(req.session.email, (err, userData) => {
       if (err) return next(err);
-      if (userDatas) req.user = res.locals.user = userDatas[0];
+      if (userData) req.user = res.locals.user = userData;
+      console.log(userData);
       next();
     });
   } else if (req.session.passport) {
-    res.locals.user = req.session.passport.user;
+    req.user = res.locals.user = req.session.passport.user;
     next();
   } else {
     return next();

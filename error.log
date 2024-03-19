@@ -1049,3 +1049,138 @@
   level: 'error',
   timestamp: '2024-03-18T08:51:25.963Z'
 }
+{
+  message: 'Bad Request',
+  level: 'error',
+  timestamp: '2024-03-19T18:01:42.245Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-19T18:04:02.910Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-19T18:04:02.957Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-19T18:04:02.969Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-19T18:04:24.478Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-19T18:04:24.519Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-19T18:04:24.540Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-19T18:04:51.526Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-19T18:04:51.565Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-19T18:04:51.593Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-19T18:06:20.966Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-19T18:06:21.009Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-19T18:06:21.035Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-19T18:08:07.516Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-19T18:08:07.552Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-19T18:08:07.587Z'
+}
+{
+  message: 'req.session.touch is not a function',
+  level: 'error',
+  timestamp: '2024-03-19T18:27:44.402Z'
+}
+{
+  message: 'req.session.touch is not a function',
+  level: 'error',
+  timestamp: '2024-03-19T18:29:51.173Z'
+}
+{
+  message: 'author is not defined',
+  level: 'error',
+  timestamp: '2024-03-19T18:33:38.924Z'
+}
+{
+  message: 'author is not defined',
+  level: 'error',
+  timestamp: '2024-03-19T18:34:38.975Z'
+}
+{
+  message: 'author is not defined',
+  level: 'error',
+  timestamp: '2024-03-19T18:36:25.448Z'
+}
+{
+  message: 'author is not defined',
+  level: 'error',
+  timestamp: '2024-03-19T18:37:00.218Z'
+}
+{
+  message: 'author is not defined',
+  level: 'error',
+  timestamp: '2024-03-19T18:38:30.459Z'
+}
+{
+  message: 'author is not defined',
+  level: 'error',
+  timestamp: '2024-03-19T18:39:13.801Z'
+}
+{
+  message: 'author is not defined',
+  level: 'error',
+  timestamp: '2024-03-19T18:39:43.946Z'
+}
+{
+  message: 'author is not defined',
+  level: 'error',
+  timestamp: '2024-03-19T18:40:11.783Z'
+}
+{
+  message: 'author is not defined',
+  level: 'error',
+  timestamp: '2024-03-19T18:41:28.674Z'
+}
