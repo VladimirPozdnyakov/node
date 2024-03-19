@@ -1184,3 +1184,42 @@
   level: 'error',
   timestamp: '2024-03-19T18:41:28.674Z'
 }
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js\\views\\entries.ejs:16\n' +
+    '    14|                     <div class="card-body ">\r\n' +
+    "    15|                         <h6>Запостил: <%= entry.author ? entry.author : 'Гость' %>\r\n" +
+    " >> 16|                             <% if (user.email === entry.author || role === 'admin') { %>\r\n" +
+    '    17|                             <a href="posts/edit/<%= entry.id %>"><i class="fa-sharp fa-solid fa-pen" style="color: #000000;"></i></a>\r\n' +
+    '    18|                             <a href="posts/delete/<%= entry.id %>"><i class="fa-solid fa-trash" style="color: #000000;"></i></a>\r\n' +
+    '    19|                             <% } %>\r\n' +
+    '\n' +
+    'user is not defined',
+  level: 'error',
+  timestamp: '2024-03-19T19:34:54.367Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js\\views\\entries.ejs:16\n' +
+    '    14|                     <div class="card-body ">\r\n' +
+    "    15|                         <h6>Запостил: <%= entry.author ? entry.author : 'Гость' %>\r\n" +
+    " >> 16|                             <% if (user.email === entry.author || role === 'admin') { %>\r\n" +
+    '    17|                             <a href="posts/edit/<%= entry.id %>"><i class="fa-sharp fa-solid fa-pen" style="color: #000000;"></i></a>\r\n' +
+    '    18|                             <a href="posts/delete/<%= entry.id %>"><i class="fa-solid fa-trash" style="color: #000000;"></i></a>\r\n' +
+    '    19|                             <% } %>\r\n' +
+    '\n' +
+    'user is not defined',
+  level: 'error',
+  timestamp: '2024-03-19T19:35:11.722Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js\\views\\entries.ejs:16\n' +
+    '    14|                     <div class="card-body ">\r\n' +
+    "    15|                         <h6>Запостил: <%= entry.author ? entry.author : 'Гость' %>\r\n" +
+    " >> 16|                             <% if (user.email === entry.author || role === 'admin') { %>\r\n" +
+    '    17|                             <a href="posts/edit/<%= entry.id %>"><i class="fa-sharp fa-solid fa-pen" style="color: #000000;"></i></a>\r\n' +
+    '    18|                             <a href="posts/delete/<%= entry.id %>"><i class="fa-solid fa-trash" style="color: #000000;"></i></a>\r\n' +
+    '    19|                             <% } %>\r\n' +
+    '\n' +
+    'user is not defined',
+  level: 'error',
+  timestamp: '2024-03-19T19:35:13.072Z'
+}
