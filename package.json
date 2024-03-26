@@ -25,6 +25,7 @@
     "method-override": "^3.0.0",
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
+    "mysql2": "^3.9.2",
     "passport": "^0.7.0",
     "passport-github": "^1.1.0",
     "passport-github2": "^0.1.12",
@@ -33,6 +34,9 @@
     "passport-oauth2": "^1.8.0",
     "passport-vkontakte": "^0.5.0",
     "passport-yandex": "^0.0.5",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.1",
     "validator": "^13.11.0",
     "winston": "^3.11.0"
   },

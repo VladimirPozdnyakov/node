@@ -1223,3 +1223,28 @@
   level: 'error',
   timestamp: '2024-03-19T19:35:13.072Z'
 }
+{
+  message: 'Error',
+  level: 'error',
+  timestamp: '2024-03-26T06:23:21.129Z'
+}
+{
+  message: 'Entry.findAll is not a function',
+  level: 'error',
+  timestamp: '2024-03-26T07:45:28.702Z'
+}
+{
+  message: 'Entry.findAll is not a function',
+  level: 'error',
+  timestamp: '2024-03-26T08:04:50.401Z'
+}
+{
+  message: 'Entry.findAll is not a function',
+  level: 'error',
+  timestamp: '2024-03-26T08:06:43.807Z'
+}
+{
+  message: 'Entry.findAll is not a function',
+  level: 'error',
+  timestamp: '2024-03-26T08:14:09.927Z'
+}

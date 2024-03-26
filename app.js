@@ -19,6 +19,7 @@ import passportFunctionYandex from "./middleware/passport_yandex.js";
 import passportFunctionGoogle from "./middleware/passport_google.js";
 import passportFunctionGithub from "./middleware/passport_github.js";
 import passportFunctionVK from "./middleware/passport_vkontakte.js";
+import sequelize from "./models/db2.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -66,6 +67,7 @@ passportFunctionVK(passport);
 app.use(myRoutes); // У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-у
 
 app.listen(port, () => {
+  async () => await sequelize.sync({ foce: true });
   console.log("...");
   console.log("Проверка console.log пройдена");
   console.log("...");
