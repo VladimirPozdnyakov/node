@@ -3,7 +3,6 @@ import validatePassword from "../middleware/validation.js";
 import validator from "validator";
 import logger from "../logger/index.js";
 import jwt from "jsonwebtoken";
-import cookieParser from "cookie-parser";
 
 const form = (req, res) => {
   res.render("registerForm", {
@@ -47,9 +46,9 @@ const submit = [
           if (err) return next(err);
           res.redirect("/login");
           console.log("...");
-          console.log("произведена регестрация");
+          console.log("произведена регистрация");
           console.log("...");
-          logger.info("произведена регестрация");
+          logger.info("произведена регистрация");
 
           //jwt
           const token = jwt.sign(

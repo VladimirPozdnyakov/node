@@ -3,6 +3,10 @@
   <head>
     <link rel="stylesheet" href="/bootstrap.css" />
     <script src="/bootstrap.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <style>
       .error-message {
         color: red;
@@ -12,73 +16,98 @@
     <title><%= title %></title>
   </head>
   <body>
-    <h1 class="text-center">Форма регистрации</h1>
-    <form action="/register" class="container" id="registerForm" method="post">
-      <div class="row my-3 g-3">
-        <div class="col-sm-6 сol-12">
-          <div class="form-floating">
-            <input
-              name="name"
-              type="text"
-              class="form-control"
-              id="floatingTextarea"
-              placeholder="имя фамилия"
-            />
-            <label for="floatingTextarea">Введите своё имя и фамилию</label>
-          </div>
+    <div class="container">
+      <%- include ('./partials/menu') %>
+      <h1 class="text-center">Форма регистрации</h1>
+      <div class="container row">
+        <div class="yandex col">
+          <a href="/auth/yandex">
+            <i class="fa-brands fa-yandex fa-2xl" style="color: #000000"></i>
+          </a>
+        </div>
+        <div class="google col">
+          <a href="/auth/google">
+            <i class="fa-brands fa-google fa-2xl" style="color: #000000"></i>
+          </a>
+        </div>
+        <div class="github col">
+          <a href="/auth/github">
+            <i class="fa-brands fa-github fa-2xl" style="color: #000000"></i>
+          </a>
         </div>
       </div>
-      <div class="row my-3">
-        <div class="col-sm-4 col-12">
-          <div class="form-floating mb-3">
-            <input
-              type="email"
-              class="form-control"
-              id="floatingInput"
-              name="email"
-              placeholder="name@example.com"
-            />
-            <label for="floatingInput">Введите адрес электронной почты</label>
+      <form
+        action="/register"
+        class="container"
+        id="registerForm"
+        method="post"
+      >
+        <div class="row my-3 g-3">
+          <div class="col-sm-6 сol-12">
+            <div class="form-floating">
+              <input
+                name="name"
+                type="text"
+                class="form-control"
+                id="floatingTextarea"
+                placeholder="имя фамилия"
+              />
+              <label for="floatingTextarea">Введите своё имя и фамилию</label>
+            </div>
           </div>
         </div>
-        <div class="col-sm-4 col-12">
-          <div class="form-floating">
-            <input
-              name="age"
-              type="number"
-              class="form-control"
-              id="floatingAge"
-              placeholder="age"
-            />
-            <label for="floatingAge">Введите Ваш полный возраст</label>
+        <div class="row my-3">
+          <div class="col-sm-4 col-12">
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                name="email"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Введите адрес электронной почты</label>
+            </div>
+          </div>
+          <div class="col-sm-4 col-12">
+            <div class="form-floating">
+              <input
+                name="age"
+                type="number"
+                class="form-control"
+                id="floatingAge"
+                placeholder="age"
+              />
+              <label for="floatingAge">Введите Ваш полный возраст</label>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row my-3">
-        <div class="col-sm-6 col-12">
-          <div class="form-floating">
-            <input
-              type="password"
-              name="password"
-              class="form-control"
-              id="floatingPassword"
-              placeholder="password"
-            />
-            <label for="floatingPassword">Введите пароль</label>
+        <div class="row my-3">
+          <div class="col-sm-6 col-12">
+            <div class="form-floating">
+              <input
+                type="password"
+                name="password"
+                class="form-control"
+                id="floatingPassword"
+                placeholder="password"
+              />
+              <label for="floatingPassword">Введите пароль</label>
+            </div>
+            <% if (errorMessage && Array.isArray(errorMessage)) { %> <%
+            errorMessage.forEach(function(error) { %>
+            <p class="error-message"><%= error %></p>
+            <% }) %> <% } %>
           </div>
-          <% if (errorMessage && Array.isArray(errorMessage)) { %> <%
-          errorMessage.forEach(function(error) { %>
-          <p class="error-message"><%= error %></p>
-          <% }) %> <% } %>
         </div>
-      </div>
-      <div class="row my-3">
-        <div class="col-sm-6 col-12">
-          <button type="submit" class="btn btn-success">
-            Зарегистрироваться
-          </button>
+        <div class="row my-3">
+          <div class="col-sm-6 col-12">
+            <button type="submit" class="btn btn-success">
+              Зарегистрироваться
+            </button>
+          </div>
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
   </body>
 </html>

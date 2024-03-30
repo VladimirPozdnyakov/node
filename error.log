@@ -1248,3 +1248,13 @@
   level: 'error',
   timestamp: '2024-03-26T08:14:09.927Z'
 }
+{
+  message: 'Entry.findAll is not a function',
+  level: 'error',
+  timestamp: '2024-03-30T16:15:23.174Z'
+}
+{
+  message: 'Entry.findAll is not a function',
+  level: 'error',
+  timestamp: '2024-03-30T16:15:26.049Z'
+}

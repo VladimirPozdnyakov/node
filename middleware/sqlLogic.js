@@ -1,5 +1,5 @@
 import connection from "../models/db.js";
-import mysql from "mysql";
+import mysql2 from "mysql2";
 import logger from "../logger/index.js";
 
 const edit = (req, res) => {

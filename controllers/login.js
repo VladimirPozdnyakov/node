@@ -2,7 +2,6 @@ import logger from "../logger/index.js";
 // import User from "../models/user.js";
 import User from "../models/db2.js";
 import jwt from "jsonwebtoken";
-import cookieParser from "cookie-parser";
 
 const form = (req, res) => {
   res.render("login", { title: "Login" });

@@ -3,23 +3,19 @@ import favicon from "express-favicon";
 import { join } from "path";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
-import fs from "fs";
-import ejs from "ejs";
 import myRoutes from "./routers/index_routers.js";
 import session from "express-session";
 import user_session from "./middleware/user_session.js";
-import User from "./models/user.js";
 import logger from "./logger/index.js";
-// import morgan from "morgan";
 import "dotenv/config.js";
 import cookieParser from "cookie-parser";
 import passport from "passport";
-import passportFunctionJWT from "./middleware/passport_jwt.js";
+import passportFunctionGithub from "./middleware/passport_github.js";
 import passportFunctionYandex from "./middleware/passport_yandex.js";
 import passportFunctionGoogle from "./middleware/passport_google.js";
-import passportFunctionGithub from "./middleware/passport_github.js";
-import passportFunctionVK from "./middleware/passport_vkontakte.js";
-import sequelize from "./models/db2.js";
+import passportFunctionJWT from "./middleware/passport_jwt.js";
+// import passportFunctionVK from "./middleware/passport_vkontakte.js";
+// import sequelize from "./models/db2.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -52,7 +48,6 @@ app.use(
     saveUninitialized: true,
   })
 );
-// app.use(morgan("tiny"));
 
 app.use(favicon(join(__dirname, "/public/img/Fox(ElectroNic).ico")));
 app.use(user_session);
@@ -73,20 +68,13 @@ app.listen(port, () => {
   console.log("...");
   console.log("Начинается логгирование");
   console.log("...");
-  addline("server started");
+  // addline("server started");
   console.log("Логгирование завершено");
   console.log("...");
   console.log("В данный момент используется версия " + app.get("env"));
   console.log("...");
   logger.info("Запуск сервера");
 });
-
-function addline(line) {
-  line = line + " timestamp: " + currentTime + "\n";
-  fs.appendFile(__dirname + "/logger/logger.txt", line, (err) => {
-    if (err) return console.log(err);
-  });
-}
 
 // error handler
 app.use((req, res, next) => {
