@@ -1,1260 +1,733 @@
 {
-  message: 'Ошибка пароля - менее 8 символов',
+  message: 'Entry.selectAll is not a function',
   level: 'error',
-  timestamp: '2024-02-26T09:14:00.645Z'
+  timestamp: '2024-03-30T16:31:14.406Z'
 }
 {
-  message: 'Неправильно записан email',
+  message: 'Entry.selectAll is not a function',
   level: 'error',
-  timestamp: '2024-02-26T09:14:10.776Z'
+  timestamp: '2024-03-30T16:32:38.974Z'
 }
 {
-  message: 'Такой пользователь уже существует',
+  message: 'Failed to lookup view "tracks/new" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
   level: 'error',
-  timestamp: '2024-02-26T09:15:52.851Z'
+  timestamp: '2024-03-30T16:39:42.949Z'
 }
 {
-  message: 'Не заполнены поля для создания поста',
-  level: 'error',
-  timestamp: '2024-02-26T09:20:56.363Z'
-}
-{
-  message: 'alert is not defined',
-  level: 'error',
-  timestamp: '2024-02-26T09:21:35.094Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-02-26T09:33:14.817Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-02-26T09:33:40.122Z'
-}
-{
-  message: 'req.cookies is not a function',
-  level: 'error',
-  timestamp: '2024-03-05T06:57:41.918Z'
-}
-{
-  message: 'Unknown authentication strategy "jwt"',
-  level: 'error',
-<<<<<<< HEAD
-  timestamp: '2024-03-11T06:02:54.820Z'
-=======
-  timestamp: '2024-03-05T11:45:24.787Z'
->>>>>>> 66c3e6656d23061199beaac47807004a8920cb81
-}
-{
-  message: 'Unknown authentication strategy "jwt"',
-  level: 'error',
-<<<<<<< HEAD
-  timestamp: '2024-03-11T06:26:52.153Z'
-=======
-  timestamp: '2024-03-05T11:48:24.040Z'
->>>>>>> 66c3e6656d23061199beaac47807004a8920cb81
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-11T06:58:14.174Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-11T06:58:14.345Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-11T06:58:14.486Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-11T07:06:38.765Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-11T07:06:39.011Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-11T07:06:39.189Z'
-}
-{
-  message: "Cannot set properties of undefined (setting 'name')",
-  level: 'error',
-  timestamp: '2024-03-11T08:50:16.677Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-11T08:50:16.995Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-11T08:50:17.198Z'
-}
-{
-  message: 'res.isAuthenticated is not a function',
-  level: 'error',
-  timestamp: '2024-03-12T06:04:41.613Z'
-}
-{
-  message: 'res.isAuthenticated is not a function',
-  level: 'error',
-  timestamp: '2024-03-12T06:05:54.355Z'
-}
-{
-  message: 'res.IsAuthenticated is not a function',
-  level: 'error',
-  timestamp: '2024-03-12T06:06:41.201Z'
-}
-{
-  message: 'res.isAuthenticated is not a function',
-  level: 'error',
-  timestamp: '2024-03-12T06:09:11.677Z'
-}
-{
-  message: 'res.isAuthenticated is not a function',
-  level: 'error',
-  timestamp: '2024-03-12T06:10:39.561Z'
-}
-{
-  message: 'Unknown authentication strategy "jwt"',
-  level: 'error',
-  timestamp: '2024-03-12T07:00:10.326Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
-  level: 'error',
-  timestamp: '2024-03-12T07:22:01.461Z'
-}
-{
-  message: 'C:\\Users\\pozdn\\Desktop\\interp\\node\\views\\entries.ejs:15\n' +
-    '    13|                 <div class="card entry" style="width: 66rem;">\r\n' +
-    '    14|                     <div class="card-body ">\r\n' +
-    " >> 15|                         <h6>Запостил: <%= user.author ? user.author : 'Гость' %>\r\n" +
-    "    16|                             <% if (email === entry.author || role === 'admin') { %>\r\n" +
-    '    17|                             <a href="posts/edit/<%= entry.id %>"><i class="fa-sharp fa-solid fa-pen" style="color: #000000;"></i></a>\r\n' +
-    '    18|                             <a href="posts/delete/<%= entry.id %>"><i class="fa-solid fa-trash" style="color: #000000;"></i></a>\r\n' +
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\tracks\\new.ejs:10\n' +
+    '    8|   <body>\r\n' +
+    '    9|     <div class="container">\r\n' +
+    " >> 10|       <%- include ('./partials/menu') %>\r\n" +
+    '    11|       <h1 class="text-center">Выложить бит</h1>\r\n' +
+    '    12|       <form action="/new" class="container" method="post">\r\n' +
+    '    13|         <div class="row my-3">\r\n' +
     '\n' +
-    'user is not defined',
+    'Could not find the include file "./partials/menu"',
   level: 'error',
-  timestamp: '2024-03-12T07:37:08.178Z'
+  timestamp: '2024-03-30T16:52:52.331Z'
 }
 {
-  message: 'locals is not defined',
+  message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-12T07:48:45.697Z'
+  timestamp: '2024-03-30T16:55:37.888Z'
 }
 {
-  message: 'Ошибка создания поста',
+  message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-12T07:49:41.091Z'
+  timestamp: '2024-03-30T16:55:53.174Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T16:55:59.679Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T16:56:19.505Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T16:56:20.164Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T16:57:39.478Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T16:58:06.011Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T16:58:08.357Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T16:58:10.023Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T16:58:11.786Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T16:58:26.955Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T16:58:41.502Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T16:58:44.521Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T16:59:14.152Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T16:59:20.315Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T16:59:21.002Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T16:59:23.906Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T16:59:32.732Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T16:59:45.891Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T16:59:46.708Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T16:59:52.843Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T16:59:56.026Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T16:59:56.060Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:00:00.693Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:00:47.764Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:00:49.565Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:00:54.970Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:00:57.892Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:01:00.388Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:01:01.257Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:01:05.270Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:01:06.303Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:01:09.050Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:01:10.158Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:10:35.664Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:10:37.073Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:10:39.972Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:10:41.143Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:12:39.743Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:12:39.762Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:12:40.451Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:12:41.620Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:12:42.261Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:12:42.875Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:12:44.195Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:12:46.799Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:12:50.316Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:14:00.223Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:14:12.306Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:14:14.748Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:14:17.297Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:14:55.772Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:15:00.092Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:15:04.900Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:15:06.175Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:15:11.894Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:15:14.955Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:17:03.042Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:17:37.918Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:17:41.782Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:17:43.187Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:17:45.107Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:20:58.711Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:22:08.292Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:22:16.497Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:22:43.515Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:23:10.048Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:24:04.539Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:24:48.255Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:25:07.184Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:25:25.558Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:25:34.038Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:25:47.229Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:25:58.883Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:27:57.551Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:28:07.622Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:31:06.933Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:31:57.180Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:32:04.766Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:32:49.671Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:32:54.429Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:33:57.567Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:34:20.943Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:34:37.367Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:37:30.278Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:48:28.788Z'
 }
 {
   message: "Cannot read properties of undefined (reading 'user')",
   level: 'error',
-  timestamp: '2024-03-12T07:51:04.129Z'
+  timestamp: '2024-03-30T17:54:47.562Z'
+}
+{
+  message: 'Какая-то непонятная ошибка',
+  level: 'error',
+  timestamp: '2024-03-30T17:58:28.542Z'
 }
 {
   message: "Cannot read properties of undefined (reading 'user')",
   level: 'error',
-  timestamp: '2024-03-12T07:51:14.501Z'
+  timestamp: '2024-03-30T17:58:30.351Z'
 }
 {
-  message: 'Ошибка создания поста',
-  level: 'error',
-  timestamp: '2024-03-12T07:51:33.202Z'
-}
-{
-  message: "Cannot read properties of undefined (reading 'user')",
-  level: 'error',
-  timestamp: '2024-03-12T07:52:00.702Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-12T08:10:20.174Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-12T08:10:20.457Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-12T08:10:20.548Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-12T08:13:21.646Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-12T08:13:21.875Z'
-}
-{
-  message: 'Ошибка создания поста',
-  level: 'error',
-  timestamp: '2024-03-12T08:29:15.885Z'
-}
-{
-  message: 'Unknown authentication strategy "github"',
-  level: 'error',
-  timestamp: '2024-03-18T06:24:10.678Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:24:10.997Z'
-}
-{
-  message: 'The redirect_uri MUST match the registered callback URL for this application.',
-  level: 'error',
-  timestamp: '2024-03-18T06:30:16.607Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:30:16.875Z'
-}
-{
-  message: 'The redirect_uri MUST match the registered callback URL for this application.',
-  level: 'error',
-  timestamp: '2024-03-18T06:30:41.408Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:30:41.685Z'
-}
-{
-  message: 'The redirect_uri MUST match the registered callback URL for this application.',
-  level: 'error',
-  timestamp: '2024-03-18T06:35:29.204Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:35:29.534Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:35:29.667Z'
-}
-{
-  message: 'The redirect_uri MUST match the registered callback URL for this application.',
-  level: 'error',
-  timestamp: '2024-03-18T06:36:09.798Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:36:10.018Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:36:10.239Z'
-}
-{
-  message: 'The redirect_uri MUST match the registered callback URL for this application.',
-  level: 'error',
-  timestamp: '2024-03-18T06:39:00.361Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:39:00.552Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:39:00.673Z'
-}
-{
-  message: 'The redirect_uri MUST match the registered callback URL for this application.',
-  level: 'error',
-  timestamp: '2024-03-18T06:41:38.787Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:41:39.123Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:41:39.546Z'
-}
-{
-  message: 'The redirect_uri MUST match the registered callback URL for this application.',
-  level: 'error',
-  timestamp: '2024-03-18T06:43:39.350Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:43:39.556Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:43:39.716Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:44:40.665Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:44:40.994Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:44:41.147Z'
-}
-{
-  message: 'User is not defined',
-  level: 'error',
-  timestamp: '2024-03-18T06:46:11.166Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:46:11.404Z'
-}
-{
-  message: 'User is not defined',
-  level: 'error',
-  timestamp: '2024-03-18T06:50:41.398Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:50:41.681Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:50:41.989Z'
-}
-{
-  message: 'User is not defined',
-  level: 'error',
-  timestamp: '2024-03-18T06:50:52.836Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:50:53.028Z'
-}
-{
-  message: 'User is not defined',
-  level: 'error',
-  timestamp: '2024-03-18T06:51:04.711Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:51:04.918Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:51:05.038Z'
-}
-{
-  message: 'User is not defined',
-  level: 'error',
-  timestamp: '2024-03-18T06:56:05.448Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:56:05.574Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:56:05.793Z'
-}
-{
-  message: 'User is not defined',
-  level: 'error',
-  timestamp: '2024-03-18T06:57:59.512Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:57:59.708Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:57:59.896Z'
-}
-{
-  message: 'User is not defined',
-  level: 'error',
-  timestamp: '2024-03-18T06:58:50.150Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:58:50.322Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T06:58:50.502Z'
-}
-{
-  message: 'Unknown authentication strategy "github"',
-  level: 'error',
-  timestamp: '2024-03-18T07:02:00.735Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:02:00.967Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:02:01.176Z'
-}
-{
-  message: 'User is not defined',
-  level: 'error',
-  timestamp: '2024-03-18T07:03:06.755Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:03:06.956Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:03:07.183Z'
-}
-{
-  message: 'User is not defined',
-  level: 'error',
-  timestamp: '2024-03-18T07:06:12.499Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:06:12.768Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:06:12.938Z'
-}
-{
-  message: 'User is not defined',
-  level: 'error',
-  timestamp: '2024-03-18T07:06:56.049Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:06:56.299Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:06:56.470Z'
-}
-{
-  message: 'User is not defined',
-  level: 'error',
-  timestamp: '2024-03-18T07:21:56.439Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:21:56.696Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:21:56.840Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
-  level: 'error',
-  timestamp: '2024-03-18T07:23:17.901Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:23:18.180Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:23:18.519Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
-  level: 'error',
-  timestamp: '2024-03-18T07:24:04.219Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:24:04.383Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:24:04.640Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
-  level: 'error',
-  timestamp: '2024-03-18T07:24:40.673Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:24:40.942Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:24:41.197Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
-  level: 'error',
-  timestamp: '2024-03-18T07:25:23.052Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:25:23.224Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:25:23.432Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
-  level: 'error',
-  timestamp: '2024-03-18T07:25:41.632Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:25:41.840Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:25:42.077Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
-  level: 'error',
-  timestamp: '2024-03-18T07:26:14.793Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:26:15.086Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:26:15.259Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
-  level: 'error',
-  timestamp: '2024-03-18T07:28:21.913Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:28:22.176Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
-  level: 'error',
-  timestamp: '2024-03-18T07:28:56.552Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:28:56.718Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:28:56.918Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
-  level: 'error',
-  timestamp: '2024-03-18T07:30:19.338Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:30:19.607Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
-  level: 'error',
-  timestamp: '2024-03-18T07:36:18.521Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:36:18.736Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:36:18.876Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
-  level: 'error',
-  timestamp: '2024-03-18T07:37:35.570Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:37:35.846Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
-  level: 'error',
-  timestamp: '2024-03-18T07:38:24.697Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:38:24.979Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:38:25.101Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
-  level: 'error',
-  timestamp: '2024-03-18T07:38:50.702Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:38:50.931Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:38:51.093Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
-  level: 'error',
-  timestamp: '2024-03-18T07:46:04.188Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:46:04.352Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T07:46:04.542Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
-  level: 'error',
-  timestamp: '2024-03-18T08:01:35.457Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T08:01:35.819Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T08:01:36.049Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
-  level: 'error',
-  timestamp: '2024-03-18T08:02:12.532Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T08:02:12.822Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T08:02:13.027Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
-  level: 'error',
-  timestamp: '2024-03-18T08:05:16.417Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T08:05:16.661Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T08:05:16.858Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
-  level: 'error',
-  timestamp: '2024-03-18T08:05:51.695Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T08:05:51.943Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T08:05:52.081Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
-  level: 'error',
-  timestamp: '2024-03-18T08:09:57.167Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T08:09:57.391Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
-  level: 'error',
-  timestamp: '2024-03-18T08:10:33.218Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T08:10:33.447Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T08:10:33.549Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
-  level: 'error',
-  timestamp: '2024-03-18T08:11:16.281Z'
-}
-{
-  message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T08:11:16.465Z'
-}
-{
   message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T08:11:16.632Z'
-}
-{
-  message: 'The redirect_uri MUST match the registered callback URL for this application.',
   level: 'error',
-  timestamp: '2024-03-18T08:13:27.201Z'
+  timestamp: '2024-03-30T17:58:57.356Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-18T08:13:27.502Z'
+  timestamp: '2024-03-30T17:59:00.401Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-18T08:13:27.571Z'
+  timestamp: '2024-03-30T17:59:01.884Z'
 }
 {
-  message: 'The redirect_uri MUST match the registered callback URL for this application.',
-  level: 'error',
-  timestamp: '2024-03-18T08:13:39.489Z'
-}
-{
   message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T08:13:39.776Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
   level: 'error',
-  timestamp: '2024-03-18T08:14:04.907Z'
+  timestamp: '2024-03-30T17:59:14.774Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-18T08:14:05.142Z'
+  timestamp: '2024-03-30T18:00:04.024Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T08:14:05.289Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
   level: 'error',
-  timestamp: '2024-03-18T08:14:10.008Z'
+  timestamp: '2024-03-30T18:00:13.810Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-18T08:14:10.264Z'
+  timestamp: '2024-03-30T18:00:18.691Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T08:14:10.378Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
   level: 'error',
-  timestamp: '2024-03-18T08:15:40.809Z'
+  timestamp: '2024-03-30T18:00:32.883Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-18T08:15:41.226Z'
+  timestamp: '2024-03-30T18:00:40.919Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-18T08:15:41.419Z'
+  timestamp: '2024-03-30T18:00:47.814Z'
 }
 {
-  message: "Cannot read properties of undefined (reading '0')",
-  level: 'error',
-  timestamp: '2024-03-18T08:16:46.911Z'
-}
-{
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-18T08:16:47.181Z'
+  timestamp: '2024-03-30T18:00:52.886Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T08:16:47.396Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
   level: 'error',
-  timestamp: '2024-03-18T08:18:19.179Z'
+  timestamp: '2024-03-30T18:00:55.353Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-18T08:18:19.424Z'
+  timestamp: '2024-03-30T18:00:56.800Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T08:18:19.573Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
   level: 'error',
-  timestamp: '2024-03-18T08:20:45.018Z'
+  timestamp: '2024-03-30T18:04:06.598Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-18T08:20:45.237Z'
+  timestamp: '2024-03-30T18:04:11.303Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T08:20:45.467Z'
-}
-{
-  message: 'Failed to serialize user into session',
   level: 'error',
-  timestamp: '2024-03-18T08:25:09.789Z'
+  timestamp: '2024-03-30T18:04:14.866Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-18T08:25:10.050Z'
+  timestamp: '2024-03-30T18:05:01.388Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-18T08:25:10.257Z'
+  timestamp: '2024-03-30T18:05:32.847Z'
 }
 {
-  message: "Cannot read properties of undefined (reading '0')",
-  level: 'error',
-  timestamp: '2024-03-18T08:25:23.294Z'
-}
-{
   message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T08:25:23.518Z'
-}
-{
-  message: 'Unknown authentication strategy "yandex"',
   level: 'error',
-  timestamp: '2024-03-18T08:26:04.331Z'
+  timestamp: '2024-03-30T18:06:28.554Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T08:26:04.577Z'
-}
-{
-  message: "Cannot read properties of undefined (reading '0')",
   level: 'error',
-  timestamp: '2024-03-18T08:28:54.241Z'
+  timestamp: '2024-03-30T18:06:39.420Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T08:28:54.456Z'
-}
-{
-  message: 'The redirect_uri MUST match the registered callback URL for this application.',
   level: 'error',
-  timestamp: '2024-03-18T08:29:52.939Z'
+  timestamp: '2024-03-30T18:06:55.083Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-18T08:29:53.222Z'
+  timestamp: '2024-03-30T18:06:58.453Z'
 }
 {
-  message: "Cannot read properties of undefined (reading '0')",
-  level: 'error',
-  timestamp: '2024-03-18T08:33:07.735Z'
-}
-{
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-18T08:33:07.966Z'
+  timestamp: '2024-03-30T18:07:22.922Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T08:33:08.332Z'
-}
-{
-  message: 'The code passed is incorrect or expired.',
   level: 'error',
-  timestamp: '2024-03-18T08:33:14.769Z'
+  timestamp: '2024-03-30T18:08:29.072Z'
 }
 {
-  message: 'Какая-то непонятная ошибка',
+  message: 'Не заполнены поля для выкладывания бита',
   level: 'error',
-  timestamp: '2024-03-18T08:33:14.890Z'
+  timestamp: '2024-03-30T18:08:36.285Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-18T08:33:14.977Z'
+  timestamp: '2024-03-30T18:08:36.463Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-18T08:47:22.454Z'
+  timestamp: '2024-03-30T18:08:41.798Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-18T08:47:22.697Z'
+  timestamp: '2024-03-30T18:08:42.907Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-18T08:47:22.830Z'
+  timestamp: '2024-03-30T18:08:44.057Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-18T08:48:51.067Z'
+  timestamp: '2024-03-30T18:08:52.456Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-18T08:48:51.343Z'
+  timestamp: '2024-03-30T18:08:59.248Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-18T08:50:14.415Z'
+  timestamp: '2024-03-30T18:09:05.880Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-18T08:50:14.615Z'
+  timestamp: '2024-03-30T18:09:39.362Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-18T08:50:14.727Z'
+  timestamp: '2024-03-30T18:09:41.621Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-18T08:51:25.610Z'
+  timestamp: '2024-03-30T18:10:04.163Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-18T08:51:25.849Z'
+  timestamp: '2024-03-30T18:11:23.284Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-18T08:51:25.963Z'
-}
-{
-  message: 'Bad Request',
   level: 'error',
-  timestamp: '2024-03-19T18:01:42.245Z'
+  timestamp: '2024-03-30T18:13:16.130Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-19T18:04:02.910Z'
+  timestamp: '2024-03-30T18:13:33.142Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-19T18:04:02.957Z'
+  timestamp: '2024-03-30T18:14:09.170Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-19T18:04:02.969Z'
+  timestamp: '2024-03-30T18:14:21.605Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-19T18:04:24.478Z'
+  timestamp: '2024-03-30T18:14:33.505Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-19T18:04:24.519Z'
+  timestamp: '2024-03-30T18:17:49.776Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-19T18:04:24.540Z'
+  timestamp: '2024-03-30T18:18:31.492Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-19T18:04:51.526Z'
+  timestamp: '2024-03-30T18:18:32.418Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-19T18:04:51.565Z'
+  timestamp: '2024-03-30T18:18:45.053Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-19T18:04:51.593Z'
+  timestamp: '2024-03-30T18:18:57.082Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-19T18:06:20.966Z'
+  timestamp: '2024-03-30T18:19:24.442Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-19T18:06:21.009Z'
+  timestamp: '2024-03-30T18:19:34.933Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-19T18:06:21.035Z'
+  timestamp: '2024-03-30T18:24:20.571Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-19T18:08:07.516Z'
+  timestamp: '2024-03-30T18:24:24.931Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
   level: 'error',
-  timestamp: '2024-03-19T18:08:07.552Z'
+  timestamp: '2024-03-30T18:24:48.789Z'
 }
 {
   message: 'Какая-то непонятная ошибка',
-  level: 'error',
-  timestamp: '2024-03-19T18:08:07.587Z'
-}
-{
-  message: 'req.session.touch is not a function',
-  level: 'error',
-  timestamp: '2024-03-19T18:27:44.402Z'
-}
-{
-  message: 'req.session.touch is not a function',
-  level: 'error',
-  timestamp: '2024-03-19T18:29:51.173Z'
-}
-{
-  message: 'author is not defined',
-  level: 'error',
-  timestamp: '2024-03-19T18:33:38.924Z'
-}
-{
-  message: 'author is not defined',
-  level: 'error',
-  timestamp: '2024-03-19T18:34:38.975Z'
-}
-{
-  message: 'author is not defined',
-  level: 'error',
-  timestamp: '2024-03-19T18:36:25.448Z'
-}
-{
-  message: 'author is not defined',
-  level: 'error',
-  timestamp: '2024-03-19T18:37:00.218Z'
-}
-{
-  message: 'author is not defined',
-  level: 'error',
-  timestamp: '2024-03-19T18:38:30.459Z'
-}
-{
-  message: 'author is not defined',
-  level: 'error',
-  timestamp: '2024-03-19T18:39:13.801Z'
-}
-{
-  message: 'author is not defined',
-  level: 'error',
-  timestamp: '2024-03-19T18:39:43.946Z'
-}
-{
-  message: 'author is not defined',
-  level: 'error',
-  timestamp: '2024-03-19T18:40:11.783Z'
-}
-{
-  message: 'author is not defined',
-  level: 'error',
-  timestamp: '2024-03-19T18:41:28.674Z'
-}
-{
-  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js\\views\\entries.ejs:16\n' +
-    '    14|                     <div class="card-body ">\r\n' +
-    "    15|                         <h6>Запостил: <%= entry.author ? entry.author : 'Гость' %>\r\n" +
-    " >> 16|                             <% if (user.email === entry.author || role === 'admin') { %>\r\n" +
-    '    17|                             <a href="posts/edit/<%= entry.id %>"><i class="fa-sharp fa-solid fa-pen" style="color: #000000;"></i></a>\r\n' +
-    '    18|                             <a href="posts/delete/<%= entry.id %>"><i class="fa-solid fa-trash" style="color: #000000;"></i></a>\r\n' +
-    '    19|                             <% } %>\r\n' +
-    '\n' +
-    'user is not defined',
-  level: 'error',
-  timestamp: '2024-03-19T19:34:54.367Z'
-}
-{
-  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js\\views\\entries.ejs:16\n' +
-    '    14|                     <div class="card-body ">\r\n' +
-    "    15|                         <h6>Запостил: <%= entry.author ? entry.author : 'Гость' %>\r\n" +
-    " >> 16|                             <% if (user.email === entry.author || role === 'admin') { %>\r\n" +
-    '    17|                             <a href="posts/edit/<%= entry.id %>"><i class="fa-sharp fa-solid fa-pen" style="color: #000000;"></i></a>\r\n' +
-    '    18|                             <a href="posts/delete/<%= entry.id %>"><i class="fa-solid fa-trash" style="color: #000000;"></i></a>\r\n' +
-    '    19|                             <% } %>\r\n' +
-    '\n' +
-    'user is not defined',
-  level: 'error',
-  timestamp: '2024-03-19T19:35:11.722Z'
-}
-{
-  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js\\views\\entries.ejs:16\n' +
-    '    14|                     <div class="card-body ">\r\n' +
-    "    15|                         <h6>Запостил: <%= entry.author ? entry.author : 'Гость' %>\r\n" +
-    " >> 16|                             <% if (user.email === entry.author || role === 'admin') { %>\r\n" +
-    '    17|                             <a href="posts/edit/<%= entry.id %>"><i class="fa-sharp fa-solid fa-pen" style="color: #000000;"></i></a>\r\n' +
-    '    18|                             <a href="posts/delete/<%= entry.id %>"><i class="fa-solid fa-trash" style="color: #000000;"></i></a>\r\n' +
-    '    19|                             <% } %>\r\n' +
-    '\n' +
-    'user is not defined',
-  level: 'error',
-  timestamp: '2024-03-19T19:35:13.072Z'
-}
-{
-  message: 'Error',
-  level: 'error',
-  timestamp: '2024-03-26T06:23:21.129Z'
-}
-{
-  message: 'Entry.findAll is not a function',
-  level: 'error',
-  timestamp: '2024-03-26T07:45:28.702Z'
-}
-{
-  message: 'Entry.findAll is not a function',
-  level: 'error',
-  timestamp: '2024-03-26T08:04:50.401Z'
-}
-{
-  message: 'Entry.findAll is not a function',
-  level: 'error',
-  timestamp: '2024-03-26T08:06:43.807Z'
-}
-{
-  message: 'Entry.findAll is not a function',
-  level: 'error',
-  timestamp: '2024-03-26T08:14:09.927Z'
-}
-{
-  message: 'Entry.findAll is not a function',
-  level: 'error',
-  timestamp: '2024-03-30T16:15:23.174Z'
-}
-{
-  message: 'Entry.findAll is not a function',
   level: 'error',
-  timestamp: '2024-03-30T16:15:26.049Z'
+  timestamp: '2024-03-30T18:24:54.245Z'
 }

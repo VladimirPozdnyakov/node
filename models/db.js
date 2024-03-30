@@ -20,7 +20,7 @@ connection.connect((err) => {
   logger.info("произведено соеденение с базой данных");
 
   let sql =
-    "CREATE TABLE IF NOT EXISTS posts( id INT PRIMARY KEY AUTO_INCREMENT, title VARCHAR(255) NOT NULL, body TEXT,author VARCHAR(255) DEFAULT 'guest')";
+    "CREATE TABLE IF NOT EXISTS tracks( id INT PRIMARY KEY AUTO_INCREMENT, title VARCHAR(255) NOT NULL, genre VARCHAR(50) NOT NULL, bpm DECIMAL(5, 2) NOT NULL, tone DECIMAL(5, 2) NOT NULL, author VARCHAR(255) DEFAULT 'guest')";
   connection.query(sql, function (err, result) {
     if (err) throw err;
   });

@@ -1,10 +1,9 @@
 import logger from "../logger/index.js";
-// import Entry from "../models/entry.js";
-import Entry from "../models/db2.js";
+import Entry from "../models/entry.js";
 
-const list = async (req, res, next) => {
-  try {
-    await Entry.findAll();
+const list = (req, res, next) => {
+  Entry.selectAll((err, entries) => {
+    if (err) return next(err);
     res.render("entries", {
       title: "Главная страница",
       email: req.session.email,
@@ -15,16 +14,14 @@ const list = async (req, res, next) => {
     console.log("заход на /");
     console.log("...");
     logger.info("Заход на главную страницу");
-  } catch (err) {
-    return next(err);
-  }
+  });
 };
 
 const form = (req, res, next) => {
   res.render("post", { title: "Post" });
 };
 
-const submit = async (req, res, next) => {
+const submit = (req, res, next) => {
   try {
     const username = req.user ? req.user.name : null;
     const data = req.body.entry;
@@ -35,7 +32,7 @@ const submit = async (req, res, next) => {
       content: data.content,
     };
 
-    await Entry.create(entry);
+    Entry.create(entry);
     res.redirect("/");
   } catch (err) {
     console.log("! ! !");

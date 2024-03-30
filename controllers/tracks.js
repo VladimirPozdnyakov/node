@@ -2,18 +2,18 @@ import connection from "../models/db.js";
 import logger from "../logger/index.js";
 
 const form = (req, res) => {
-  res.render("posts/new", {
-    title: "Создать пост",
+  res.render("tracks/new", {
+    title: "Выложить бит",
     errorMessage: res.locals.errorMessage,
   });
   console.log("...");
   console.log("заход на /new");
   console.log("...");
-  logger.info("заход на страницу создания поста");
+  logger.info("заход на страницу выкладывания бита");
 };
 
 const sql =
-  "CREATE TABLE IF NOT EXISTS posts( id INT PRIMARY KEY AUTO_INCREMENT, title VARCHAR(255) NOT NULL, body TEXT,author VARCHAR(255) DEFAULT 'guest')";
+  "CREATE TABLE IF NOT EXISTS tracks( id INT PRIMARY KEY AUTO_INCREMENT, title VARCHAR(255) NOT NULL, genre VARCHAR(50) NOT NULL, bpm DECIMAL(5, 2) NOT NULL, tone DECIMAL(5, 2) NOT NULL, author VARCHAR(255) DEFAULT 'guest')";
 
 connection.query(sql, (err) => {
   if (err) {
@@ -22,27 +22,28 @@ connection.query(sql, (err) => {
 });
 
 const addPost = (req, res, next) => {
-  const { title, body } = req.body;
+  const { title, genre, bpm, tone } = req.body;
   const author = req.session.email
     ? req.session.email
     : req.session.passport.user.email;
 
-  if (!title || !body) {
+  if (!title || !genre || !bpm || !tone) {
     console.log("! ! !");
     console.log("! ! !");
     console.log("! ! !");
     console.log("Все поля должны быть заполнены!");
     console.log("! ! !");
     console.log("! ! !");
-    logger.error("Не заполнены поля для создания поста");
+    logger.error("Не заполнены поля для выкладывания бита");
     res.redirect("/new");
     return;
   }
 
-  let query = "INSERT INTO posts (title, body, author) VALUES (?, ?, ?)";
+  let query =
+    "INSERT INTO tracks (title, genre, bpm, tone, author) VALUES (?, ?, ?, ?, ?)";
   connection.query(
     query,
-    [title, body, author],
+    [title, genre, bpm, tone, author],
     function (err, results, fields) {
       if (err) {
         console.log(err.message);
@@ -53,20 +54,20 @@ const addPost = (req, res, next) => {
         console.log("ошибка ");
         console.log("! ! !");
         console.log("! ! !");
-        logger.error("Ошибка создания поста");
+        logger.error("Ошибка выкладывания бита");
       } else {
         res.redirect("/");
         console.log("...");
-        console.log("успешное создание поста");
+        console.log("успешное выкладывание бита");
         console.log("...");
-        logger.info("Пост создан" + " " + author);
+        logger.info("Бит выложен" + " " + author);
       }
     }
   );
 };
 
-function getPosts(callback) {
-  let query = "SELECT * FROM posts ORDER BY id DESC";
+function gettracks(callback) {
+  let query = "SELECT * FROM tracks ORDER BY id DESC";
   connection.query(query, function (err, results, fields) {
     if (err) {
       console.log("! ! !");
@@ -88,4 +89,4 @@ function getPosts(callback) {
   });
 }
 
-export default { form, addPost, getPosts };
+export default { form, addPost, gettracks };

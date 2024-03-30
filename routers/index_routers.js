@@ -5,7 +5,7 @@ import { fileURLToPath } from "url";
 import register from "../controllers/register.js";
 import entries from "../controllers/entries.js";
 import login from "../controllers/login.js";
-import posts from "../controllers/posts.js";
+import tracks from "../controllers/tracks.js";
 import sqlLogic from "../middleware/sqlLogic.js";
 import logger from "../logger/index.js";
 import passport from "passport";
@@ -19,7 +19,7 @@ router.use(favicon(__dirname + "/favicon.ico"));
 router.get("/", entries.list);
 
 router.get("/entries", entries.form, (req, res) => {
-  posts.getPosts((err, posts) => {
+  tracks.gettracks((err, tracks) => {
     if (err) {
       console.log("! ! !");
       console.log("! ! !");
@@ -32,7 +32,7 @@ router.get("/entries", entries.form, (req, res) => {
     } else {
       res.render("main", {
         title: "Главная страница",
-        posts: posts,
+        tracks: tracks,
       });
     }
   });
@@ -47,12 +47,12 @@ router.post("/login", login.submit);
 
 router.get("/logout", login.logout);
 
-router.get("/new", posts.form);
-router.post("/new", posts.addPost);
+router.get("/new", tracks.form);
+router.post("/new", tracks.addPost);
 
-router.get("/posts/edit/:id", sqlLogic.edit);
-router.post("/posts/edit/:id", sqlLogic.update);
-router.get("/posts/delete/:id", sqlLogic.deleted);
+router.get("/tracks/edit/:id", sqlLogic.edit);
+router.post("/tracks/edit/:id", sqlLogic.update);
+router.get("/tracks/delete/:id", sqlLogic.deleted);
 
 router.get(
   "/auth/yandex",
@@ -94,15 +94,6 @@ router.get(
     // Successful authentication, redirect home.
     res.redirect("/");
   }
-);
-
-router.get("/auth/vkontakte", passport.authenticate("vkontakte"));
-router.get(
-  "/auth/vkontakte/callback",
-  passport.authenticate("vkontakte", {
-    successRedirect: "/",
-    failureRedirect: "/login",
-  })
 );
 
 export default router;

@@ -28,10 +28,10 @@ class Entry {
   }
 
   static selectAll(cb) {
-    const sqlPosts = "SELECT * FROM posts";
+    const sqltracks = "SELECT * FROM tracks";
     const sqlUsers = "SELECT * FROM user";
 
-    connection.query(sqlPosts, (err, posts) => {
+    connection.query(sqltracks, (err, tracks) => {
       if (err) {
         console.log(err);
         cb(err, null);
@@ -41,7 +41,7 @@ class Entry {
             console.log(err);
             cb(err, null);
           } else {
-            cb(null, { posts, users });
+            cb(null, { tracks, users });
           }
         });
       }

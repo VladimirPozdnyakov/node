@@ -14,8 +14,6 @@ import passportFunctionGithub from "./middleware/passport_github.js";
 import passportFunctionYandex from "./middleware/passport_yandex.js";
 import passportFunctionGoogle from "./middleware/passport_google.js";
 import passportFunctionJWT from "./middleware/passport_jwt.js";
-// import passportFunctionVK from "./middleware/passport_vkontakte.js";
-// import sequelize from "./models/db2.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -49,7 +47,7 @@ app.use(
   })
 );
 
-app.use(favicon(join(__dirname, "/public/img/Fox(ElectroNic).ico")));
+app.use(favicon(join(__dirname, "/public/img/logo.ico")));
 app.use(user_session);
 app.use(cookieParser());
 app.use(passport.initialize());
@@ -58,8 +56,7 @@ passportFunctionGithub(passport);
 passportFunctionJWT(passport);
 passportFunctionYandex(passport);
 passportFunctionGoogle(passport);
-passportFunctionVK(passport);
-app.use(myRoutes); // У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-y-У-у
+app.use(myRoutes);
 
 app.listen(port, () => {
   async () => await sequelize.sync({ foce: true });

@@ -1,13 +1,15 @@
 <nav class="navbar navbar-expand navbar-light bg-light justify-content-end">
   <div class="nav navbar-nav">
-    <a href="/"><img src="../../public/img/logo.ico" alt="На главную" /></a>
+    <a href="/"
+      ><img src="../../public/img/logo.ico" alt="На главную (Будет логотип)"
+    /></a>
     <% if (locals.user) { %>
     <div id="menu">
       <%# меню пользователей выполнивших вход%>
       <span class="name"><%= user.email %> </span> <%# user.email для браузера
       то, что пользователь послал в requeste%>
       <a class="badge rounded-pill bg-primary" href="/new" aria-current="page"
-        >Создать пост<span class="visually-hidden">(current)</span></a
+        >Выложить бит<span class="visually-hidden">(current)</span></a
       >
       <a class="badge rounded-pill bg-warning" href="/logout">Выйти</a>
     </div>

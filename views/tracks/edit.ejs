@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href="/bootstrap.css" />
+    <script src="/bootstrap.js"></script>
+    <title>Редактирование информации о бите</title>
+  </head>
+  <body>
+    <div class="container">
+      <%- include ('../partials/menu') %>
+      <h1 class="text-center">Выложить бит</h1>
+      <form
+        action="/new"
+        class="container"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <!-- Добавляем поле для загрузки обложки -->
+        <div class="row my-3">
+          <div class="col-sm-4 col-12">
+            <div class="form-group">
+              <label for="coverImage">Загрузить обложку</label>
+              <input
+                type="file"
+                id="coverImage"
+                name="coverImage"
+                accept="image/*"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Добавляем поле для загрузки аудиофайла -->
+        <div class="row my-3">
+          <div class="col-sm-4 col-12">
+            <div class="form-group">
+              <label for="audioFile">Загрузить аудиофайл</label>
+              <input
+                type="file"
+                id="audioFile"
+                name="audioFile"
+                accept="audio/*"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col-sm-4 col-12">
+            <div class="form-floating mb-3">
+              <input
+                name="title"
+                type="text"
+                class="form-control"
+                id="title"
+                placeholder="Title"
+              />
+              <label for="title">Введите название бита</label>
+            </div>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col-sm-4 col-12">
+            <div class="form-floating mb-3">
+              <input
+                name="genre"
+                type="text"
+                class="form-control"
+                id="genre"
+                placeholder="Genre"
+              />
+              <label for="genre">Введите жанр бита</label>
+            </div>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col-sm-4 col-12">
+            <div class="form-floating mb-3">
+              <input
+                name="bpm"
+                type="number"
+                class="form-control"
+                id="bpm"
+                placeholder="Bpm"
+              />
+              <label for="bpm">Введите BPM бита</label>
+            </div>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col-sm-4 col-12">
+            <div class="form-floating mb-3">
+              <input
+                name="tone"
+                type="text"
+                class="form-control"
+                id="tone"
+                placeholder="Tone"
+              />
+              <label for="tone">Введите тональность бита</label>
+            </div>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col-sm-6 col-12">
+            <button type="submit" class="btn btn-success">Выложить</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
