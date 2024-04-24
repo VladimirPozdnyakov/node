@@ -48,7 +48,7 @@ const submit = (req, res, next) => {
       console.log("...");
       logger.info("токен подготовлен:" + token);
 
-      //jwt cookie
+      // jwt cookie
       res.cookie("jwt", token, {
         httpOnly: true,
         secure: true,
@@ -56,8 +56,6 @@ const submit = (req, res, next) => {
       });
       console.log("...");
       console.log("куки подготовлен");
-
-      res.redirect("/");
 
       res.redirect("/");
     }

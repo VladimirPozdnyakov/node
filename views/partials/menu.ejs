@@ -1,21 +1,35 @@
 <nav class="navbar navbar-expand navbar-light bg-light justify-content-end">
-  <div class="nav navbar-nav">
-    <a href="/"
-      ><img src="../../public/img/logo.ico" alt="На главную (Будет логотип)"
-    /></a>
+  <div class="container container-fluid">
+    <a
+      class="navbar-brand bg-white p-1 rounded-circle overflow-hidden"
+      href="/"
+    >
+      <img
+        class=""
+        src="../../public/img/logo.jpg"
+        alt="Логотип"
+        width="30"
+        height="30"
+      />
+    </a>
     <% if (locals.user) { %>
     <div id="menu">
-      <%# меню пользователей выполнивших вход%>
-      <span class="name"><%= user.email %> </span> <%# user.email для браузера
-      то, что пользователь послал в requeste%>
+      <%# Меню пользователей, выполнивших вход%>
+      <span class="name"><%= user.email %> </span>
+      <% if (locals.role === 'admin') { %>
+      <a class="badge rounded-pill bg-primary" href="/admin" aria-current="page"
+        >Панель администратора<span class="visually-hidden">(current)</span></a
+      >
+      <% } else { %>
       <a class="badge rounded-pill bg-primary" href="/new" aria-current="page"
         >Выложить бит<span class="visually-hidden">(current)</span></a
       >
+      <% } %>
       <a class="badge rounded-pill bg-warning" href="/logout">Выйти</a>
     </div>
     <% } else { %>
     <div class="" id="menu">
-      <%# //меню анонимных пользователей %>
+      <%# Меню анонимных пользователей %>
       <a class="badge rounded-pill bg-info" href="/login" aria-current="page"
         >Войти<span class="visually-hidden">(current)</span></a
       >

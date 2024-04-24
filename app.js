@@ -59,7 +59,6 @@ passportFunctionGoogle(passport);
 app.use(myRoutes);
 
 app.listen(port, () => {
-  async () => await sequelize.sync({ foce: true });
   console.log("...");
   console.log("Проверка console.log пройдена");
   console.log("...");
@@ -71,13 +70,6 @@ app.listen(port, () => {
   console.log("В данный момент используется версия " + app.get("env"));
   console.log("...");
   logger.info("Запуск сервера");
-});
-
-// error handler
-app.use((req, res, next) => {
-  const err = new Error("Какая-то непонятная ошибка");
-  err.status = 404;
-  next(err);
 });
 
 //production error handler

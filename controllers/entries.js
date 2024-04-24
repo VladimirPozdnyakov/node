@@ -1,49 +1,39 @@
 import logger from "../logger/index.js";
 import Entry from "../models/entry.js";
 
-const list = (req, res, next) => {
+function list(req, res, next) {
   Entry.selectAll((err, entries) => {
-    if (err) return next(err);
+    if (err) {
+      logger.error(err.message);
+      return next(err);
+    }
+
     res.render("entries", {
       title: "Главная страница",
       email: req.session.email,
       role: req.session.role,
       entries: entries,
     });
-    console.log("...");
-    console.log("заход на /");
-    console.log("...");
+
     logger.info("Заход на главную страницу");
   });
-};
+}
 
-const form = (req, res, next) => {
+function form(req, res) {
   res.render("post", { title: "Post" });
-};
+}
 
-const submit = (req, res, next) => {
+function submit(req, res, next) {
+  const username = req.user ? req.user.name : null;
+  const { title, content } = req.body.entry;
+
   try {
-    const username = req.user ? req.user.name : null;
-    const data = req.body.entry;
-
-    const entry = {
-      username: username,
-      title: data.title,
-      content: data.content,
-    };
-
-    Entry.create(entry);
+    Entry.create({ username, title, content });
     res.redirect("/");
   } catch (err) {
-    console.log("! ! !");
-    console.log("! ! !");
-    console.log("! ! !");
-    console.log("ошибка ");
-    console.log("! ! !");
-    console.log("! ! !");
-    logger.error(err.message);
+    logger.error(`Ошибка: ${err.message}`);
     return next(err);
   }
-};
+}
 
 export default { list, form, submit };
