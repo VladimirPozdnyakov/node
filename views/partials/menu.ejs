@@ -21,11 +21,13 @@
         >Панель администратора<span class="visually-hidden">(current)</span></a
       >
       <% } else { %>
-      <a class="badge rounded-pill bg-primary" href="/new" aria-current="page"
-        >Выложить бит<span class="visually-hidden">(current)</span></a
-      >
+      <a href="/new">
+        <button type="button" class="btn btn-light">Выложить бит</button>
+      </a>
       <% } %>
-      <a class="badge rounded-pill bg-warning" href="/logout">Выйти</a>
+      <a href="/logout">
+        <button type="button" class="btn btn-light">Выйти</button>
+      </a>
     </div>
     <% } else { %>
     <div class="" id="menu">
