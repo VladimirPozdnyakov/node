@@ -1088,3 +1088,598 @@
   level: 'error',
   timestamp: '2024-05-02T19:13:51.068Z'
 }
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('./login'); -%> <%- include('./registerForm'); -%>\r\n" +
+    '    63|     </div>\r\n' +
+    '    64|   </body>\r\n' +
+    '    65| </html>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\registerForm.ejs:97\n' +
+    '    95|               <label for="floatingPassword">Введите пароль</label>\r\n' +
+    '    96|             </div>\r\n' +
+    ' >> 97|             <% if (errorMessage && Array.isArray(errorMessage)) { %> <%\r\n' +
+    '    98|             errorMessage.forEach(function(error) { %>\r\n' +
+    '    99|             <p class="error-message"><%= error %></p>\r\n' +
+    '    100|             <% }) %> <% } %>\r\n' +
+    '\n' +
+    'errorMessage is not defined',
+  level: 'error',
+  timestamp: '2024-05-02T19:23:30.634Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('./login'); -%> <%- include('./registerForm'); -%>\r\n" +
+    '    63|     </div>\r\n' +
+    '    64|   </body>\r\n' +
+    '    65| </html>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\registerForm.ejs:97\n' +
+    '    95|               <label for="floatingPassword">Введите пароль</label>\r\n' +
+    '    96|             </div>\r\n' +
+    ' >> 97|             <% if (errorMessage && Array.isArray(errorMessage)) { %> <%\r\n' +
+    '    98|             errorMessage.forEach(function(error) { %>\r\n' +
+    '    99|             <p class="error-message"><%= error %></p>\r\n' +
+    '    100|             <% }) %> <% } %>\r\n' +
+    '\n' +
+    'errorMessage is not defined',
+  level: 'error',
+  timestamp: '2024-05-02T19:23:51.011Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:63\n' +
+    '    61|       </table>\r\n' +
+    "    62|       <%- include('./loginModal'); -%>\r\n" +
+    " >> 63|       <!-- <%- include('./registerForm'); -%> -->\r\n" +
+    '    64|     </div>\r\n' +
+    '    65|   </body>\r\n' +
+    '    66| </html>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\registerForm.ejs:97\n' +
+    '    95|               <label for="floatingPassword">Введите пароль</label>\r\n' +
+    '    96|             </div>\r\n' +
+    ' >> 97|             <% if (errorMessage && Array.isArray(errorMessage)) { %> <%\r\n' +
+    '    98|             errorMessage.forEach(function(error) { %>\r\n' +
+    '    99|             <p class="error-message"><%= error %></p>\r\n' +
+    '    100|             <% }) %> <% } %>\r\n' +
+    '\n' +
+    'errorMessage is not defined',
+  level: 'error',
+  timestamp: '2024-05-02T19:26:39.036Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:63\n' +
+    '    61|       </table>\r\n' +
+    "    62|       <%- include('./loginModal'); -%>\r\n" +
+    " >> 63|       <!-- <%- include('./registerForm'); -%> -->\r\n" +
+    '    64|     </div>\r\n' +
+    '    65|   </body>\r\n' +
+    '    66| </html>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\registerForm.ejs:97\n' +
+    '    95|               <label for="floatingPassword">Введите пароль</label>\r\n' +
+    '    96|             </div>\r\n' +
+    ' >> 97|             <% if (errorMessage && Array.isArray(errorMessage)) { %> <%\r\n' +
+    '    98|             errorMessage.forEach(function(error) { %>\r\n' +
+    '    99|             <p class="error-message"><%= error %></p>\r\n' +
+    '    100|             <% }) %> <% } %>\r\n' +
+    '\n' +
+    'errorMessage is not defined',
+  level: 'error',
+  timestamp: '2024-05-02T19:26:43.507Z'
+}
+{
+  message: 'Failed to lookup view "register" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
+  level: 'error',
+  timestamp: '2024-05-02T19:26:49.729Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('./loginModal'); -%> <%- include('./registerModal'); -%>\r\n" +
+    '    63|     </div>\r\n' +
+    '    64|   </body>\r\n' +
+    '    65| </html>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\registerModal.ejs:97\n' +
+    '    95|                 <label for="floatingPassword">Введите пароль</label>\r\n' +
+    '    96|               </div>\r\n' +
+    ' >> 97|               <% if (errorMessage && Array.isArray(errorMessage)) { %> <%\r\n' +
+    '    98|               errorMessage.forEach(function(error) { %>\r\n' +
+    '    99|               <p class="error-message"><%= error %></p>\r\n' +
+    '    100|               <% }) %> <% } %>\r\n' +
+    '\n' +
+    'errorMessage is not defined',
+  level: 'error',
+  timestamp: '2024-05-02T19:32:41.556Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('./loginModal'); -%> <%- include('./registerModal'); -%>\r\n" +
+    '    63|     </div>\r\n' +
+    '    64|   </body>\r\n' +
+    '    65| </html>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\registerModal.ejs:97\n' +
+    '    95|                 <label for="floatingPassword">Введите пароль</label>\r\n' +
+    '    96|               </div>\r\n' +
+    ' >> 97|               <% if (errorMessage && Array.isArray(errorMessage)) { %> <%\r\n' +
+    '    98|               errorMessage.forEach(function(error) { %>\r\n' +
+    '    99|               <p class="error-message"><%= error %></p>\r\n' +
+    '    100|               <% }) %> <% } %>\r\n' +
+    '\n' +
+    'errorMessage is not defined',
+  level: 'error',
+  timestamp: '2024-05-02T19:33:35.358Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('./loginModal'); -%> <%- include('./registerModal'); -%>\r\n" +
+    '    63|     </div>\r\n' +
+    '    64|   </body>\r\n' +
+    '    65| </html>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\registerModal.ejs:97\n' +
+    '    95|                 <label for="floatingPassword">Введите пароль</label>\r\n' +
+    '    96|               </div>\r\n' +
+    ' >> 97|               <% if (errorMessage && Array.isArray(errorMessage)) { %> <%\r\n' +
+    '    98|               errorMessage.forEach(function(error) { %>\r\n' +
+    '    99|               <p class="error-message"><%= error %></p>\r\n' +
+    '    100|               <% }) %> <% } %>\r\n' +
+    '\n' +
+    'errorMessage is not defined',
+  level: 'error',
+  timestamp: '2024-05-02T19:33:52.086Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('./loginModal'); -%> <%- include('./registerModal'); -%>\r\n" +
+    '    63|     </div>\r\n' +
+    '    64|   </body>\r\n' +
+    '    65| </html>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\registerModal.ejs:97\n' +
+    '    95|                 <label for="floatingPassword">Введите пароль</label>\r\n' +
+    '    96|               </div>\r\n' +
+    ' >> 97|               <% if (errorMessage && Array.isArray(errorMessage)) { %> <%\r\n' +
+    '    98|               errorMessage.forEach(function(error) { %>\r\n' +
+    '    99|               <p class="error-message"><%= error %></p>\r\n' +
+    '    100|               <% }) %> <% } %>\r\n' +
+    '\n' +
+    'errorMessage is not defined',
+  level: 'error',
+  timestamp: '2024-05-02T19:33:54.313Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('./loginModal'); -%> <%- include('./registerModal'); -%>\r\n" +
+    '    63|     </div>\r\n' +
+    '    64|   </body>\r\n' +
+    '    65| </html>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\registerModal.ejs:97\n' +
+    '    95|                 <label for="floatingPassword">Введите пароль</label>\r\n' +
+    '    96|               </div>\r\n' +
+    ' >> 97|               <% if (errorMessage && Array.isArray(errorMessage)) { %> <%\r\n' +
+    '    98|               errorMessage.forEach(function(error) { %>\r\n' +
+    '    99|               <p class="error-message"><%= error %></p>\r\n' +
+    '    100|               <% }) %> <% } %>\r\n' +
+    '\n' +
+    'errorMessage is not defined',
+  level: 'error',
+  timestamp: '2024-05-02T19:34:01.153Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('./loginModal'); -%> <%- include('./registerModal'); -%>\r\n" +
+    '    63|     </div>\r\n' +
+    '    64|   </body>\r\n' +
+    '    65| </html>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\registerModal.ejs:97\n' +
+    '    95|                 <label for="floatingPassword">Введите пароль</label>\r\n' +
+    '    96|               </div>\r\n' +
+    ' >> 97|               <% if (errorMessage && Array.isArray(errorMessage)) { %> <%\r\n' +
+    '    98|               errorMessage.forEach(function(error) { %>\r\n' +
+    '    99|               <p class="error-message"><%= error %></p>\r\n' +
+    '    100|               <% }) %> <% } %>\r\n' +
+    '\n' +
+    'errorMessage is not defined',
+  level: 'error',
+  timestamp: '2024-05-02T19:34:02.106Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('./loginModal'); -%> <%- include('./registerModal'); -%>\r\n" +
+    '    63|     </div>\r\n' +
+    '    64|   </body>\r\n' +
+    '    65| </html>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\registerModal.ejs:97\n' +
+    '    95|                 <label for="floatingPassword">Введите пароль</label>\r\n' +
+    '    96|               </div>\r\n' +
+    ' >> 97|               <% if (errorMessage && Array.isArray(errorMessage)) { %> <%\r\n' +
+    '    98|               errorMessage.forEach(function(error) { %>\r\n' +
+    '    99|               <p class="error-message"><%= error %></p>\r\n' +
+    '    100|               <% }) %> <% } %>\r\n' +
+    '\n' +
+    'errorMessage is not defined',
+  level: 'error',
+  timestamp: '2024-05-02T19:34:02.762Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('./loginModal'); -%> <%- include('./registerModal'); -%>\r\n" +
+    '    63|     </div>\r\n' +
+    '    64|   </body>\r\n' +
+    '    65| </html>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\registerModal.ejs:97\n' +
+    '    95|                 <label for="floatingPassword">Введите пароль</label>\r\n' +
+    '    96|               </div>\r\n' +
+    ' >> 97|               <% if (errorMessage && Array.isArray(errorMessage)) { %> <%\r\n' +
+    '    98|               errorMessage.forEach(function(error) { %>\r\n' +
+    '    99|               <p class="error-message"><%= error %></p>\r\n' +
+    '    100|               <% }) %> <% } %>\r\n' +
+    '\n' +
+    'errorMessage is not defined',
+  level: 'error',
+  timestamp: '2024-05-02T19:34:20.527Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('./loginModal'); -%> <%- include('./registerModal'); -%>\r\n" +
+    '    63|     </div>\r\n' +
+    '    64|   </body>\r\n' +
+    '    65| </html>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\registerModal.ejs:97\n' +
+    '    95|                 <label for="floatingPassword">Введите пароль</label>\r\n' +
+    '    96|               </div>\r\n' +
+    ' >> 97|               <% if (errorMessage && Array.isArray(errorMessage)) { %> <%\r\n' +
+    '    98|               errorMessage.forEach(function(error) { %>\r\n' +
+    '    99|               <p class="error-message"><%= error %></p>\r\n' +
+    '    100|               <% }) %> <% } %>\r\n' +
+    '\n' +
+    'errorMessage is not defined',
+  level: 'error',
+  timestamp: '2024-05-02T19:34:21.734Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('./loginModal'); -%> <%- include('./registerModal'); -%>\r\n" +
+    '    63|     </div>\r\n' +
+    '    64|   </body>\r\n' +
+    '    65| </html>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\registerModal.ejs:97\n' +
+    '    95|                 <label for="floatingPassword">Введите пароль</label>\r\n' +
+    '    96|               </div>\r\n' +
+    ' >> 97|               <% if (errorMessage && Array.isArray(errorMessage)) { %> <%\r\n' +
+    '    98|               errorMessage.forEach(function(error) { %>\r\n' +
+    '    99|               <p class="error-message"><%= error %></p>\r\n' +
+    '    100|               <% }) %> <% } %>\r\n' +
+    '\n' +
+    'errorMessage is not defined',
+  level: 'error',
+  timestamp: '2024-05-02T19:34:22.390Z'
+}
+{
+  message: 'missing ) after argument list in C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs while compiling ejs\n' +
+    '\n' +
+    'If the above error is not helpful, you may want to try EJS-Lint:\n' +
+    'https://github.com/RyanZim/EJS-Lint\n' +
+    'Or, if you meant to create an async function, pass `async: true` as an option.',
+  level: 'error',
+  timestamp: '2024-05-02T19:35:19.126Z'
+}
+{
+  message: 'missing ) after argument list in C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs while compiling ejs\n' +
+    '\n' +
+    'If the above error is not helpful, you may want to try EJS-Lint:\n' +
+    'https://github.com/RyanZim/EJS-Lint\n' +
+    'Or, if you meant to create an async function, pass `async: true` as an option.',
+  level: 'error',
+  timestamp: '2024-05-02T19:35:33.293Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('./loginModal'); -%> <%- include('./registerModal'); -%>\r\n" +
+    '    63|     </div>\r\n' +
+    '    64|   </body>\r\n' +
+    '    65| </html>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\registerModal.ejs:97\n' +
+    '    95|                 <label for="floatingPassword">Введите пароль</label>\r\n' +
+    '    96|               </div>\r\n' +
+    ' >> 97|               <% if (errorMessage && Array.isArray(errorMessage)) { %> <%\r\n' +
+    '    98|               errorMessage.forEach(function(error) { %>\r\n' +
+    '    99|               <p class="error-message"><%= error %></p>\r\n' +
+    '    100|               <% }) %> <% } %>\r\n' +
+    '\n' +
+    'errorMessage is not defined',
+  level: 'error',
+  timestamp: '2024-05-02T19:37:01.051Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('./registerModal'); -%>\r\n" +
+    '    63|     </div>\r\n' +
+    '    64|   </body>\r\n' +
+    '    65| </html>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\registerModal.ejs:97\n' +
+    '    95|                 <label for="floatingPassword">Введите пароль</label>\r\n' +
+    '    96|               </div>\r\n' +
+    ' >> 97|               <% if (errorMessage && Array.isArray(errorMessage)) { %> <%\r\n' +
+    '    98|               errorMessage.forEach(function(error) { %>\r\n' +
+    '    99|               <p class="error-message"><%= error %></p>\r\n' +
+    '    100|               <% }) %> <% } %>\r\n' +
+    '\n' +
+    'errorMessage is not defined',
+  level: 'error',
+  timestamp: '2024-05-02T19:38:40.901Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('./registerModal'); -%>\r\n" +
+    '    63|     </div>\r\n' +
+    '    64|   </body>\r\n' +
+    '    65| </html>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\registerModal.ejs:97\n' +
+    '    95|                 <label for="floatingPassword">Введите пароль</label>\r\n' +
+    '    96|               </div>\r\n' +
+    ' >> 97|               <% if (errorMessage && Array.isArray(errorMessage)) { %> <%\r\n' +
+    '    98|               errorMessage.forEach(function(error) { %>\r\n' +
+    '    99|               <p class="error-message"><%= error %></p>\r\n' +
+    '    100|               <% }) %> <% } %>\r\n' +
+    '\n' +
+    'errorMessage is not defined',
+  level: 'error',
+  timestamp: '2024-05-02T19:38:41.790Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('./loginModal'); -%> <%- include('./registerModal'); -%>\r\n" +
+    '    63|     </div>\r\n' +
+    '    64|   </body>\r\n' +
+    '    65| </html>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\registerModal.ejs:97\n' +
+    '    95|                 <label for="floatingPassword">Введите пароль</label>\r\n' +
+    '    96|               </div>\r\n' +
+    ' >> 97|               <% if (errorMessage && Array.isArray(errorMessage)) { %> <%\r\n' +
+    '    98|               errorMessage.forEach(function(error) { %>\r\n' +
+    '    99|               <p class="error-message"><%= error %></p>\r\n' +
+    '    100|               <% }) %> <% } %>\r\n' +
+    '\n' +
+    'errorMessage is not defined',
+  level: 'error',
+  timestamp: '2024-05-02T19:39:27.988Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('./loginModal'); -%> <%- include('./registerModal'); -%>\r\n" +
+    '    63|     </div>\r\n' +
+    '    64|   </body>\r\n' +
+    '    65| </html>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\registerModal.ejs:97\n' +
+    '    95|                 <label for="floatingPassword">Введите пароль</label>\r\n' +
+    '    96|               </div>\r\n' +
+    ' >> 97|               <% if (errorMessage && Array.isArray(errorMessage)) { %> <%\r\n' +
+    '    98|               errorMessage.forEach(function(error) { %>\r\n' +
+    '    99|               <p class="error-message"><%= error %></p>\r\n' +
+    '    100|               <% }) %> <% } %>\r\n' +
+    '\n' +
+    'errorMessage is not defined',
+  level: 'error',
+  timestamp: '2024-05-02T19:39:35.403Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('./registerModal'); -%>\r\n" +
+    '    63|     </div>\r\n' +
+    '    64|   </body>\r\n' +
+    '    65| </html>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\registerModal.ejs:97\n' +
+    '    95|                 <label for="floatingPassword">Введите пароль</label>\r\n' +
+    '    96|               </div>\r\n' +
+    ' >> 97|               <% if (errorMessage && Array.isArray(errorMessage)) { %> <%\r\n' +
+    '    98|               errorMessage.forEach(function(error) { %>\r\n' +
+    '    99|               <p class="error-message"><%= error %></p>\r\n' +
+    '    100|               <% }) %> <% } %>\r\n' +
+    '\n' +
+    'errorMessage is not defined',
+  level: 'error',
+  timestamp: '2024-05-02T19:39:54.820Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('./registerModal'); -%>\r\n" +
+    '    63|     </div>\r\n' +
+    '    64|   </body>\r\n' +
+    '    65| </html>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\registerModal.ejs:97\n' +
+    '    95|                 <label for="floatingPassword">Введите пароль</label>\r\n' +
+    '    96|               </div>\r\n' +
+    ' >> 97|               <% if (errorMessage && Array.isArray(errorMessage)) { %> <%\r\n' +
+    '    98|               errorMessage.forEach(function(error) { %>\r\n' +
+    '    99|               <p class="error-message"><%= error %></p>\r\n' +
+    '    100|               <% }) %> <% } %>\r\n' +
+    '\n' +
+    'errorMessage is not defined',
+  level: 'error',
+  timestamp: '2024-05-02T19:39:55.727Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('./partials/loginModal'); -%> <%-\r\n" +
+    "    63|       include('./partials/registerModal'); -%>\r\n" +
+    '    64|     </div>\r\n' +
+    '    65|   </body>\r\n' +
+    '\n' +
+    'Could not find the include file "./partials/registerModal"',
+  level: 'error',
+  timestamp: '2024-05-02T19:42:53.699Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('./partials/loginModal'); -%> <%-\r\n" +
+    "    63|       include('./partials/registerModal'); -%>\r\n" +
+    '    64|     </div>\r\n' +
+    '    65|   </body>\r\n' +
+    '\n' +
+    'Could not find the include file "./partials/registerModal"',
+  level: 'error',
+  timestamp: '2024-05-02T19:42:54.751Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('./partials/loginModal'); -%> <%-\r\n" +
+    "    63|       include('./partials/registerModal'); -%>\r\n" +
+    '    64|     </div>\r\n' +
+    '    65|   </body>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\registerModal.ejs:97\n' +
+    '    95|                 <label for="floatingPassword">Введите пароль</label>\r\n' +
+    '    96|               </div>\r\n' +
+    ' >> 97|               <% if (errorMessage && Array.isArray(errorMessage)) { %> <%\r\n' +
+    '    98|               errorMessage.forEach(function(error) { %>\r\n' +
+    '    99|               <p class="error-message"><%= error %></p>\r\n' +
+    '    100|               <% }) %> <% } %>\r\n' +
+    '\n' +
+    'errorMessage is not defined',
+  level: 'error',
+  timestamp: '2024-05-02T19:43:01.964Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('./partials/loginModal'); -%> <%-\r\n" +
+    "    63|       include('./partials/registerModal'); -%>\r\n" +
+    '    64|     </div>\r\n' +
+    '    65|   </body>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\registerModal.ejs:97\n' +
+    '    95|                 <label for="floatingPassword">Введите пароль</label>\r\n' +
+    '    96|               </div>\r\n' +
+    ' >> 97|               <% if (errorMessage && Array.isArray(errorMessage)) { %> <%\r\n' +
+    '    98|               errorMessage.forEach(function(error) { %>\r\n' +
+    '    99|               <p class="error-message"><%= error %></p>\r\n' +
+    '    100|               <% }) %> <% } %>\r\n' +
+    '\n' +
+    'errorMessage is not defined',
+  level: 'error',
+  timestamp: '2024-05-02T19:43:17.058Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('./partials/loginModal'); -%> <%-\r\n" +
+    "    63|       include('./partials/registerModal'); -%>\r\n" +
+    '    64|     </div>\r\n' +
+    '    65|   </body>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\registerModal.ejs:97\n' +
+    '    95|                 <label for="floatingPassword">Введите пароль</label>\r\n' +
+    '    96|               </div>\r\n' +
+    ' >> 97|               <% if (errorMessage && Array.isArray(errorMessage)) { %> <%\r\n' +
+    '    98|               errorMessage.forEach(function(error) { %>\r\n' +
+    '    99|               <p class="error-message"><%= error %></p>\r\n' +
+    '    100|               <% }) %> <% } %>\r\n' +
+    '\n' +
+    'errorMessage is not defined',
+  level: 'error',
+  timestamp: '2024-05-02T19:43:20.027Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('./partials/loginModal'); -%> <%-\r\n" +
+    "    63|       include('./partials/registerModal'); -%>\r\n" +
+    '    64|     </div>\r\n' +
+    '    65|   </body>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\registerModal.ejs:97\n' +
+    '    95|                 <label for="floatingPassword">Введите пароль</label>\r\n' +
+    '    96|               </div>\r\n' +
+    ' >> 97|               <% if (errorMessage && Array.isArray(errorMessage)) { %> <%\r\n' +
+    '    98|               errorMessage.forEach(function(error) { %>\r\n' +
+    '    99|               <p class="error-message"><%= error %></p>\r\n' +
+    '    100|               <% }) %> <% } %>\r\n' +
+    '\n' +
+    'errorMessage is not defined',
+  level: 'error',
+  timestamp: '2024-05-02T19:46:00.430Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('./partials/loginModal'); -%> <%-\r\n" +
+    "    63|       include('./partials/registerModal'); -%>\r\n" +
+    '    64|     </div>\r\n' +
+    '    65|   </body>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\registerModal.ejs:97\n' +
+    '    95|                 <label for="floatingPassword">Введите пароль</label>\r\n' +
+    '    96|               </div>\r\n' +
+    ' >> 97|               <% if (errorMessage && Array.isArray(errorMessage)) { %> <%\r\n' +
+    '    98|               errorMessage.forEach(function(error) { %>\r\n' +
+    '    99|               <p class="error-message"><%= error %></p>\r\n' +
+    '    100|               <% }) %> <% } %>\r\n' +
+    '\n' +
+    'errorMessage is not defined',
+  level: 'error',
+  timestamp: '2024-05-02T19:48:33.126Z'
+}

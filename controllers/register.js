@@ -5,7 +5,7 @@ import logger from "../logger/index.js";
 import jwt from "jsonwebtoken";
 
 const form = (req, res) => {
-  res.render("registerForm", {
+  res.render("registerModal", {
     title: "Регистрация",
     errorMessage: res.locals.errorMessage,
   });

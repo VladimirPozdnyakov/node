@@ -1,14 +1,14 @@
 <div
   class="modal fade"
-  id="login"
+  id="register"
   tabindex="-1"
-  aria-labelledby="login"
+  aria-labelledby="registerModal"
   aria-hidden="true"
 >
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title fs-5" id="login">Вход</h5>
+        <h5 class="modal-title fs-5" id="registerModal">Зарегистрироваться</h5>
         <button
           type="button"
           class="btn-close"
@@ -17,7 +17,7 @@
         ></button>
       </div>
       <div class="modal-body">
-        <div class="container row">
+        <div class="container row socials">
           <div class="yandex col">
             <a href="/auth/yandex">
               <i class="fa-brands fa-yandex fa-2xl" style="color: #000000"></i>
@@ -34,29 +34,62 @@
             </a>
           </div>
         </div>
-        <form action="/login" method="post">
+        <form
+          action="/register"
+          class="container"
+          id="registerForm"
+          method="post"
+        >
           <div class="row my-3">
-            <div class="col-sm-4 col-12">
-              <div class="form-floating mb-3">
+            <div class="col-sm-7 сol-12">
+              <div class="form-floating">
                 <input
-                  name="loginForm[email]"
+                  name="name"
+                  type="text"
+                  class="form-control"
+                  id="floatingTextarea"
+                  placeholder="имя фамилия"
+                />
+                <label for="floatingTextarea">Введите своё имя и фамилию</label>
+              </div>
+            </div>
+          </div>
+          <div class="row my-3">
+            <div class="col-sm-8 col-12">
+              <div class="form-floating">
+                <input
                   type="email"
                   class="form-control"
                   id="floatingInput"
+                  name="email"
                   placeholder="name@example.com"
                 />
                 <label for="floatingInput"
-                  >Введите вдрес электронной почты</label
+                  >Введите адрес электронной почты</label
                 >
               </div>
             </div>
           </div>
           <div class="row my-3">
-            <div class="col-sm-6 col-12">
+            <div class="col-sm-8 col-12">
               <div class="form-floating">
                 <input
-                  name="loginForm[password]"
+                  name="age"
+                  type="number"
+                  class="form-control"
+                  id="floatingAge"
+                  placeholder="age"
+                />
+                <label for="floatingAge">Введите Ваш полный возраст</label>
+              </div>
+            </div>
+          </div>
+          <div class="row my-3">
+            <div class="col-sm-5 col-12">
+              <div class="form-floating">
+                <input
                   type="password"
+                  name="password"
                   class="form-control"
                   id="floatingPassword"
                   placeholder="password"
@@ -67,7 +100,9 @@
           </div>
           <div class="row my-3">
             <div class="col-sm-6 col-12">
-              <button type="submit" class="btn btn-success">Войти</button>
+              <button type="submit" class="btn btn-success">
+                Зарегистрироваться
+              </button>
             </div>
           </div>
         </form>

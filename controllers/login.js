@@ -4,7 +4,7 @@ import User from "../models/user.js";
 import jwt from "jsonwebtoken";
 
 const form = (req, res) => {
-  res.render("login", { title: "Login" });
+  res.render("loginModal", { title: "Login" });
   console.log("...");
   console.log("заход на /login");
 };
