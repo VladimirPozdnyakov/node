@@ -6,7 +6,6 @@ import jwt from "jsonwebtoken";
 const form = (req, res) => {
   res.render("loginModal", { title: "Login" });
   console.log("...");
-  console.log("заход на /login");
 };
 
 const submit = (req, res, next) => {

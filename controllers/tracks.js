@@ -2,11 +2,10 @@ import connection from "../models/db.js";
 import logger from "../logger/index.js";
 
 const form = (req, res) => {
-  res.render("tracks/new", {
+  res.render("./partials/tracks/newModal", {
     title: "Выложить бит",
     errorMessage: res.locals.errorMessage,
   });
-  logger.info("заход на страницу выкладывания бита");
 };
 
 const sql =
@@ -22,7 +21,7 @@ const addPost = (req, res) => {
 
   if (!title || !genre || !bpm || !tone) {
     logger.error("Не заполнены поля для выкладывания бита");
-    return res.redirect("/new");
+    return res.redirect("/");
   }
 
   const query =
@@ -30,7 +29,7 @@ const addPost = (req, res) => {
   connection.query(query, [title, genre, bpm, tone, author], (error) => {
     if (error) {
       logger.error("Ошибка выкладывания бита", error.message);
-      return res.redirect("/new");
+      return res.redirect("/");
     }
 
     res.redirect("/");

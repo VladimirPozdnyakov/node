@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="container">
-      <%- include ('./partials/menu') %>
+      <%- include ('./partials/header') %>
       <h1 class="text-center">Каталог битов</h1>
       <table class="table table-striped">
         <tbody>
@@ -59,8 +59,9 @@
           <% }) %>
         </tbody>
       </table>
-      <%- include('./partials/loginModal'); -%> <%-
-      include('./partials/registerModal'); -%>
+      <% if (locals.user) { %> <%- include('./partials/tracks/newModal'); -%><%
+      } else { %> <%- include('./partials/loginModal'); -%> <%-
+      include('./partials/registerModal'); -%> <% } %>
     </div>
   </body>
 </html>

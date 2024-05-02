@@ -13,24 +13,31 @@
       />
     </a>
     <% if (locals.user) { %>
-    <div id="menu">
+    <div id="header">
       <%# Меню пользователей, выполнивших вход%>
       <span class="name"><%= user.email %> </span>
       <% if (locals.role === 'admin') { %>
-      <a class="badge rounded-pill bg-primary" href="/admin" aria-current="page"
-        >Панель администратора<span class="visually-hidden">(current)</span></a
-      >
-      <% } else { %>
       <a href="/new">
-        <button type="button" class="btn btn-light">Выложить бит</button>
+        <button type="button" class="btn btn-light">
+          Панель администратора
+        </button>
       </a>
+      <% } else { %>
+      <button
+        type="button"
+        class="btn btn-light"
+        data-bs-toggle="modal"
+        data-bs-target="#new"
+      >
+        Выложить бит
+      </button>
       <% } %>
       <a href="/logout">
         <button type="button" class="btn btn-light">Выйти</button>
       </a>
     </div>
     <% } else { %>
-    <div class="" id="menu">
+    <div class="" id="header">
       <%# Меню анонимных пользователей %>
       <button
         type="button"

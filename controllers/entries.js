@@ -14,8 +14,6 @@ function list(req, res, next) {
       role: req.session.role,
       entries: entries,
     });
-
-    logger.info("Заход на главную страницу");
   });
 }
 

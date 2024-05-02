@@ -1683,3 +1683,98 @@
   level: 'error',
   timestamp: '2024-05-02T19:48:33.126Z'
 }
+{
+  message: 'Could not find matching close tag for "<%-".',
+  level: 'error',
+  timestamp: '2024-05-02T20:22:35.480Z'
+}
+{
+  message: 'Не заполнены поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-02T20:29:05.455Z'
+}
+{
+  message: 'Failed to lookup view "tracks/new" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
+  level: 'error',
+  timestamp: '2024-05-02T20:29:05.526Z'
+}
+{
+  message: 'Не заполнены поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-02T20:30:20.037Z'
+}
+{
+  message: 'Failed to lookup view "/new" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
+  level: 'error',
+  timestamp: '2024-05-02T20:30:20.108Z'
+}
+{
+  message: 'Не заполнены поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-02T20:45:32.944Z'
+}
+{
+  message: 'Failed to lookup view "/new" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
+  level: 'error',
+  timestamp: '2024-05-02T20:45:33.019Z'
+}
+{
+  message: 'Не заполнены поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-02T20:47:07.545Z'
+}
+{
+  message: 'Failed to lookup view "/partials/tracks/newModal" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
+  level: 'error',
+  timestamp: '2024-05-02T20:47:07.616Z'
+}
+{
+  message: 'Failed to lookup view "/newModal" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
+  level: 'error',
+  timestamp: '2024-05-02T20:47:46.048Z'
+}
+{
+  message: 'Failed to lookup view "/newModal" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
+  level: 'error',
+  timestamp: '2024-05-02T20:47:49.235Z'
+}
+{
+  message: 'Не заполнены поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-02T20:48:19.365Z'
+}
+{
+  message: 'Failed to lookup view "/new" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
+  level: 'error',
+  timestamp: '2024-05-02T20:48:19.443Z'
+}
+{
+  message: 'Failed to lookup view "/partials/tracks/newModal" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
+  level: 'error',
+  timestamp: '2024-05-02T20:48:59.107Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'user')",
+  level: 'error',
+  timestamp: '2024-05-02T20:49:32.775Z'
+}
+{
+  message: 'Не заполнены поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-02T20:49:58.213Z'
+}
+{
+  message: 'Не заполнены поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-02T20:50:35.233Z'
+}
+{
+  message: 'Не заполнены поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-02T20:51:05.915Z'
+}
+{
+  message: 'Не заполнены поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-02T20:52:24.247Z'
+}

@@ -9,7 +9,6 @@ import tracks from "../controllers/tracks.js";
 import sqlLogic from "../middleware/sqlLogic.js";
 import logger from "../logger/index.js";
 import passport from "passport";
-import ensureAuthenticated from "../middleware/isAuthenticated.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const router = express.Router();

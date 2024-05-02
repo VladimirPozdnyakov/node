@@ -9,10 +9,6 @@ const form = (req, res) => {
     title: "Регистрация",
     errorMessage: res.locals.errorMessage,
   });
-  console.log("...");
-  console.log("заход на /register");
-  console.log("...");
-  logger.info("заход на страницу регистрации");
 };
 
 const submit = [
