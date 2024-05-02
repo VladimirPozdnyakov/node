@@ -4,7 +4,6 @@ import "dotenv/config.js";
 
 function passportFunctionGithub(passport) {
   passport.serializeUser(function (user, doneGT) {
-    console.log(user);
     const email = function () {
       if (user.provider == "google") {
         return user.email;

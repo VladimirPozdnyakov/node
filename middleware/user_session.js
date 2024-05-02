@@ -5,7 +5,6 @@ export default (req, res, next) => {
     User.findByEmail(req.session.email, (err, userData) => {
       if (err) return next(err);
       if (userData) req.user = res.locals.user = userData;
-      console.log(userData);
       next();
     });
   } else if (req.session.passport) {

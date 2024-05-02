@@ -1,5 +1,4 @@
 import logger from "../logger/index.js";
-// import User from "../models/user.js";
 import User from "../models/user.js";
 import jwt from "jsonwebtoken";
 
@@ -46,15 +45,6 @@ const submit = (req, res, next) => {
       console.log("токен подготовлен");
       console.log("...");
       logger.info("токен подготовлен:" + token);
-
-      // jwt cookie
-      res.cookie("jwt", token, {
-        httpOnly: true,
-        secure: true,
-        maxAge: 3600000,
-      });
-      console.log("...");
-      console.log("куки подготовлен");
 
       res.redirect("/");
     }

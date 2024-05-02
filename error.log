@@ -1778,3 +1778,43 @@
   level: 'error',
   timestamp: '2024-05-02T20:52:24.247Z'
 }
+{
+  message: 'Ошибка ввода пароля',
+  level: 'error',
+  timestamp: '2024-05-02T20:57:23.296Z'
+}
+{
+  message: 'Failed to lookup view "loginModal" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
+  level: 'error',
+  timestamp: '2024-05-02T20:57:23.299Z'
+}
+{
+  message: 'Ошибка ввода пароля',
+  level: 'error',
+  timestamp: '2024-05-02T20:57:33.447Z'
+}
+{
+  message: 'Failed to lookup view "loginModal" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
+  level: 'error',
+  timestamp: '2024-05-02T20:57:33.449Z'
+}
+{
+  message: 'Не заполнены поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-02T20:59:36.645Z'
+}
+{
+  message: 'Не заполнены поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-02T21:02:21.327Z'
+}
+{
+  message: 'Не заполнены поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-02T21:19:04.556Z'
+}
+{
+  message: 'Не заполнены поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-02T21:23:28.557Z'
+}
