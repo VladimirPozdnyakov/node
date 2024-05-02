@@ -1,70 +1,77 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <link rel="stylesheet" href="/bootstrap.css" />
-    <script src="/bootstrap.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <title>Вход</title>
-  </head>
-  <body>
-    <div class="container">
-      <%- include ('./partials/menu') %>
-      <h1 class="text-center">Форма входа</h1>
-      <div class="container row">
-        <div class="yandex col">
-          <a href="/auth/yandex">
-            <i class="fa-brands fa-yandex fa-2xl" style="color: #000000"></i>
-          </a>
-        </div>
-        <div class="google col">
-          <a href="/auth/google">
-            <i class="fa-brands fa-google fa-2xl" style="color: #000000"></i>
-          </a>
-        </div>
-        <div class="github col">
-          <a href="/auth/github">
-            <i class="fa-brands fa-github fa-2xl" style="color: #000000"></i>
-          </a>
-        </div>
+<div
+  class="modal fade"
+  id="login"
+  tabindex="-1"
+  aria-labelledby="login"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fs-5" id="login">Вход</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
       </div>
-      <form action="/login" class="container" method="post">
-        <div class="row my-3">
-          <div class="col-sm-4 col-12">
-            <div class="form-floating mb-3">
-              <input
-                name="loginForm[email]"
-                type="email"
-                class="form-control"
-                id="floatingInput"
-                placeholder="name@example.com"
-              />
-              <label for="floatingInput">Введите адрес электронной почты</label>
+      <div class="modal-body">
+        <div class="container row">
+          <div class="yandex col">
+            <a href="/auth/yandex">
+              <i class="fa-brands fa-yandex fa-2xl" style="color: #000000"></i>
+            </a>
+          </div>
+          <div class="google col">
+            <a href="/auth/google">
+              <i class="fa-brands fa-google fa-2xl" style="color: #000000"></i>
+            </a>
+          </div>
+          <div class="github col">
+            <a href="/auth/github">
+              <i class="fa-brands fa-github fa-2xl" style="color: #000000"></i>
+            </a>
+          </div>
+        </div>
+        <form action="/login" method="post">
+          <div class="row my-3">
+            <div class="col-sm-4 col-12">
+              <div class="form-floating mb-3">
+                <input
+                  name="loginForm[email]"
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput"
+                  >Введите вдрес электронной почты</label
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row my-3">
-          <div class="col-sm-6 col-12">
-            <div class="form-floating">
-              <input
-                name="loginForm[password]"
-                type="password"
-                class="form-control"
-                id="floatingPassword"
-                placeholder="password"
-              />
-              <label for="floatingPassword">Введите пароль</label>
+          <div class="row my-3">
+            <div class="col-sm-6 col-12">
+              <div class="form-floating">
+                <input
+                  name="loginForm[password]"
+                  type="password"
+                  class="form-control"
+                  id="floatingPassword"
+                  placeholder="password"
+                />
+                <label for="floatingPassword">Введите пароль</label>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row my-3">
-          <div class="col-sm-6 col-12">
-            <button type="submit" class="btn btn-success">Войти</button>
+          <div class="row my-3">
+            <div class="col-sm-6 col-12">
+              <button type="submit" class="btn btn-success">Войти</button>
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
-  </body>
-</html>
+  </div>
+</div>

@@ -30,9 +30,14 @@
     <% } else { %>
     <div class="" id="menu">
       <%# Меню анонимных пользователей %>
-      <a class="badge rounded-pill bg-info" href="/login" aria-current="page"
-        >Войти<span class="visually-hidden">(current)</span></a
+      <button
+        type="button"
+        class="btn btn-light"
+        data-bs-toggle="modal"
+        data-bs-target="#login"
       >
+        Войти
+      </button>
       <a class="badge rounded-pill bg-info" href="/register"
         >Зарегистрироваться</a
       >

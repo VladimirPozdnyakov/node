@@ -1036,3 +1036,55 @@
   level: 'error',
   timestamp: '2024-04-26T07:22:32.358Z'
 }
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:15\n' +
+    '    13|   <body>\r\n' +
+    '    14|     <div class="container">\r\n' +
+    " >> 15|       <%- include ('/menu') %>\r\n" +
+    '    16|       <h1 class="text-center">Каталог битов</h1>\r\n' +
+    '    17|       <table class="table table-striped">\r\n' +
+    '    18|         <tbody>\r\n' +
+    '\n' +
+    "ENOENT: no such file or directory, open 'C:\\menu.ejs'",
+  level: 'error',
+  timestamp: '2024-05-02T19:04:15.238Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:15\n' +
+    '    13|   <body>\r\n' +
+    '    14|     <div class="container">\r\n' +
+    " >> 15|       <%- include ('/menu') %>\r\n" +
+    '    16|       <h1 class="text-center">Каталог битов</h1>\r\n' +
+    '    17|       <table class="table table-striped">\r\n' +
+    '    18|         <tbody>\r\n' +
+    '\n' +
+    "ENOENT: no such file or directory, open 'C:\\menu.ejs'",
+  level: 'error',
+  timestamp: '2024-05-02T19:04:16.195Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('/login'); -%>\r\n" +
+    '    63|     </div>\r\n' +
+    '    64|   </body>\r\n' +
+    '    65| </html>\r\n' +
+    '\n' +
+    "ENOENT: no such file or directory, open 'C:\\login.ejs'",
+  level: 'error',
+  timestamp: '2024-05-02T19:11:32.171Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:62\n' +
+    '    60|         </tbody>\r\n' +
+    '    61|       </table>\r\n' +
+    " >> 62|       <%- include('/login'); -%>\r\n" +
+    '    63|     </div>\r\n' +
+    '    64|   </body>\r\n' +
+    '    65| </html>\r\n' +
+    '\n' +
+    "ENOENT: no such file or directory, open 'C:\\login.ejs'",
+  level: 'error',
+  timestamp: '2024-05-02T19:13:51.068Z'
+}
