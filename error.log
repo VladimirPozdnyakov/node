@@ -2029,3 +2029,18 @@
   level: 'error',
   timestamp: '2024-05-03T19:22:35.943Z'
 }
+{
+  message: 'Error',
+  level: 'error',
+  timestamp: '2024-05-03T20:01:57.731Z'
+}
+{
+  message: 'connect ETIMEDOUT',
+  level: 'error',
+  timestamp: '2024-05-03T20:01:57.734Z'
+}
+{
+  message: 'connect ETIMEDOUT',
+  level: 'error',
+  timestamp: '2024-05-03T20:01:57.744Z'
+}
