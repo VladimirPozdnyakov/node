@@ -1893,3 +1893,139 @@
   level: 'error',
   timestamp: '2024-05-03T15:57:47.588Z'
 }
+{
+  message: 'Error',
+  level: 'error',
+  timestamp: '2024-05-03T17:29:32.909Z'
+}
+{
+  message: 'read ECONNRESET',
+  level: 'error',
+  timestamp: '2024-05-03T17:29:32.911Z'
+}
+{
+  message: 'Error',
+  level: 'error',
+  timestamp: '2024-05-03T17:29:43.604Z'
+}
+{
+  message: "Can't add new command when connection is in closed state",
+  level: 'error',
+  timestamp: '2024-05-03T17:29:43.605Z'
+}
+{
+  message: 'Не заполнены поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-03T17:34:49.539Z'
+}
+{
+  message: 'Не заполнены поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-03T18:01:06.572Z'
+}
+{
+  message: 'Не заполнены поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-03T18:02:48.852Z'
+}
+{
+  message: 'Обложка должна быть картинкой!',
+  level: 'error',
+  timestamp: '2024-05-03T18:17:21.407Z'
+}
+{
+  level: 'error',
+  message: 'Ошибка выкладывания бита',
+  timestamp: '2024-05-03T18:19:11.748Z'
+}
+{
+  level: 'error',
+  message: 'Ошибка выкладывания бита',
+  timestamp: '2024-05-03T18:20:53.115Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:27\n' +
+    '    25|               >\r\n' +
+    '    26|                 <img\r\n' +
+    ' >> 27|                   src="<%= images + entry.cover_path %>"\r\n' +
+    '    28|                   alt="Track cover"\r\n' +
+    '    29|                   style="\r\n' +
+    '    30|                     width: 100px;\r\n' +
+    '\n' +
+    'images is not defined',
+  level: 'error',
+  timestamp: '2024-05-03T18:31:14.748Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:27\n' +
+    '    25|               >\r\n' +
+    '    26|                 <img\r\n' +
+    ` >> 27|                   src="<%= images + '../public/uploads/tracks/Fox(ElectroNic).jpg' %>"\r\n` +
+    '    28|                   alt="Track cover"\r\n' +
+    '    29|                   style="\r\n' +
+    '    30|                     width: 100px;\r\n' +
+    '\n' +
+    'images is not defined',
+  level: 'error',
+  timestamp: '2024-05-03T18:34:07.512Z'
+}
+{
+  level: 'error',
+  message: 'Ошибка выкладывания бита',
+  timestamp: '2024-05-03T18:39:12.478Z'
+}
+{
+  message: "Table 'sql11688819.tracks' doesn't exist",
+  level: 'error',
+  timestamp: '2024-05-03T18:43:44.424Z'
+}
+{
+  message: "Table 'sql11688819.tracks' doesn't exist",
+  level: 'error',
+  timestamp: '2024-05-03T18:43:44.426Z'
+}
+{
+  message: "Table 'sql11688819.tracks' doesn't exist",
+  level: 'error',
+  timestamp: '2024-05-03T18:43:46.434Z'
+}
+{
+  message: "Table 'sql11688819.tracks' doesn't exist",
+  level: 'error',
+  timestamp: '2024-05-03T18:43:46.436Z'
+}
+{
+  message: "Table 'sql11688819.tracks' doesn't exist",
+  level: 'error',
+  timestamp: '2024-05-03T18:43:50.948Z'
+}
+{
+  message: "Table 'sql11688819.tracks' doesn't exist",
+  level: 'error',
+  timestamp: '2024-05-03T18:43:50.949Z'
+}
+{
+  message: "ENOENT: no such file or directory, open 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\public\\uploads\\tracks\\pozdnyakov044@gmail.com\\Fox(ElectroNic).jpg'",
+  level: 'error',
+  timestamp: '2024-05-03T18:46:48.068Z'
+}
+{
+  message: "ENOENT: no such file or directory, open 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\public\\uploads\\tracks\\VladimirPozdnyakov\\Fox(ElectroNic).jpg'",
+  level: 'error',
+  timestamp: '2024-05-03T18:49:56.899Z'
+}
+{
+  message: 'Не заполнены поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-03T19:18:17.120Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'user')",
+  level: 'error',
+  timestamp: '2024-05-03T19:22:20.080Z'
+}
+{
+  message: 'Не заполнены поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-03T19:22:35.943Z'
+}

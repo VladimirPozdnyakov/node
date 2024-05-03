@@ -23,10 +23,11 @@ function form(req, res) {
 
 function submit(req, res, next) {
   const username = req.user ? req.user.name : null;
-  const { title, content } = req.body.entry;
+  const {} = req.body.entry;
+  console.log(req.body.entry);
 
   try {
-    Entry.create({ username, title, content });
+    Entry.create({ username });
     res.redirect("/");
   } catch (err) {
     logger.error(`Ошибка: ${err.message}`);

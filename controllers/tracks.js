@@ -1,5 +1,6 @@
 import connection from "../models/db.js";
 import logger from "../logger/index.js";
+import multer from "multer";
 
 const form = (req, res) => {
   res.render("./partials/tracks/newModal", {
@@ -9,7 +10,7 @@ const form = (req, res) => {
 };
 
 const sql =
-  "CREATE TABLE IF NOT EXISTS tracks( id INT PRIMARY KEY AUTO_INCREMENT, title VARCHAR(255) NOT NULL, genre VARCHAR(50) NOT NULL, bpm DECIMAL(5, 2) NOT NULL, tone DECIMAL(5, 2) NOT NULL, author VARCHAR(255) DEFAULT 'guest')";
+  "CREATE TABLE IF NOT EXISTS tracks( id INT PRIMARY KEY AUTO_INCREMENT, cover_name VARCHAR(255) NOT NULL, audiofile_name VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, genre VARCHAR(50) NOT NULL, bpm DECIMAL(5, 0) NOT NULL, tone DECIMAL(5, 0) NOT NULL, author VARCHAR(255) DEFAULT 'guest')";
 
 connection.query(sql, console.log);
 
@@ -18,23 +19,32 @@ const addTrack = (req, res) => {
   const author = req.session.email
     ? req.session.email
     : req.session.passport.user.email;
+  const cover = req.files[0];
+  const audiofile = req.files[1];
 
-  if (!title || !genre || !bpm || !tone) {
+  if (!cover || !audiofile || !title || !genre || !bpm || !tone) {
     logger.error("Не заполнены поля для выкладывания бита");
     return res.redirect("/");
   }
 
-  const query =
-    "INSERT INTO tracks (title, genre, bpm, tone, author) VALUES (?, ?, ?, ?, ?)";
-  connection.query(query, [title, genre, bpm, tone, author], (error) => {
-    if (error) {
-      logger.error("Ошибка выкладывания бита", error.message);
-      return res.redirect("/");
-    }
+  const cover_name = cover.originalname;
+  const audiofile_name = audiofile.originalname;
 
-    res.redirect("/");
-    logger.info("Бит выложен by " + author);
-  });
+  const query =
+    "INSERT INTO tracks (cover_name, audiofile_name, title, genre, bpm, tone, author) VALUES (?, ?, ?, ?, ?, ?, ?)";
+  connection.query(
+    query,
+    [cover_name, audiofile_name, title, genre, bpm, tone, author],
+    (error) => {
+      if (error) {
+        logger.error("Ошибка выкладывания бита", error.message);
+        return res.redirect("/");
+      }
+
+      res.redirect("/");
+      logger.info("Бит выложен by " + author);
+    }
+  );
 };
 
 const getTracks = (callback) => {

@@ -19,39 +19,40 @@
           <% entries.tracks.forEach((entry)=>{ %>
           <tr>
             <td>
-              <div
-                class="card"
-                style="border-radius: 10px; background-color: #fff"
-              >
+              <div class="card" style="width: 150px; height: 150px">
                 <img
-                  src="<%= entry.cover %>"
+                  src="./uploads/tracks/<%= entry.cover_name %>"
                   alt="Track cover"
-                  style="
-                    width: 100%;
-                    height: 100px;
-                    object-fit: cover;
-                    border-radius: 10px 10px 0 0;
-                  "
+                  style="width: 100%; height: 100%; object-fit: cover"
                 />
               </div>
             </td>
             <td>
-              <h4 style="font-weight: 600"><%= entry.title %></h4>
-              <h5>От: <%= entry.author ? entry.author : 'Гость' %></h5>
+              <h4 style="font-weight: 600">
+                <%= entry.title %> <% if (email === entry.author || role ===
+                'admin') { %>
+                <a href="tracks/edit/<%= entry.id %>"
+                  ><i
+                    class="fa-sharp fa-solid fa-pen"
+                    style="color: #000000"
+                  ></i
+                ></a>
+                <a href="tracks/delete/<%= entry.id %>"
+                  ><i class="fa-solid fa-trash" style="color: #000000"></i
+                ></a>
+                <% } %>
+              </h4>
+              <h5><%= entry.author ? entry.author : 'Гость' %></h5>
               <p class="card-text">
                 Теги (Жанр, BPM, тональность): <%= entry.genre %>, <%= entry.bpm
                 %> BPM, <%= entry.tone %>
               </p>
+              <audio
+                controls="controls"
+                src="./uploads/tracks/<%= entry.audiofile_name %>"
+              ></audio>
             </td>
             <td>
-              <% if (email === entry.author || role === 'admin') { %>
-              <a href="tracks/edit/<%= entry.id %>"
-                ><i class="fa-sharp fa-solid fa-pen" style="color: #000000"></i
-              ></a>
-              <a href="tracks/delete/<%= entry.id %>"
-                ><i class="fa-solid fa-trash" style="color: #000000"></i
-              ></a>
-              <% } %>
               <!-- Button to buy the track -->
               <a href="#" class="btn btn-primary">Купить</a>
             </td>

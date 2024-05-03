@@ -13,7 +13,17 @@ import multer from "multer";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const router = express.Router();
-const upload = multer({ dest: "./uploads/" });
+
+let storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, `./public/uploads/tracks/`);
+  },
+  filename: function (req, file, cb) {
+    cb(null, file.originalname);
+  },
+});
+
+const upload = multer({ storage: storage });
 
 router.use(favicon(__dirname + "/favicon.ico"));
 
@@ -22,7 +32,6 @@ router.get("/", entries.list);
 router.get("/entries", entries.form, (req, res) => {
   tracks.gettracks((err, tracks) => {
     if (err) {
-      console.log("! ! !");
       logger.error("Ошибка захода на страницу");
       console.log(err.message);
     } else {
@@ -47,7 +56,7 @@ router.get("/new", tracks.form);
 router.post("/new", upload.any(), tracks.addTrack);
 
 router.get("/tracks/edit/:id", sqlLogic.edit);
-router.post("/tracks/edit/:id", sqlLogic.update);
+router.post("/tracks/edit/:id", upload.any(), sqlLogic.update);
 router.get("/tracks/delete/:id", sqlLogic.deleted);
 
 router.get(
