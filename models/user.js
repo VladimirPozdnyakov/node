@@ -3,7 +3,7 @@ import logger from "../logger/index.js";
 
 // Создание таблицы, если её нет
 const sql =
-  "CREATE TABLE IF NOT EXISTS user (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL, password VARCHAR(50), age INT NOT NULL, role VARCHAR(50) DEFAULT 'user')";
+  "CREATE TABLE IF NOT EXISTS users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL, password VARCHAR(50), age INT NOT NULL, role VARCHAR(50) DEFAULT 'user')";
 
 connection.query(sql, (err) => {
   if (err) {
@@ -41,7 +41,7 @@ class User {
   }
 
   static findByEmail(email, cb) {
-    const sql = "SELECT * FROM user WHERE email = ?";
+    const sql = "SELECT * FROM users WHERE email = ?";
     connection.query(sql, [email], (err, rows) => {
       if (err) {
         console.log("! ! !");

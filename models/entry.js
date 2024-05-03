@@ -2,7 +2,7 @@ import connection from "./db.js";
 
 // Создание таблицы, если её нет
 const sql =
-  "CREATE TABLE IF NOT EXISTS user (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL, password VARCHAR(50), age INT NOT NULL, role VARCHAR(50) DEFAULT 'user')";
+  "CREATE TABLE IF NOT EXISTS users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL, password VARCHAR(50), age INT NOT NULL, role VARCHAR(50) DEFAULT 'user')";
 
 connection.query(sql, (err) => {
   if (err) {
@@ -29,7 +29,7 @@ class Entry {
 
   static selectAll(cb) {
     const sqltracks = "SELECT * FROM tracks";
-    const sqlUsers = "SELECT * FROM user";
+    const sqlUsers = "SELECT * FROM users";
 
     connection.query(sqltracks, (err, tracks) => {
       if (err) {
