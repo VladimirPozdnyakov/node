@@ -27,8 +27,6 @@ const submit = (req, res, next) => {
       req.session.password = data.password;
       req.session.role = data.role;
       console.log("...");
-      console.log("Всё верно!");
-      console.log("...");
       logger.info("Заход произведён" + " " + data.name + " " + data.email);
 
       //jwt

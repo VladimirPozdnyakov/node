@@ -1,5 +1,4 @@
 import User from "../models/user.js";
-import logger from "../logger/index.js";
 export default (req, res, next) => {
   if (req.session.email) {
     User.findByEmail(req.session.email, (err, userData) => {

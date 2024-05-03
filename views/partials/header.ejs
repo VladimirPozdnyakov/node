@@ -17,7 +17,7 @@
       <%# Меню пользователей, выполнивших вход%>
       <span class="name"><%= user.email %> </span>
       <% if (locals.role === 'admin') { %>
-      <a href="/new">
+      <a href="/admin">
         <button type="button" class="btn btn-light">
           Панель администратора
         </button>

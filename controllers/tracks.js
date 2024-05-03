@@ -13,7 +13,7 @@ const sql =
 
 connection.query(sql, console.log);
 
-const addPost = (req, res) => {
+const addTrack = (req, res) => {
   const { title, genre, bpm, tone } = req.body;
   const author = req.session.email
     ? req.session.email
@@ -37,7 +37,7 @@ const addPost = (req, res) => {
   });
 };
 
-const gettracks = (callback) => {
+const getTracks = (callback) => {
   const query = "SELECT * FROM tracks ORDER BY id DESC";
   connection.query(query, (error, results) => {
     if (error) {
@@ -50,4 +50,4 @@ const gettracks = (callback) => {
   });
 };
 
-export default { form, addPost, gettracks };
+export default { form, addTrack, getTracks };

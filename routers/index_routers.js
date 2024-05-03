@@ -9,9 +9,11 @@ import tracks from "../controllers/tracks.js";
 import sqlLogic from "../middleware/sqlLogic.js";
 import logger from "../logger/index.js";
 import passport from "passport";
+import multer from "multer";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const router = express.Router();
+const upload = multer({ dest: "./uploads/" });
 
 router.use(favicon(__dirname + "/favicon.ico"));
 
@@ -20,11 +22,6 @@ router.get("/", entries.list);
 router.get("/entries", entries.form, (req, res) => {
   tracks.gettracks((err, tracks) => {
     if (err) {
-      console.log("! ! !");
-      console.log("! ! !");
-      console.log("! ! !");
-      console.log("ошибка ");
-      console.log("! ! !");
       console.log("! ! !");
       logger.error("Ошибка захода на страницу");
       console.log(err.message);
@@ -47,7 +44,7 @@ router.post("/login", login.submit);
 router.get("/logout", login.logout);
 
 router.get("/new", tracks.form);
-router.post("/new", tracks.addPost);
+router.post("/new", upload.any(), tracks.addTrack);
 
 router.get("/tracks/edit/:id", sqlLogic.edit);
 router.post("/tracks/edit/:id", sqlLogic.update);

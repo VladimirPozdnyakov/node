@@ -1818,3 +1818,78 @@
   level: 'error',
   timestamp: '2024-05-02T21:23:28.557Z'
 }
+{
+  message: 'Не заполнены поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-03T14:54:15.043Z'
+}
+{
+  message: 'Не заполнены поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-03T14:55:02.523Z'
+}
+{
+  message: 'Не заполнены поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-03T14:56:19.364Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'user')",
+  level: 'error',
+  timestamp: '2024-05-03T14:57:51.518Z'
+}
+{
+  message: 'Не заполнены поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-03T14:59:17.637Z'
+}
+{
+  message: 'Не заполнены поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-03T15:16:25.861Z'
+}
+{
+  message: 'Failed to lookup view "loginModal" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
+  level: 'error',
+  timestamp: '2024-05-03T15:18:28.022Z'
+}
+{
+  message: 'Failed to lookup view "registerModal" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
+  level: 'error',
+  timestamp: '2024-05-03T15:18:34.150Z'
+}
+{
+  message: 'Не заполнены поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-03T15:29:20.671Z'
+}
+{
+  message: 'Не заполнены поля для создания поста',
+  level: 'error',
+  timestamp: '2024-05-03T15:32:52.116Z'
+}
+{
+  message: 'Не заполнены поля для создания поста',
+  level: 'error',
+  timestamp: '2024-05-03T15:35:29.861Z'
+}
+{
+  message: 'Не заполнены поля для создания поста',
+  level: 'error',
+  timestamp: '2024-05-03T15:40:31.881Z'
+}
+{
+  message: 'Не заполнены поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-03T15:45:29.190Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'user')",
+  level: 'error',
+  timestamp: '2024-05-03T15:57:05.871Z'
+}
+{
+  message: 'Не заполнены поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-03T15:57:47.588Z'
+}
