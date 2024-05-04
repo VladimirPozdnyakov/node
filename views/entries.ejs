@@ -36,13 +36,24 @@
               <h4 style="font-weight: 600">
                 <%= entry.title %> <% if (email === entry.author || role ===
                 'admin') { %>
-                <a href="tracks/edit/<%= entry.id %>"
+                <a href="/edit/tracks/<%= entry.id %>"
                   ><i
                     class="fa-sharp fa-solid fa-pen"
                     style="color: #000000"
                   ></i
                 ></a>
-                <a href="tracks/delete/<%= entry.id %>"
+                <button
+                  type="button"
+                  class="btn btn-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#edit"
+                >
+                  <i
+                    class="fa-sharp fa-solid fa-pen"
+                    style="color: #000000"
+                  ></i>
+                </button>
+                <a href="/edit/tracks/delete/<%= entry.id %>"
                   ><i class="fa-solid fa-trash" style="color: #000000"></i
                 ></a>
                 <% } %>
@@ -65,7 +76,7 @@
           <% }) %>
         </tbody>
       </table>
-      <% if (locals.user) { %> <%- include('./partials/tracks/newModal'); -%><%
+      <% if (locals.user) { %> <%- include('./partials/tracks/newModal'); -%> <%
       } else { %> <%- include('./partials/loginModal'); -%> <%-
       include('./partials/registerModal'); -%> <% } %>
     </div>

@@ -1,0 +1,93 @@
+<div
+  class="modal fade"
+  id="edit"
+  tabindex="-1"
+  aria-labelledby="editModal"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fs-5" id="editModal">
+          Изменить информацию о бите
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form
+          action="<%= post.id %>"
+          class="container"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <div class="row my-3">
+            <div class="col-sm-6 col-12">
+              <div class="form-floating mb-3">
+                <input
+                  name="title"
+                  type="text"
+                  class="form-control"
+                  id="title"
+                  placeholder="Title"
+                />
+                <label for="title">Введите название бита</label>
+              </div>
+            </div>
+          </div>
+          <div class="row my-3">
+            <div class="col-sm-6 col-12">
+              <div class="form-floating mb-3">
+                <input
+                  name="genre"
+                  type="text"
+                  class="form-control"
+                  id="genre"
+                  placeholder="Genre"
+                />
+                <label for="genre">Введите жанр бита</label>
+              </div>
+            </div>
+          </div>
+          <div class="row my-3">
+            <div class="col-sm-6 col-12">
+              <div class="form-floating mb-3">
+                <input
+                  name="bpm"
+                  type="number"
+                  class="form-control"
+                  id="bpm"
+                  placeholder="Bpm"
+                />
+                <label for="bpm">Введите BPM бита</label>
+              </div>
+            </div>
+          </div>
+          <div class="row my-3">
+            <div class="col-sm-7 col-12">
+              <div class="form-floating mb-3">
+                <input
+                  name="tone"
+                  type="text"
+                  class="form-control"
+                  id="tone"
+                  placeholder="Tone"
+                />
+                <label for="tone">Введите тональность бита</label>
+              </div>
+            </div>
+          </div>
+          <div class="row my-3">
+            <div class="col-sm-6 col-12">
+              <button type="submit" class="btn btn-success">Обновить</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

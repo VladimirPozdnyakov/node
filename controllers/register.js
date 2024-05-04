@@ -40,7 +40,7 @@ const submit = [
       if (!user) {
         User.create(req.body, (err) => {
           if (err) return next(err);
-          res.redirect("/login");
+          res.redirect("/");
           console.log("...");
           console.log("произведена регистрация");
           console.log("...");

@@ -2044,3 +2044,342 @@
   level: 'error',
   timestamp: '2024-05-03T20:01:57.744Z'
 }
+{
+  message: 'Failed to lookup view "/edit/tracks" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
+  level: 'error',
+  timestamp: '2024-05-04T18:47:43.241Z'
+}
+{
+  message: 'Failed to lookup view "./partials/tracks/editModal" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
+  level: 'error',
+  timestamp: '2024-05-04T18:48:13.856Z'
+}
+{
+  message: 'Failed to lookup view "/tracks/edit" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
+  level: 'error',
+  timestamp: '2024-05-04T18:48:29.037Z'
+}
+{
+  message: 'Не заполнены поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-04T18:50:01.092Z'
+}
+{
+  message: 'Не заполнены все поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-04T19:02:52.841Z'
+}
+{
+  message: 'Не заполнены все поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-04T19:06:04.236Z'
+}
+{
+  message: 'Не заполнены все поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-04T19:11:08.561Z'
+}
+{
+  message: 'Не заполнены все поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-04T19:17:31.764Z'
+}
+{
+  message: 'Не заполнены все поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-04T19:19:20.120Z'
+}
+{
+  message: 'Не заполнены все поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-04T19:19:48.011Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:80\n' +
+    '    78|       </table>\r\n' +
+    "    79|       <% if (locals.user) { %> <%- include('./partials/tracks/newModal'); -%>\r\n" +
+    " >> 80|       <%- include('./partials/tracks/editModal'); -%> <% } else { %> <%-\r\n" +
+    "    81|       include('./partials/loginModal'); -%> <%-\r\n" +
+    "    82|       include('./partials/registerModal'); -%> <% } %>\r\n" +
+    '    83|     </div>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\tracks\\editModal.ejs:23\n' +
+    '    21|       <div class="modal-body">\r\n' +
+    '    22|         <form\r\n' +
+    ' >> 23|           action="/posts/edit/<%= post.id %>"\r\n' +
+    '    24|           class="container"\r\n' +
+    '    25|           method="post"\r\n' +
+    '    26|           enctype="multipart/form-data"\r\n' +
+    '\n' +
+    'post is not defined',
+  level: 'error',
+  timestamp: '2024-05-04T19:22:53.093Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:80\n' +
+    '    78|       </table>\r\n' +
+    "    79|       <% if (locals.user) { %> <%- include('./partials/tracks/newModal'); -%>\r\n" +
+    " >> 80|       <%- include('./partials/tracks/editModal'); -%> <% } else { %> <%-\r\n" +
+    "    81|       include('./partials/loginModal'); -%> <%-\r\n" +
+    "    82|       include('./partials/registerModal'); -%> <% } %>\r\n" +
+    '    83|     </div>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\tracks\\editModal.ejs:23\n' +
+    '    21|       <div class="modal-body">\r\n' +
+    '    22|         <form\r\n' +
+    ' >> 23|           action="/posts/edit/<%= post.id %>"\r\n' +
+    '    24|           class="container"\r\n' +
+    '    25|           method="post"\r\n' +
+    '    26|           enctype="multipart/form-data"\r\n' +
+    '\n' +
+    'post is not defined',
+  level: 'error',
+  timestamp: '2024-05-04T19:31:31.662Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:79\n' +
+    '    77|         </tbody>\r\n' +
+    '    78|       </table>\r\n' +
+    " >> 79|       <% if (locals.user) { %> <%- include('./partials/tracks/newModal'); -%>\r\n" +
+    "    80|       <%- include('./partials/tracks/editModal'); -%> <% } else { %> <%-\r\n" +
+    "    81|       include('./partials/loginModal'); -%> <%-\r\n" +
+    "    82|       include('./partials/registerModal'); -%> <% } %>\r\n" +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\tracks\\newModal.ejs:10\n' +
+    '    8|   <body>\r\n' +
+    '    9|     <h1 class="text-center">Редактировать пост</h1>\r\n' +
+    ' >> 10|     <form action="/tracks/edit/<%= post.id %>" class="container" method="post">\r\n' +
+    '    11|       <div class="row my-3">\r\n' +
+    '    12|         <div class="col-sm-4 col-12">\r\n' +
+    '    13|           <div class="form-floating mb-3">\r\n' +
+    '\n' +
+    'post is not defined',
+  level: 'error',
+  timestamp: '2024-05-04T19:32:17.590Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:79\n' +
+    '    77|         </tbody>\r\n' +
+    '    78|       </table>\r\n' +
+    " >> 79|       <% if (locals.user) { %> <%- include('./partials/tracks/newModal'); -%> <%\r\n" +
+    "    80|       } else { %> <%- include('./partials/loginModal'); -%> <%-\r\n" +
+    "    81|       include('./partials/registerModal'); -%> <% } %>\r\n" +
+    '    82|     </div>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\tracks\\newModal.ejs:10\n' +
+    '    8|   <body>\r\n' +
+    '    9|     <h1 class="text-center">Редактировать пост</h1>\r\n' +
+    ' >> 10|     <form action="/tracks/edit/<%= post.id %>" class="container" method="post">\r\n' +
+    '    11|       <div class="row my-3">\r\n' +
+    '    12|         <div class="col-sm-4 col-12">\r\n' +
+    '    13|           <div class="form-floating mb-3">\r\n' +
+    '\n' +
+    'post is not defined',
+  level: 'error',
+  timestamp: '2024-05-04T19:32:47.198Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:79\n' +
+    '    77|         </tbody>\r\n' +
+    '    78|       </table>\r\n' +
+    " >> 79|       <% if (locals.user) { %> <%- include('./partials/tracks/newModal'); -%> <%\r\n" +
+    "    80|       } else { %> <%- include('./partials/loginModal'); -%> <%-\r\n" +
+    "    81|       include('./partials/registerModal'); -%> <% } %>\r\n" +
+    '    82|     </div>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\tracks\\newModal.ejs:10\n' +
+    '    8|   <body>\r\n' +
+    '    9|     <h1 class="text-center">Редактировать пост</h1>\r\n' +
+    ' >> 10|     <form action="/tracks/edit/<%= post.id %>" class="container" method="post">\r\n' +
+    '    11|       <div class="row my-3">\r\n' +
+    '    12|         <div class="col-sm-4 col-12">\r\n' +
+    '    13|           <div class="form-floating mb-3">\r\n' +
+    '\n' +
+    'post is not defined',
+  level: 'error',
+  timestamp: '2024-05-04T19:33:02.514Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:79\n' +
+    '    77|         </tbody>\r\n' +
+    '    78|       </table>\r\n' +
+    " >> 79|       <% if (locals.user) { %> <%- include('./partials/tracks/newModal'); -%>\r\n" +
+    "    80|       <%- include('./partials/tracks/editModal'); -%> <% } else { %> <%-\r\n" +
+    "    81|       include('./partials/loginModal'); -%> <%-\r\n" +
+    "    82|       include('./partials/registerModal'); -%> <% } %>\r\n" +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\tracks\\newModal.ejs:10\n' +
+    '    8|   <body>\r\n' +
+    '    9|     <h1 class="text-center">Редактировать пост</h1>\r\n' +
+    ' >> 10|     <form action="/tracks/edit/<%= post.id %>" class="container" method="post">\r\n' +
+    '    11|       <div class="row my-3">\r\n' +
+    '    12|         <div class="col-sm-4 col-12">\r\n' +
+    '    13|           <div class="form-floating mb-3">\r\n' +
+    '\n' +
+    'post is not defined',
+  level: 'error',
+  timestamp: '2024-05-04T19:34:17.085Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:79\n' +
+    '    77|         </tbody>\r\n' +
+    '    78|       </table>\r\n' +
+    " >> 79|       <% if (locals.user) { %> <%- include('./partials/tracks/newModal'); -%>\r\n" +
+    "    80|       <%- include('./partials/tracks/editModal'); -%> <% } else { %> <%-\r\n" +
+    "    81|       include('./partials/loginModal'); -%> <%-\r\n" +
+    "    82|       include('./partials/registerModal'); -%> <% } %>\r\n" +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\tracks\\newModal.ejs:10\n' +
+    '    8|   <body>\r\n' +
+    '    9|     <h1 class="text-center">Редактировать пост</h1>\r\n' +
+    ' >> 10|     <form action="/tracks/edit/<%= post.id %>" class="container" method="post">\r\n' +
+    '    11|       <div class="row my-3">\r\n' +
+    '    12|         <div class="col-sm-4 col-12">\r\n' +
+    '    13|           <div class="form-floating mb-3">\r\n' +
+    '\n' +
+    'post is not defined',
+  level: 'error',
+  timestamp: '2024-05-04T19:34:40.052Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:79\n' +
+    '    77|         </tbody>\r\n' +
+    '    78|       </table>\r\n' +
+    " >> 79|       <% if (locals.user) { %> <%- include('./partials/tracks/newModal'); -%> <%\r\n" +
+    "    80|       } else { %> <%- include('./partials/loginModal'); -%> <%-\r\n" +
+    "    81|       include('./partials/registerModal'); -%> <% } %>\r\n" +
+    '    82|     </div>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\tracks\\newModal.ejs:10\n' +
+    '    8|   <body>\r\n' +
+    '    9|     <h1 class="text-center">Редактировать пост</h1>\r\n' +
+    ' >> 10|     <form action="/tracks/edit/<%= post.id %>" class="container" method="post">\r\n' +
+    '    11|       <div class="row my-3">\r\n' +
+    '    12|         <div class="col-sm-4 col-12">\r\n' +
+    '    13|           <div class="form-floating mb-3">\r\n' +
+    '\n' +
+    'post is not defined',
+  level: 'error',
+  timestamp: '2024-05-04T19:34:52.117Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:79\n' +
+    '    77|         </tbody>\r\n' +
+    '    78|       </table>\r\n' +
+    " >> 79|       <% if (locals.user) { %> <%- include('./partials/tracks/newModal'); -%> <%\r\n" +
+    "    80|       } else { %> <%- include('./partials/loginModal'); -%> <%-\r\n" +
+    "    81|       include('./partials/registerModal'); -%> <% } %>\r\n" +
+    '    82|     </div>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\tracks\\newModal.ejs:10\n' +
+    '    8|   <body>\r\n' +
+    '    9|     <h1 class="text-center">Редактировать пост</h1>\r\n' +
+    ' >> 10|     <form action="/tracks/edit/<%= post.id %>" class="container" method="post">\r\n' +
+    '    11|       <div class="row my-3">\r\n' +
+    '    12|         <div class="col-sm-4 col-12">\r\n' +
+    '    13|           <div class="form-floating mb-3">\r\n' +
+    '\n' +
+    'post is not defined',
+  level: 'error',
+  timestamp: '2024-05-04T19:35:31.713Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:80\n' +
+    '    78|       </table>\r\n' +
+    "    79|       <% if (locals.user) { %> <%- include('./partials/tracks/newModal'); -%>\r\n" +
+    " >> 80|       <%- include('./partials/tracks/editModal'); -%> <% } else { %> <%-\r\n" +
+    "    81|       include('./partials/loginModal'); -%> <%-\r\n" +
+    "    82|       include('./partials/registerModal'); -%> <% } %>\r\n" +
+    '    83|     </div>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\tracks\\editModal.ejs:23\n' +
+    '    21|       <div class="modal-body">\r\n' +
+    '    22|         <form\r\n' +
+    ' >> 23|           action="/posts/edit/<%= post.id %>"\r\n' +
+    '    24|           class="container"\r\n' +
+    '    25|           method="post"\r\n' +
+    '    26|           enctype="multipart/form-data"\r\n' +
+    '\n' +
+    'post is not defined',
+  level: 'error',
+  timestamp: '2024-05-04T19:36:34.485Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\tracks\\editModal.ejs:23\n' +
+    '    21|       <div class="modal-body">\r\n' +
+    '    22|         <form\r\n' +
+    ' >> 23|           action="/posts/edit/<%= post.id %>"\r\n' +
+    '    24|           class="container"\r\n' +
+    '    25|           method="post"\r\n' +
+    '    26|           enctype="multipart/form-data"\r\n' +
+    '\n' +
+    'post is not defined',
+  level: 'error',
+  timestamp: '2024-05-04T19:37:35.482Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:80\n' +
+    '    78|       </table>\r\n' +
+    "    79|       <% if (locals.user) { %> <%- include('./partials/tracks/newModal'); -%>\r\n" +
+    " >> 80|       <%- include('./partials/tracks/editModal'); -%> <% } else { %> <%-\r\n" +
+    "    81|       include('./partials/loginModal'); -%> <%-\r\n" +
+    "    82|       include('./partials/registerModal'); -%> <% } %>\r\n" +
+    '    83|     </div>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\tracks\\editModal.ejs:23\n' +
+    '    21|       <div class="modal-body">\r\n' +
+    '    22|         <form\r\n' +
+    ' >> 23|           action="/posts/edit/<%= post.id %>"\r\n' +
+    '    24|           class="container"\r\n' +
+    '    25|           method="post"\r\n' +
+    '    26|           enctype="multipart/form-data"\r\n' +
+    '\n' +
+    'post is not defined',
+  level: 'error',
+  timestamp: '2024-05-04T19:38:27.373Z'
+}
+{
+  message: 'Не заполнены все поля для обновления бита',
+  level: 'error',
+  timestamp: '2024-05-04T19:41:00.001Z'
+}
+{
+  message: 'Ошибка в работе sql-операции update',
+  level: 'error',
+  timestamp: '2024-05-04T19:44:42.431Z'
+}
+{
+  message: 'Не заполнены все поля для обновления бита',
+  level: 'error',
+  timestamp: '2024-05-04T19:45:06.647Z'
+}
+{
+  message: 'Не заполнены все поля для обновления бита',
+  level: 'error',
+  timestamp: '2024-05-04T19:45:23.257Z'
+}
+{
+  message: 'Ошибка в работе sql-операции update',
+  level: 'error',
+  timestamp: '2024-05-04T19:45:55.756Z'
+}
+{
+  message: 'Ошибка в работе sql-операции update',
+  level: 'error',
+  timestamp: '2024-05-04T19:46:10.167Z'
+}
+{
+  message: 'Ошибка в работе sql-операции update',
+  level: 'error',
+  timestamp: '2024-05-04T19:47:27.887Z'
+}
+{
+  message: 'Ошибка создания пользователя',
+  level: 'error',
+  timestamp: '2024-05-04T20:09:25.459Z'
+}
+{
+  message: "Table 'sql11688819.user' doesn't exist",
+  level: 'error',
+  timestamp: '2024-05-04T20:09:25.461Z'
+}

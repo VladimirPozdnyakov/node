@@ -23,7 +23,7 @@ const addTrack = (req, res) => {
   const audiofile = req.files[1];
 
   if (!cover || !audiofile || !title || !genre || !bpm || !tone) {
-    logger.error("Не заполнены поля для выкладывания бита");
+    logger.error("Не заполнены все поля для выкладывания бита");
     return res.redirect("/");
   }
 
@@ -60,4 +60,66 @@ const getTracks = (callback) => {
   });
 };
 
-export default { form, addTrack, getTracks };
+const editForm = (req, res) => {
+  connection.query(
+    "SELECT * FROM tracks WHERE id = ? LIMIT 1",
+    [req.params.id],
+    (err, results) => {
+      if (err) {
+        logger.error("Ошибка в работе sql-операции select", err.message);
+        console.log("Ошибка в работе sql-операции select", err.message);
+        return res.redirect("/");
+      }
+      res.render("./partials/tracks/editModal", { post: results[0] });
+      logger.info("Успешное выполнение sql-операции select");
+    }
+  );
+};
+
+const updateTrack = (req, res) => {
+  const { title, genre, bpm, tone } = req.body;
+
+  if (!title || !genre || !bpm || !tone) {
+    logger.error("Не заполнены все поля для обновления бита");
+    return res.redirect("/");
+  }
+
+  connection.query(
+    "UPDATE tracks SET ? WHERE id = ?",
+    [{ title, genre, bpm, tone }, req.params.id],
+    (err, result) => {
+      if (err) {
+        logger.error("Ошибка в работе sql-операции update");
+        console.log(err.message);
+      } else {
+        logger.info("Успешное выполнение sql-операции update");
+        return res.redirect("/");
+      }
+    }
+  );
+};
+
+const deleteTrack = (req, res) => {
+  connection.query(
+    "DELETE FROM tracks WHERE id = ?",
+    [req.params.id],
+    (err, result) => {
+      if (err) {
+        logger.error("Ошибка в работе sql-операции delete");
+        console.log(err.message);
+      } else {
+        res.redirect("/");
+        logger.info("Успешное выполнение sql-операции delete");
+      }
+    }
+  );
+};
+
+export default {
+  form,
+  addTrack,
+  getTracks,
+  editForm,
+  updateTrack,
+  deleteTrack,
+};

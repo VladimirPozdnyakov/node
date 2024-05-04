@@ -2,7 +2,7 @@ import connection from "./db.js";
 
 // Создание таблицы, если её нет
 const sql =
-  "CREATE TABLE IF NOT EXISTS users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL, password VARCHAR(50), age INT NOT NULL, role VARCHAR(50) DEFAULT 'user')";
+  "CREATE TABLE IF NOT EXISTS users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL, password VARCHAR(50), role VARCHAR(50) DEFAULT 'user')";
 
 connection.query(sql, (err) => {
   if (err) {
@@ -15,16 +15,12 @@ class Entry {
 
   static create(data) {
     const sql =
-      "INSERT INTO user (name, email, password, age, role) VALUES (?, ?, ?, ?, 'user')";
-    connection.query(
-      sql,
-      [data.username, data.email, data.password, data.age],
-      (err) => {
-        if (err) {
-          console.log(err);
-        }
+      "INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, 'user')";
+    connection.query(sql, [data.username, data.email, data.password], (err) => {
+      if (err) {
+        console.log(err);
       }
-    );
+    });
   }
 
   static selectAll(cb) {

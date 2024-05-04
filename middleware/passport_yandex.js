@@ -8,7 +8,6 @@ function passportFunctionYandex(passport) {
     newUser.id = user.id;
     newUser.email = user.emails[0].value;
     newUser.name = user.displayName;
-    newUser.age = user.birthday ? Date.now() - user.birthday : 0;
     newUser.author = user.displayName;
     done(null, newUser);
   });
