@@ -15,11 +15,11 @@
       <%- include ('./partials/header') %>
       <h1 class="text-center">Каталог битов</h1>
       <% entries.tracks.forEach((entry)=>{ %>
-      <table class="table table-striped">
+      <table class="table" style="width: 80%">
         <tbody>
           <tr>
-            <td>
-              <div class="card" style="width: 150px; height: 150px">
+            <td style="width: 150px">
+              <div style="width: 150px; height: 150px">
                 <img
                   src="./uploads/tracks/<%= entry.cover_name %>"
                   alt="Track cover"
@@ -32,7 +32,7 @@
                 />
               </div>
             </td>
-            <td>
+            <td style="width: 60%">
               <h4 style="font-weight: 600">
                 <%= entry.title %> <% if (email === entry.author || role ===
                 'admin') { %>
@@ -69,7 +69,6 @@
               ></audio>
             </td>
             <td>
-              <!-- Button to buy the track -->
               <a href="#" class="btn btn-primary">Купить</a>
             </td>
           </tr>
