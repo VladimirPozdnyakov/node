@@ -3,7 +3,7 @@ import User from "../models/user.js";
 import jwt from "jsonwebtoken";
 
 const form = (req, res) => {
-  res.render("loginModal", { title: "Login" });
+  res.render("./partials/loginModal", { title: "Login" });
   console.log("...");
 };
 
@@ -15,11 +15,11 @@ const submit = (req, res, next) => {
       console.log("! ! !");
       console.log("! ! !");
       console.log("! ! !");
-      console.log("Имя и/или пароль неверны!");
+      console.log("Почта и/или пароль неверны!");
       console.log("! ! !");
       console.log("! ! !");
-      logger.error("Ошибка ввода пароля");
-      return form(req, res);
+      logger.error("Ошибка ввода пароля или почты");
+      return res.redirect("/");
     }
     if (data) {
       req.session.email = data.email;
@@ -62,7 +62,7 @@ const logout = (req, res) => {
       logger.error("Ошибка выхода");
       console.log(err.message);
     }
-    return res.redirect("/"); // перенаправляем на главную страницу после выхода
+    return res.redirect("/");
   });
 };
 

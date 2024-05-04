@@ -14,9 +14,9 @@
     <div class="container">
       <%- include ('./partials/header') %>
       <h1 class="text-center">Каталог битов</h1>
+      <% entries.tracks.forEach((entry)=>{ %>
       <table class="table table-striped">
         <tbody>
-          <% entries.tracks.forEach((entry)=>{ %>
           <tr>
             <td>
               <div class="card" style="width: 150px; height: 150px">
@@ -73,11 +73,11 @@
               <a href="#" class="btn btn-primary">Купить</a>
             </td>
           </tr>
-          <% }) %>
         </tbody>
       </table>
-      <% if (locals.user) { %> <%- include('./partials/tracks/newModal'); -%> <%
-      } else { %> <%- include('./partials/loginModal'); -%> <%-
+      <% }) %> <% if (locals.user) { %> <%-
+      include('./partials/tracks/newModal'); -%> <% } else { %> <%-
+      include('./partials/loginModal'); -%> <%-
       include('./partials/registerModal'); -%> <% } %>
     </div>
   </body>

@@ -2383,3 +2383,38 @@
   level: 'error',
   timestamp: '2024-05-04T20:09:25.461Z'
 }
+{
+  message: 'Ошибка ввода пароля',
+  level: 'error',
+  timestamp: '2024-05-04T20:20:58.719Z'
+}
+{
+  message: 'Failed to lookup view "loginModal" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
+  level: 'error',
+  timestamp: '2024-05-04T20:20:58.722Z'
+}
+{
+  message: 'Ошибка ввода пароля',
+  level: 'error',
+  timestamp: '2024-05-04T20:22:19.028Z'
+}
+{
+  message: 'Failed to lookup view "/partials/loginModal" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
+  level: 'error',
+  timestamp: '2024-05-04T20:22:19.037Z'
+}
+{
+  message: 'Ошибка ввода пароля',
+  level: 'error',
+  timestamp: '2024-05-04T20:22:57.267Z'
+}
+{
+  message: 'Ошибка ввода пароля',
+  level: 'error',
+  timestamp: '2024-05-04T20:23:11.860Z'
+}
+{
+  message: 'Ошибка ввода пароля или почты',
+  level: 'error',
+  timestamp: '2024-05-04T20:25:39.283Z'
+}

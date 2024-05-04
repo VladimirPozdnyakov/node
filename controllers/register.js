@@ -28,11 +28,11 @@ const submit = [
       console.log("! ! !");
       console.log("! ! !");
       logger.error("Неправильно записан email");
-      return form(req, res);
+      return res.redirect("/");
     }
 
     if (res.locals.errorMessage && res.locals.errorMessage.length > 0) {
-      return form(req, res);
+      return res.redirect("/");
     }
 
     User.findByEmail(email, (err, user) => {
@@ -67,7 +67,7 @@ const submit = [
         res.locals.errorMessage.push("Такой пользователь уже существует!");
         console.log("...");
         logger.error("Такой пользователь уже существует");
-        return form(req, res);
+        return res.redirect("/");
       }
     });
   },
