@@ -28,21 +28,6 @@ router.use(favicon(__dirname + "/favicon.ico"));
 
 router.get("/", entries.list);
 
-router.get("/entries", entries.form, (req, res) => {
-  tracks.gettracks((err, tracks) => {
-    if (err) {
-      logger.error("Ошибка захода на страницу");
-      console.log(err.message);
-    } else {
-      res.render("main", {
-        title: "Главная страница",
-        tracks: tracks,
-      });
-    }
-  });
-});
-router.post("/entries", entries.submit);
-
 router.get("/register", register.form);
 router.post("/register", register.submit);
 

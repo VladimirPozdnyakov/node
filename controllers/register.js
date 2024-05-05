@@ -16,17 +16,10 @@ const submit = [
   (req, res, next) => {
     const email = req.body.email;
     if (!validator.isEmail(email) || !/@(mail\.ru|yandex\.ru)$/.test(email)) {
-      console.log("! ! !");
-      console.log("! ! !");
-      console.log("! ! !");
-      console.log("ошибка ");
-      console.log("! ! !");
-      console.log("! ! !");
+      console.log("Принимаются электронные почты только mail.ru и yandex.ru");
       res.locals.errorMessage.push(
         "Принимаются электронные почты только mail.ru и yandex.ru"
       );
-      console.log("! ! !");
-      console.log("! ! !");
       logger.error("Неправильно записан email");
       return res.redirect("/");
     }
@@ -41,10 +34,8 @@ const submit = [
         User.create(req.body, (err) => {
           if (err) return next(err);
           res.redirect("/");
-          console.log("...");
-          console.log("произведена регистрация");
-          console.log("...");
-          logger.info("произведена регистрация");
+          console.log("Произведена регистрация");
+          logger.info("Произведена регистрация");
 
           //jwt
           const token = jwt.sign(
@@ -58,14 +49,8 @@ const submit = [
           );
         });
       } else {
-        console.log("! ! !");
-        console.log("! ! !");
-        console.log("! ! !");
-        console.log("ошибка ");
-        console.log("! ! !");
-        console.log("! ! !");
+        console.log("Такой пользователь уже существует!");
         res.locals.errorMessage.push("Такой пользователь уже существует!");
-        console.log("...");
         logger.error("Такой пользователь уже существует");
         return res.redirect("/");
       }

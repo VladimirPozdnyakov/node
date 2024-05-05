@@ -15,7 +15,7 @@
       <%- include ('./partials/header') %>
       <h1 class="text-center">Каталог битов</h1>
       <% entries.tracks.forEach((entry)=>{ %>
-      <table class="table" style="width: 80%">
+      <table class="table" style="margin: 0 auto">
         <tbody>
           <tr>
             <td style="width: 150px">
@@ -48,10 +48,7 @@
                   data-bs-toggle="modal"
                   data-bs-target="#edit"
                 >
-                  <i
-                    class="fa-sharp fa-solid fa-pen"
-                    style="color: #000000"
-                  ></i>
+                  Редактировать (не редактирует пока)
                 </button>
                 <a href="/edit/tracks/delete/<%= entry.id %>"
                   ><i class="fa-solid fa-trash" style="color: #000000"></i
@@ -75,7 +72,8 @@
         </tbody>
       </table>
       <% }) %> <% if (locals.user) { %> <%-
-      include('./partials/tracks/newModal'); -%> <% } else { %> <%-
+      include('./partials/tracks/newModal'); -%> <%-
+      include('./partials/tracks/editModal'); -%> <% } else { %> <%-
       include('./partials/loginModal'); -%> <%-
       include('./partials/registerModal'); -%> <% } %>
     </div>

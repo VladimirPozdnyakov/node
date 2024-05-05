@@ -14,10 +14,8 @@ const connection = mysql2.createConnection({
 // Подключение к БД
 connection.connect((err) => {
   if (err) throw err;
-  console.log("...");
   console.log("Соединение с БД установлено!");
-  console.log("...");
-  logger.info("произведено соеденение с базой данных");
+  logger.info("Произведено соеденение с базой данных");
 
   let sql =
     "CREATE TABLE IF NOT EXISTS tracks( id INT PRIMARY KEY AUTO_INCREMENT, cover_name VARCHAR(255) NOT NULL, audiofile_name VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, genre VARCHAR(50) NOT NULL, bpm DECIMAL(5, 2) NOT NULL, tone DECIMAL(5, 2) NOT NULL, author VARCHAR(255) DEFAULT 'guest')";

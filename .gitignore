@@ -6,6 +6,7 @@ bootstrap-5.3.2
 
 # Logs
 logs
+logger
 *.log
 npm-debug.log*
 yarn-debug.log*

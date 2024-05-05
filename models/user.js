@@ -7,12 +7,6 @@ const sql =
 
 connection.query(sql, (err) => {
   if (err) {
-    console.log("! ! !");
-    console.log("! ! !");
-    console.log("! ! !");
-    console.log("ошибка ");
-    console.log("! ! !");
-    console.log("! ! !");
     logger.error("Error");
     console.log(err.message);
   }
@@ -27,12 +21,6 @@ class User {
     const { name, email, password } = dataForm;
     connection.query(sql, [name, email, password], (err) => {
       if (err) {
-        console.log("! ! !");
-        console.log("! ! !");
-        console.log("! ! !");
-        console.log("ошибка ");
-        console.log("! ! !");
-        console.log("! ! !");
         logger.error("Ошибка создания пользователя");
         console.log(err.message);
       }
@@ -44,13 +32,7 @@ class User {
     const sql = "SELECT * FROM users WHERE email = ?";
     connection.query(sql, [email], (err, rows) => {
       if (err) {
-        console.log("! ! !");
-        console.log("! ! !");
-        console.log("! ! !");
-        console.log("ошибка ");
-        console.log("! ! !");
-        console.log("! ! !");
-        logger.error("Error");
+        logger.error(err.message);
         console.log(err.message);
         cb(err, null);
       } else {

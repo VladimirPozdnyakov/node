@@ -59,7 +59,7 @@
                   id="title"
                   placeholder="Title"
                 />
-                <label for="title">Введите название бита</label>
+                <label for="title">Название</label>
               </div>
             </div>
           </div>
@@ -73,7 +73,7 @@
                   id="genre"
                   placeholder="Genre"
                 />
-                <label for="genre">Введите жанр бита</label>
+                <label for="genre">Жанр</label>
               </div>
             </div>
           </div>
@@ -87,21 +87,46 @@
                   id="bpm"
                   placeholder="Bpm"
                 />
-                <label for="bpm">Введите BPM бита</label>
+                <label for="bpm">BPM</label>
               </div>
             </div>
           </div>
           <div class="row my-3">
             <div class="col-sm-7 col-12">
               <div class="form-floating mb-3">
-                <input
+                <select
                   name="tone"
                   type="text"
                   class="form-control"
                   id="tone"
                   placeholder="Tone"
-                />
-                <label for="tone">Введите тональность бита</label>
+                >
+                  <option value="C">C</option>
+                  <option value="Cm">Cm</option>
+                  <option value="C#/D♭">C#/D♭</option>
+                  <option value="C#m/D♭m">C#m/D♭m</option>
+                  <option value="D">D</option>
+                  <option value="Dm">Dm</option>
+                  <option value="D#/E♭">D#/E♭</option>
+                  <option value="D#m/E♭m">D#m/E♭m</option>
+                  <option value="E">E</option>
+                  <option value="Em">Em</option>
+                  <option value="F">F</option>
+                  <option value="Fm">Fm</option>
+                  <option value="F#/G♭">F#/G♭</option>
+                  <option value="F#m/G♭m">F#m/G♭m</option>
+                  <option value="G">G</option>
+                  <option value="Gm">Gm</option>
+                  <option value="G#/A♭">G#/A♭</option>
+                  <option value="G#m/A♭m">G#m/A♭m</option>
+                  <option value="A">A</option>
+                  <option value="Am">Am</option>
+                  <option value="A#/B♭">A#/B♭</option>
+                  <option value="A#m/B♭m">A#m/B♭m</option>
+                  <option value="B">B</option>
+                  <option value="Bm">Bm</option>
+                </select>
+                <label for="tone">Тональность</label>
               </div>
             </div>
           </div>

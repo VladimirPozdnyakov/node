@@ -59,16 +59,7 @@ passportFunctionGoogle(passport);
 app.use(myRoutes);
 
 app.listen(port, () => {
-  console.log("...");
-  console.log("Проверка console.log пройдена");
-  console.log("...");
-  console.log("Начинается логгирование");
-  console.log("...");
-  // addline("server started");
-  console.log("Логгирование завершено");
-  console.log("...");
   console.log("В данный момент используется версия " + app.get("env"));
-  console.log("...");
   logger.info("Запуск сервера");
 });
 
@@ -85,16 +76,6 @@ if (app.get("env") != "development") {
 } else {
   app.use((err, req, res, next) => {
     res.status = 404;
-    console.log("! ! !");
-    console.log("! ! !");
-    console.log("! ! !");
-    console.log("ошибка " + res.status);
-    console.log("! ! !");
-    console.log(app.get);
-    console.log("! ! !");
-    console.log(err.message);
-    console.log("! ! !");
-    logger.error(err.message);
-    res.end("ПЛОХОЙ КОД!");
+    console.log("Ошибка: " + res.status);
   });
 }

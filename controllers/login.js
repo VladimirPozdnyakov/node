@@ -4,7 +4,6 @@ import jwt from "jsonwebtoken";
 
 const form = (req, res) => {
   res.render("./partials/loginModal", { title: "Login" });
-  console.log("...");
 };
 
 const submit = (req, res, next) => {
@@ -12,12 +11,7 @@ const submit = (req, res, next) => {
     //data is user
     if (err) return next(err);
     if (!data) {
-      console.log("! ! !");
-      console.log("! ! !");
-      console.log("! ! !");
       console.log("Почта и/или пароль неверны!");
-      console.log("! ! !");
-      console.log("! ! !");
       logger.error("Ошибка ввода пароля или почты");
       return res.redirect("/");
     }
@@ -26,7 +20,6 @@ const submit = (req, res, next) => {
       req.session.name = data.name;
       req.session.password = data.password;
       req.session.role = data.role;
-      console.log("...");
       logger.info("Заход произведён" + " " + data.name + " " + data.email);
 
       //jwt
@@ -39,10 +32,8 @@ const submit = (req, res, next) => {
           expiresIn: process.env.JWTTOKENTIME,
         }
       );
-      console.log("...");
-      console.log("токен подготовлен");
-      console.log("...");
-      logger.info("токен подготовлен:" + token);
+      console.log("Токен подготовлен");
+      logger.info("Токен подготовлен:" + token);
 
       res.redirect("/");
     }
@@ -53,12 +44,6 @@ const logout = (req, res) => {
   res.clearCookie("jwt");
   req.session.destroy((err) => {
     if (err) {
-      console.log("! ! !");
-      console.log("! ! !");
-      console.log("! ! !");
-      console.log("ошибка ");
-      console.log("! ! !");
-      console.log("! ! !");
       logger.error("Ошибка выхода");
       console.log(err.message);
     }
