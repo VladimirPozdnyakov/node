@@ -7,199 +7,211 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="../public/css/entries.css" />
     <script src="/bootstrap.js"></script>
+    <style>
+      .navbar-expand-lg {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        transition: box-shadow 0.25s;
+      }
+
+      .navbar-expand-lg:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+    </style>
   </head>
   <body>
+    <%- include ('./partials/header') %>
     <div class="container">
-      <%- include ('./partials/header') %>
       <h1 class="text-center">Каталог битов</h1>
       <% entries.tracks.forEach((entry)=>{ %>
-      <table class="table" style="margin: 0 auto">
-        <tbody>
-          <tr>
-            <td style="width: 150px">
-              <div style="width: 150px; height: 150px">
-                <img
-                  src="./uploads/tracks/<%= entry.cover_name %>"
-                  alt="Track cover"
-                  style="
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 10px;
-                    object-fit: cover;
-                  "
-                />
-              </div>
-            </td>
-            <td style="width: 60%">
-              <div style="display: flex">
-                <h4 style="font-weight: 600"><%= entry.title %></h4>
-                <% if (email === entry.author || role === 'admin') { %>
-                <button
-                  type="button"
-                  class="btn btn-light"
-                  data-bs-toggle="modal"
-                  data-bs-target="#edit<%=entry.id %>"
-                >
-                  <i
-                    class="fa-sharp fa-solid fa-pen"
-                    style="color: #000000"
-                  ></i>
-                </button>
-                <!-- Модальное окно не через include, потому что «entry is not defined» -->
+      <div class="track">
+        <table class="table" style="margin: 0 auto; max-width: 1000px">
+          <tbody>
+            <tr>
+              <td style="width: 150px">
+                <div style="width: 150px; height: 150px">
+                  <img
+                    src="./uploads/tracks/<%= entry.cover_name %>"
+                    alt="Track cover"
+                    style="
+                      width: 100%;
+                      height: 100%;
+                      border-radius: 10px;
+                      object-fit: cover;
+                    "
+                  />
+                </div>
+              </td>
+              <td style="width: 60%">
+                <div style="display: flex">
+                  <h4 style="font-weight: 600"><%= entry.title %></h4>
+                  <% if (email === entry.author || role === 'admin') { %>
+                  <button
+                    type="button"
+                    class="btn btn-light"
+                    data-bs-toggle="modal"
+                    data-bs-target="#edit<%=entry.id %>"
+                  >
+                    <i
+                      class="fa-sharp fa-solid fa-pen"
+                      style="color: #000000"
+                    ></i>
+                  </button>
+                  <!-- Модальное окно не через include, потому что «entry is not defined» -->
 
-                <!-- Начало модального окна -->
-                <div
-                  class="modal fade"
-                  id="edit<%= entry.id %>"
-                  tabindex="-1"
-                  aria-labelledby="editModal"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title fs-5" id="editModal">
-                          Изменить информацию о «<%=entry.title %>»
-                        </h5>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div class="modal-body">
-                        <form
-                          action="/edit/tracks/<%=entry.id %>"
-                          class="container"
-                          method="post"
-                          enctype="multipart/form-data"
-                        >
-                          <div class="row my-3">
-                            <div class="col-sm-6 col-12">
-                              <div class="form-floating mb-3">
-                                <input
-                                  name="title"
-                                  type="text"
-                                  class="form-control"
-                                  id="title"
-                                  placeholder="Title"
-                                  value="<%=entry.title %>"
-                                />
-                                <label for="title">Название</label>
+                  <!-- Начало модального окна -->
+                  <div
+                    class="modal fade"
+                    id="edit<%= entry.id %>"
+                    tabindex="-1"
+                    aria-labelledby="editModal"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title fs-5" id="editModal">
+                            Изменить информацию о «<%=entry.title %>»
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <form
+                            action="/edit/tracks/<%=entry.id %>"
+                            class="container"
+                            method="post"
+                            enctype="multipart/form-data"
+                          >
+                            <div class="row my-3">
+                              <div class="col-sm-6 col-12">
+                                <div class="form-floating mb-3">
+                                  <input
+                                    name="title"
+                                    type="text"
+                                    class="form-control"
+                                    id="title"
+                                    placeholder="Title"
+                                    value="<%=entry.title %>"
+                                  />
+                                  <label for="title">Название</label>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="row my-3">
-                            <div class="col-sm-6 col-12">
-                              <div class="form-floating mb-3">
-                                <input
-                                  name="genre"
-                                  type="text"
-                                  class="form-control"
-                                  id="genre"
-                                  placeholder="Genre"
-                                  value="<%=entry.genre %>"
-                                />
-                                <label for="genre">Жанр</label>
+                            <div class="row my-3">
+                              <div class="col-sm-6 col-12">
+                                <div class="form-floating mb-3">
+                                  <input
+                                    name="genre"
+                                    type="text"
+                                    class="form-control"
+                                    id="genre"
+                                    placeholder="Genre"
+                                    value="<%=entry.genre %>"
+                                  />
+                                  <label for="genre">Жанр</label>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="row my-3">
-                            <div class="col-sm-6 col-12">
-                              <div class="form-floating mb-3">
-                                <input
-                                  name="bpm"
-                                  type="number"
-                                  class="form-control"
-                                  id="bpm"
-                                  placeholder="Bpm"
-                                  value="<%=entry.bpm %>"
-                                />
-                                <label for="bpm">BPM</label>
+                            <div class="row my-3">
+                              <div class="col-sm-6 col-12">
+                                <div class="form-floating mb-3">
+                                  <input
+                                    name="bpm"
+                                    type="number"
+                                    class="form-control"
+                                    id="bpm"
+                                    placeholder="Bpm"
+                                    value="<%=entry.bpm %>"
+                                  />
+                                  <label for="bpm">BPM</label>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="row my-3">
-                            <div class="col-sm-7 col-12">
-                              <div class="form-floating mb-3">
-                                <select
-                                  name="tone"
-                                  type="text"
-                                  class="form-control"
-                                  id="tone"
-                                  placeholder="Tone"
-                                  value="<%=entry.tone %>"
-                                >
-                                  <option value="C">C</option>
-                                  <option value="Cm">Cm</option>
-                                  <option value="C#/D♭">C#/D♭</option>
-                                  <option value="C#m/D♭m">C#m/D♭m</option>
-                                  <option value="D">D</option>
-                                  <option value="Dm">Dm</option>
-                                  <option value="D#/E♭">D#/E♭</option>
-                                  <option value="D#m/E♭m">D#m/E♭m</option>
-                                  <option value="E">E</option>
-                                  <option value="Em">Em</option>
-                                  <option value="F">F</option>
-                                  <option value="Fm">Fm</option>
-                                  <option value="F#/G♭">F#/G♭</option>
-                                  <option value="F#m/G♭m">F#m/G♭m</option>
-                                  <option value="G">G</option>
-                                  <option value="Gm">Gm</option>
-                                  <option value="G#/A♭">G#/A♭</option>
-                                  <option value="G#m/A♭m">G#m/A♭m</option>
-                                  <option value="A">A</option>
-                                  <option value="Am">Am</option>
-                                  <option value="A#/B♭">A#/B♭</option>
-                                  <option value="A#m/B♭m">A#m/B♭m</option>
-                                  <option value="B">B</option>
-                                  <option value="Bm">Bm</option>
-                                </select>
-                                <label for="tone">Тональность</label>
+                            <div class="row my-3">
+                              <div class="col-sm-7 col-12">
+                                <div class="form-floating mb-3">
+                                  <select
+                                    name="tone"
+                                    type="text"
+                                    class="form-control"
+                                    id="tone"
+                                    placeholder="Tone"
+                                    value="<%=entry.tone %>"
+                                  >
+                                    <option value="C">C</option>
+                                    <option value="Cm">Cm</option>
+                                    <option value="C#/D♭">C#/D♭</option>
+                                    <option value="C#m/D♭m">C#m/D♭m</option>
+                                    <option value="D">D</option>
+                                    <option value="Dm">Dm</option>
+                                    <option value="D#/E♭">D#/E♭</option>
+                                    <option value="D#m/E♭m">D#m/E♭m</option>
+                                    <option value="E">E</option>
+                                    <option value="Em">Em</option>
+                                    <option value="F">F</option>
+                                    <option value="Fm">Fm</option>
+                                    <option value="F#/G♭">F#/G♭</option>
+                                    <option value="F#m/G♭m">F#m/G♭m</option>
+                                    <option value="G">G</option>
+                                    <option value="Gm">Gm</option>
+                                    <option value="G#/A♭">G#/A♭</option>
+                                    <option value="G#m/A♭m">G#m/A♭m</option>
+                                    <option value="A">A</option>
+                                    <option value="Am">Am</option>
+                                    <option value="A#/B♭">A#/B♭</option>
+                                    <option value="A#m/B♭m">A#m/B♭m</option>
+                                    <option value="B">B</option>
+                                    <option value="Bm">Bm</option>
+                                  </select>
+                                  <label for="tone">Тональность</label>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="row my-3">
-                            <div class="col-sm-6 col-12">
-                              <button type="submit" class="btn btn-success">
-                                Изменить
-                              </button>
+                            <div class="row my-3">
+                              <div class="col-sm-6 col-12">
+                                <button type="submit" class="btn btn-success">
+                                  Изменить
+                                </button>
+                              </div>
                             </div>
-                          </div>
-                        </form>
-                        <a
-                          href="/edit/tracks/delete/<%= entry.id %>"
-                          style="margin-left: 12px"
-                        >
-                          <button class="btn btn-danger">Удалить</button>
-                        </a>
+                          </form>
+                          <a
+                            href="/edit/tracks/delete/<%= entry.id %>"
+                            style="margin-left: 12px"
+                          >
+                            <button class="btn btn-danger">Удалить</button>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <!-- Конец модального окна -->
+                  <!-- Конец модального окна -->
 
-                <% } %>
-              </div>
-              <h5><%= entry.author ? entry.author : 'Гость' %></h5>
-              <p class="card-text">
-                Теги (Жанр, BPM, тональность): <%= entry.genre %>, <%= entry.bpm
-                %> BPM, <%= entry.tone %>
-              </p>
-              <audio
-                controls="controls"
-                src="./uploads/tracks/<%= entry.audiofile_name %>"
-              ></audio>
-            </td>
-            <td>
-              <a href="#" class="btn btn-primary">Купить</a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+                  <% } %>
+                </div>
+                <h5><%= entry.author ? entry.author : 'Гость' %></h5>
+                <p class="card-text">
+                  Теги (Жанр, BPM, тональность): <%= entry.genre %>, <%=
+                  entry.bpm %> BPM, <%= entry.tone %>
+                </p>
+                <audio
+                  controls="controls"
+                  src="./uploads/tracks/<%= entry.audiofile_name %>"
+                ></audio>
+              </td>
+              <td align="center" valign="middle">
+                <a href="#" class="btn btn-primary">Купить</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <% }) %> <% if (locals.user) { %> <%-
       include('./partials/tracks/newModal'); -%> <% } else { %> <%-
       include('./partials/loginModal'); -%> <%-

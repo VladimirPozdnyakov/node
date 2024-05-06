@@ -11,8 +11,6 @@ function passportFunctionGithub(passport) {
         return user.emails[0].value;
       } else if (user.provider == "github") {
         return user.username ? user.username : "github.email@gmail.com";
-      } else {
-        return user.displayName ? user.displayName : "vk.email@gmail.com";
       }
     };
     const newUser = {
