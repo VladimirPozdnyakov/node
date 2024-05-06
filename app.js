@@ -13,7 +13,6 @@ import passport from "passport";
 import passportFunctionGithub from "./middleware/passport_github.js";
 import passportFunctionYandex from "./middleware/passport_yandex.js";
 import passportFunctionGoogle from "./middleware/passport_google.js";
-import passportFunctionJWT from "./middleware/passport_jwt.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -53,7 +52,6 @@ app.use(cookieParser());
 app.use(passport.initialize());
 app.use(passport.session());
 passportFunctionGithub(passport);
-passportFunctionJWT(passport);
 passportFunctionYandex(passport);
 passportFunctionGoogle(passport);
 app.use(myRoutes);

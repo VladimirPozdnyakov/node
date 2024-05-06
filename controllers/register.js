@@ -2,7 +2,6 @@ import User from "../models/user.js";
 import validatePassword from "../middleware/validation.js";
 import validator from "validator";
 import logger from "../logger/index.js";
-import jwt from "jsonwebtoken";
 
 const submit = [
   validatePassword,
@@ -29,17 +28,6 @@ const submit = [
           res.redirect("/");
           console.log("Произведена регистрация");
           logger.info("Произведена регистрация");
-
-          //jwt
-          const token = jwt.sign(
-            {
-              email: req.body.email,
-            },
-            process.env.JWTTOKENSECRET,
-            {
-              expiresIn: process.env.JWTTOKENTIME,
-            }
-          );
         });
       } else {
         console.log("Такой пользователь уже существует!");
