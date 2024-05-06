@@ -3136,3 +3136,386 @@
   level: 'error',
   timestamp: '2024-05-05T21:38:22.853Z'
 }
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:53\n' +
+    '    51|                   Редактировать (не редактирует пока)\r\n' +
+    '    52|                 </button>\r\n' +
+    " >> 53|                 <%- include('./partials/tracks/editModal'); -%>\r\n" +
+    '    54|                 <a href="/edit/tracks/delete/<%= entry.id %>"\r\n' +
+    '    55|                   ><i class="fa-solid fa-trash" style="color: #000000"></i\r\n' +
+    '    56|                 ></a>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\tracks\\editModal.ejs:3\n' +
+    '    1| <div\r\n' +
+    '    2|   class="modal fade"\r\n' +
+    ' >> 3|   id="edit<%= entry.id %>"\r\n' +
+    '    4|   tabindex="-1"\r\n' +
+    '    5|   aria-labelledby="editModal"\r\n' +
+    '    6|   aria-hidden="true"\r\n' +
+    '\n' +
+    'entry is not defined',
+  level: 'error',
+  timestamp: '2024-05-06T14:29:53.500Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:53\n' +
+    '    51|                   Редактировать (не редактирует пока)\r\n' +
+    '    52|                 </button>\r\n' +
+    " >> 53|                 <%- include('./partials/tracks/editModal'); -%>\r\n" +
+    '    54|                 <a href="/edit/tracks/delete/<%= entry.id %>"\r\n' +
+    '    55|                   ><i class="fa-solid fa-trash" style="color: #000000"></i\r\n' +
+    '    56|                 ></a>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\tracks\\editModal.ejs:3\n' +
+    '    1| <div\r\n' +
+    '    2|   class="modal fade"\r\n' +
+    ' >> 3|   id="edit<%= entry.id %>"\r\n' +
+    '    4|   tabindex="-1"\r\n' +
+    '    5|   aria-labelledby="editModal"\r\n' +
+    '    6|   aria-hidden="true"\r\n' +
+    '\n' +
+    'entry is not defined',
+  level: 'error',
+  timestamp: '2024-05-06T14:30:41.275Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:53\n' +
+    '    51|                   Редактировать (не редактирует пока)\r\n' +
+    '    52|                 </button>\r\n' +
+    " >> 53|                 <%- include('./partials/tracks/editModal'); -%>\r\n" +
+    '    54|                 <a href="/edit/tracks/delete/<%= entry.id %>"\r\n' +
+    '    55|                   ><i class="fa-solid fa-trash" style="color: #000000"></i\r\n' +
+    '    56|                 ></a>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\tracks\\editModal.ejs:3\n' +
+    '    1| <div\r\n' +
+    '    2|   class="modal fade"\r\n' +
+    ' >> 3|   id="edit<%= entry.id %>"\r\n' +
+    '    4|   tabindex="-1"\r\n' +
+    '    5|   aria-labelledby="editModal"\r\n' +
+    '    6|   aria-hidden="true"\r\n' +
+    '\n' +
+    'entry is not defined',
+  level: 'error',
+  timestamp: '2024-05-06T14:31:31.440Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:53\n' +
+    '    51|                   Редактировать (не редактирует пока)\r\n' +
+    '    52|                 </button>\r\n' +
+    " >> 53|                 <%- include('./partials/tracks/editModal'); -%>\r\n" +
+    '    54|                 <a href="/edit/tracks/delete/<%= entry.id %>"\r\n' +
+    '    55|                   ><i class="fa-solid fa-trash" style="color: #000000"></i\r\n' +
+    '    56|                 ></a>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\tracks\\editModal.ejs:3\n' +
+    '    1| <div\r\n' +
+    '    2|   class="modal fade"\r\n' +
+    ' >> 3|   id="edit<%= entry.id %>"\r\n' +
+    '    4|   tabindex="-1"\r\n' +
+    '    5|   aria-labelledby="editModal"\r\n' +
+    '    6|   aria-hidden="true"\r\n' +
+    '\n' +
+    'entry is not defined',
+  level: 'error',
+  timestamp: '2024-05-06T14:31:34.227Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:53\n' +
+    '    51|                   Редактировать (не редактирует пока)\r\n' +
+    '    52|                 </button>\r\n' +
+    " >> 53|                 <%- include('./partials/tracks/editModal'); -%>\r\n" +
+    '    54|                 <a href="/edit/tracks/delete/<%= entry.id %>"\r\n' +
+    '    55|                   ><i class="fa-solid fa-trash" style="color: #000000"></i\r\n' +
+    '    56|                 ></a>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\tracks\\editModal.ejs:3\n' +
+    '    1| <div\r\n' +
+    '    2|   class="modal fade"\r\n' +
+    ' >> 3|   id="edit<%= entry.id %>"\r\n' +
+    '    4|   tabindex="-1"\r\n' +
+    '    5|   aria-labelledby="editModal"\r\n' +
+    '    6|   aria-hidden="true"\r\n' +
+    '\n' +
+    'entry is not defined',
+  level: 'error',
+  timestamp: '2024-05-06T14:31:38.685Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:53\n' +
+    '    51|                   Редактировать (не редактирует пока)\r\n' +
+    '    52|                 </button>\r\n' +
+    " >> 53|                 <%- include('./partials/tracks/editModal'); -%>\r\n" +
+    '    54|                 <a href="/edit/tracks/delete/<%= entry.id %>"\r\n' +
+    '    55|                   ><i class="fa-solid fa-trash" style="color: #000000"></i\r\n' +
+    '    56|                 ></a>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\tracks\\editModal.ejs:11\n' +
+    '    9|     <div class="modal-content">\r\n' +
+    '    10|       <div class="modal-header">\r\n' +
+    ' >> 11|         <h5 class="modal-title fs-5" id="editModal"><%=entry.title %></h5>\r\n' +
+    '    12|         <button\r\n' +
+    '    13|           type="button"\r\n' +
+    '    14|           class="btn-close"\r\n' +
+    '\n' +
+    'entry is not defined',
+  level: 'error',
+  timestamp: '2024-05-06T14:34:06.420Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:53\n' +
+    '    51|                   Редактировать (не редактирует пока)\r\n' +
+    '    52|                 </button>\r\n' +
+    " >> 53|                 <%- include('./partials/tracks/editModal'); -%>\r\n" +
+    '    54|                 <a href="/edit/tracks/delete/<%= entry.id %>"\r\n' +
+    '    55|                   ><i class="fa-solid fa-trash" style="color: #000000"></i\r\n' +
+    '    56|                 ></a>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\tracks\\editModal.ejs:3\n' +
+    '    1| <div\r\n' +
+    '    2|   class="modal fade"\r\n' +
+    ' >> 3|   id="edit<%=entry.id %>"\r\n' +
+    '    4|   tabindex="-1"\r\n' +
+    '    5|   aria-labelledby="editModal"\r\n' +
+    '    6|   aria-hidden="true"\r\n' +
+    '\n' +
+    'entry is not defined',
+  level: 'error',
+  timestamp: '2024-05-06T14:35:32.510Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:53\n' +
+    '    51|                   Редактировать (не редактирует пока)\r\n' +
+    '    52|                 </button>\r\n' +
+    " >> 53|                 <%- include('./partials/tracks/editModal'); -%>\r\n" +
+    '    54|                 <a href="/edit/tracks/delete/<%= entry.id %>"\r\n' +
+    '    55|                   ><i class="fa-solid fa-trash" style="color: #000000"></i\r\n' +
+    '    56|                 ></a>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\tracks\\editModal.ejs:3\n' +
+    '    1| <div\r\n' +
+    '    2|   class="modal fade"\r\n' +
+    ' >> 3|   id="edit<%=entry.id %>"\r\n' +
+    '    4|   tabindex="-1"\r\n' +
+    '    5|   aria-labelledby="editModal"\r\n' +
+    '    6|   aria-hidden="true"\r\n' +
+    '\n' +
+    'entry is not defined',
+  level: 'error',
+  timestamp: '2024-05-06T14:35:58.269Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:53\n' +
+    '    51|                   Редактировать (не редактирует пока)\r\n' +
+    '    52|                 </button>\r\n' +
+    " >> 53|                 <%- include('./partials/tracks/editModal'); -%>\r\n" +
+    '    54|                 <a href="/edit/tracks/delete/<%= entry.id %>"\r\n' +
+    '    55|                   ><i class="fa-solid fa-trash" style="color: #000000"></i\r\n' +
+    '    56|                 ></a>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\tracks\\editModal.ejs:3\n' +
+    '    1| <div\r\n' +
+    '    2|   class="modal fade"\r\n' +
+    ' >> 3|   id="edit<%=entry.id %>"\r\n' +
+    '    4|   tabindex="-1"\r\n' +
+    '    5|   aria-labelledby="editModal"\r\n' +
+    '    6|   aria-hidden="true"\r\n' +
+    '\n' +
+    'entry is not defined',
+  level: 'error',
+  timestamp: '2024-05-06T14:36:09.199Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:53\n' +
+    '    51|                   Редактировать (не редактирует пока)\r\n' +
+    '    52|                 </button>\r\n' +
+    " >> 53|                 <%- include('./partials/tracks/editModal'); -%>\r\n" +
+    '    54|                 <a href="/edit/tracks/delete/<%= entry.id %>"\r\n' +
+    '    55|                   ><i class="fa-solid fa-trash" style="color: #000000"></i\r\n' +
+    '    56|                 ></a>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\tracks\\editModal.ejs:3\n' +
+    '    1| <div\r\n' +
+    '    2|   class="modal fade"\r\n' +
+    ' >> 3|   id="edit<%=entry.id %>"\r\n' +
+    '    4|   tabindex="-1"\r\n' +
+    '    5|   aria-labelledby="editModal"\r\n' +
+    '    6|   aria-hidden="true"\r\n' +
+    '\n' +
+    'entry is not defined',
+  level: 'error',
+  timestamp: '2024-05-06T14:36:36.353Z'
+}
+{
+  message: 'Такой пользователь уже существует',
+  level: 'error',
+  timestamp: '2024-05-06T14:40:56.517Z'
+}
+{
+  message: 'Ошибка ввода пароля или почты',
+  level: 'error',
+  timestamp: '2024-05-06T14:43:50.231Z'
+}
+{
+  message: 'Ошибка ввода пароля или почты',
+  level: 'error',
+  timestamp: '2024-05-06T14:44:09.274Z'
+}
+{
+  message: 'Ошибка ввода пароля или почты',
+  level: 'error',
+  timestamp: '2024-05-06T14:44:56.485Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:53\n' +
+    '    51|                   Редактировать (не редактирует пока)\r\n' +
+    '    52|                 </button>\r\n' +
+    " >> 53|                 <%- include('./partials/tracks/editModal'); -%>\r\n" +
+    '    54|                 <a href="/edit/tracks/delete/<%= entry.id %>"\r\n' +
+    '    55|                   ><i class="fa-solid fa-trash" style="color: #000000"></i\r\n' +
+    '    56|                 ></a>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\tracks\\editModal.ejs:3\n' +
+    '    1| <div\r\n' +
+    '    2|   class="modal fade"\r\n' +
+    ' >> 3|   id="edit<%=entry.id %>"\r\n' +
+    '    4|   tabindex="-1"\r\n' +
+    '    5|   aria-labelledby="editModal"\r\n' +
+    '    6|   aria-hidden="true"\r\n' +
+    '\n' +
+    'entry is not defined',
+  level: 'error',
+  timestamp: '2024-05-06T14:52:06.043Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:17\n' +
+    "    15|       <%- include ('./partials/header') %>\r\n" +
+    '    16|       <h1 class="text-center">Каталог битов</h1>\r\n' +
+    ' >> 17|       <% entries.tracks.forEach((entry)=>{ i++; %>\r\n' +
+    '    18|       <table class="table" style="margin: 0 auto">\r\n' +
+    '    19|         <tbody>\r\n' +
+    '    20|           <tr>\r\n' +
+    '\n' +
+    'i is not defined',
+  level: 'error',
+  timestamp: '2024-05-06T14:56:45.421Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:17\n' +
+    "    15|       <%- include ('./partials/header') %>\r\n" +
+    '    16|       <h1 class="text-center">Каталог битов</h1>\r\n' +
+    ' >> 17|       <% entries.tracks.forEach((entry)=>{ i++ %>\r\n' +
+    '    18|       <table class="table" style="margin: 0 auto">\r\n' +
+    '    19|         <tbody>\r\n' +
+    '    20|           <tr>\r\n' +
+    '\n' +
+    'i is not defined',
+  level: 'error',
+  timestamp: '2024-05-06T14:57:01.216Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:17\n' +
+    "    15|       <%- include ('./partials/header') %>\r\n" +
+    '    16|       <h1 class="text-center">Каталог битов</h1>\r\n' +
+    ' >> 17|       <% entries.tracks.forEach((entry)=>{ i++ %>\r\n' +
+    '    18|       <table class="table" style="margin: 0 auto">\r\n' +
+    '    19|         <tbody>\r\n' +
+    '    20|           <tr>\r\n' +
+    '\n' +
+    'i is not defined',
+  level: 'error',
+  timestamp: '2024-05-06T14:57:02.269Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:53\n' +
+    '    51|                   Редактировать (не редактирует пока)\r\n' +
+    '    52|                 </button>\r\n' +
+    " >> 53|                 <%- include('./partials/tracks/editModal'); -%>\r\n" +
+    '    54|                 <a href="/edit/tracks/delete/<%= entry.id %>"\r\n' +
+    '    55|                   ><i class="fa-solid fa-trash" style="color: #000000"></i\r\n' +
+    '    56|                 ></a>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\tracks\\editModal.ejs:3\n' +
+    '    1| <div\r\n' +
+    '    2|   class="modal fade"\r\n' +
+    ' >> 3|   id="edit<%= entry.id %>"\r\n' +
+    '    4|   tabindex="-1"\r\n' +
+    '    5|   aria-labelledby="editModal"\r\n' +
+    '    6|   aria-hidden="true"\r\n' +
+    '\n' +
+    'entry is not defined',
+  level: 'error',
+  timestamp: '2024-05-06T15:03:52.171Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:53\n' +
+    '    51|                   Редактировать (не редактирует пока)\r\n' +
+    '    52|                 </button>\r\n' +
+    " >> 53|                 <!-- <%- include('./partials/tracks/editModal'); -%> -->\r\n" +
+    '    54|                 <a href="/edit/tracks/delete/<%= entry.id %>"\r\n' +
+    '    55|                   ><i class="fa-solid fa-trash" style="color: #000000"></i\r\n' +
+    '    56|                 ></a>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\tracks\\editModal.ejs:3\n' +
+    '    1| <div\r\n' +
+    '    2|   class="modal fade"\r\n' +
+    ' >> 3|   id="edit<%= entry.id %>"\r\n' +
+    '    4|   tabindex="-1"\r\n' +
+    '    5|   aria-labelledby="editModal"\r\n' +
+    '    6|   aria-hidden="true"\r\n' +
+    '\n' +
+    'entry is not defined',
+  level: 'error',
+  timestamp: '2024-05-06T15:04:04.001Z'
+}
+{
+  message: 'read ECONNRESET',
+  level: 'error',
+  timestamp: '2024-05-06T15:05:10.796Z'
+}
+{
+  message: 'read ECONNRESET',
+  level: 'error',
+  timestamp: '2024-05-06T15:05:10.798Z'
+}
+{
+  message: 'read ECONNRESET',
+  level: 'error',
+  timestamp: '2024-05-06T15:05:10.798Z'
+}
+{
+  message: 'read ECONNRESET',
+  level: 'error',
+  timestamp: '2024-05-06T15:05:10.799Z'
+}
+{
+  message: "Can't add new command when connection is in closed state",
+  level: 'error',
+  timestamp: '2024-05-06T15:05:10.888Z'
+}
+{
+  message: "Can't add new command when connection is in closed state",
+  level: 'error',
+  timestamp: '2024-05-06T15:05:10.890Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:50\n' +
+    '    48|                   ></i>\r\n' +
+    '    49|                 </button>\r\n' +
+    " >> 50|                 <%- include('./partials/tracks/editModal'); -%>\r\n" +
+    '    51|                 <a href="/edit/tracks/delete/<%= entry.id %>"\r\n' +
+    '    52|                   ><i class="fa-solid fa-trash" style="color: #000000"></i\r\n' +
+    '    53|                 ></a>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\tracks\\editModal.ejs:3\n' +
+    '    1| <div\r\n' +
+    '    2|   class="modal fade"\r\n' +
+    ' >> 3|   id="edit<%= entry.id %>"\r\n' +
+    '    4|   tabindex="-1"\r\n' +
+    '    5|   aria-labelledby="editModal"\r\n' +
+    '    6|   aria-hidden="true"\r\n' +
+    '\n' +
+    'entry is not defined',
+  level: 'error',
+  timestamp: '2024-05-06T15:07:36.949Z'
+}

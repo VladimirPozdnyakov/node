@@ -28,18 +28,14 @@ router.use(favicon(__dirname + "/favicon.ico"));
 
 router.get("/", entries.list);
 
-router.get("/register", register.form);
 router.post("/register", register.submit);
 
-router.get("/login", login.form);
 router.post("/login", login.submit);
 
 router.get("/logout", login.logout);
 
-router.get("/new", tracks.form);
 router.post("/new", upload.any(), tracks.addTrack);
 
-router.get("/edit/tracks/:id", tracks.editForm);
 router.post("/edit/tracks/:id", upload.any(), tracks.updateTrack);
 router.get("/edit/tracks/delete/:id", tracks.deleteTrack);
 

@@ -2,13 +2,6 @@ import connection from "../models/db.js";
 import logger from "../logger/index.js";
 import multer from "multer";
 
-const form = (req, res) => {
-  res.render("./partials/tracks/newModal", {
-    title: "Выложить бит",
-    errorMessage: res.locals.errorMessage,
-  });
-};
-
 const sql =
   "CREATE TABLE IF NOT EXISTS tracks( id INT PRIMARY KEY AUTO_INCREMENT, cover_name VARCHAR(255) NOT NULL, audiofile_name VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, genre VARCHAR(50) NOT NULL, bpm DECIMAL(5, 0) NOT NULL, tone DECIMAL(5, 0) NOT NULL, author VARCHAR(255) DEFAULT 'guest')";
 
@@ -60,22 +53,6 @@ const getTracks = (callback) => {
   });
 };
 
-const editForm = (req, res) => {
-  connection.query(
-    "SELECT * FROM tracks WHERE id = ? LIMIT 1",
-    [req.params.id],
-    (err, results) => {
-      if (err) {
-        logger.error("Ошибка в работе sql-операции select", err.message);
-        console.log("Ошибка в работе sql-операции select", err.message);
-        return res.redirect("/");
-      }
-      res.render("./partials/tracks/editModal", { post: results[0] });
-      logger.info("Успешное выполнение sql-операции select");
-    }
-  );
-};
-
 const updateTrack = (req, res) => {
   const { title, genre, bpm, tone } = req.body;
 
@@ -116,10 +93,8 @@ const deleteTrack = (req, res) => {
 };
 
 export default {
-  form,
   addTrack,
   getTracks,
-  editForm,
   updateTrack,
   deleteTrack,
 };

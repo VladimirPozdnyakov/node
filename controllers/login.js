@@ -2,10 +2,6 @@ import logger from "../logger/index.js";
 import User from "../models/user.js";
 import jwt from "jsonwebtoken";
 
-const form = (req, res) => {
-  res.render("./partials/loginModal", { title: "Login" });
-};
-
 const submit = (req, res, next) => {
   User.authenticate(req.body.loginForm, (err, data) => {
     //data is user
@@ -23,17 +19,17 @@ const submit = (req, res, next) => {
       logger.info("Заход произведён" + " " + data.name + " " + data.email);
 
       //jwt
-      const token = jwt.sign(
-        {
-          email: data.email,
-        },
-        process.env.JWTTOKENSECRET,
-        {
-          expiresIn: process.env.JWTTOKENTIME,
-        }
-      );
-      console.log("Токен подготовлен");
-      logger.info("Токен подготовлен:" + token);
+      // const token = jwt.sign(
+      //   {
+      //     email: data.email,
+      //   },
+      //   process.env.JWTTOKENSECRET,
+      //   {
+      //     expiresIn: process.env.JWTTOKENTIME,
+      //   }
+      // );
+      // console.log("Токен подготовлен");
+      // logger.info("Токен подготовлен:" + token);
 
       res.redirect("/");
     }
@@ -51,4 +47,4 @@ const logout = (req, res) => {
   });
 };
 
-export default { form, submit, logout };
+export default { submit, logout };

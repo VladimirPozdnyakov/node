@@ -4,13 +4,6 @@ import validator from "validator";
 import logger from "../logger/index.js";
 import jwt from "jsonwebtoken";
 
-const form = (req, res) => {
-  res.render("registerModal", {
-    title: "Регистрация",
-    errorMessage: res.locals.errorMessage,
-  });
-};
-
 const submit = [
   validatePassword,
   (req, res, next) => {
@@ -58,4 +51,4 @@ const submit = [
   },
 ];
 
-export default { form, submit };
+export default { submit };
