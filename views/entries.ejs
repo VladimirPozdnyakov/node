@@ -51,7 +51,9 @@
               </td>
               <td style="width: 60%">
                 <div style="display: flex">
-                  <h3 style="font-weight: 600"><%= entry.title %></h3>
+                  <h3 style="font-weight: 600; font-size: 30px">
+                    <%= entry.title %>
+                  </h3>
                   <% if (name === entry.author || role === 'admin') { %>
                   <a
                     data-bs-toggle="modal"
@@ -75,7 +77,7 @@
                     aria-hidden="true"
                   >
                     <div class="modal-dialog">
-                      <div class="modal-content">
+                      <div class="modal-content" style="border-radius: 20px">
                         <div class="modal-header">
                           <h5 class="modal-title fs-5" id="editModal">
                             Изменить информацию о «<%=entry.title %>»
@@ -196,7 +198,11 @@
                             </div>
                             <div class="row my-3">
                               <div class="col-sm-6 col-12">
-                                <button type="submit" class="btn btn-success">
+                                <button
+                                  type="submit"
+                                  class="btn btn-success"
+                                  style="border-radius: 10px"
+                                >
                                   Изменить
                                 </button>
                               </div>
@@ -206,7 +212,12 @@
                             href="/edit/tracks/delete/<%= entry.id %>"
                             style="margin-left: 12px"
                           >
-                            <button class="btn btn-danger">Удалить</button>
+                            <button
+                              class="btn btn-danger"
+                              style="border-radius: 10px"
+                            >
+                              Удалить
+                            </button>
                           </a>
                         </div>
                       </div>
@@ -216,7 +227,7 @@
 
                   <% } %>
                 </div>
-                <h5><%= entry.author ? entry.author : 'Гость' %></h5>
+                <h5><%= entry.author %></h5>
                 <p class="card-text">
                   Теги (Жанр, BPM, тональность): <%= entry.genre %>, <%=
                   entry.bpm %> BPM, <%= entry.tone %>
@@ -228,9 +239,87 @@
                 ></audio>
               </td>
               <td align="center" valign="middle">
-                <a href="#" class="btn btn-primary"
-                  >Купить <%= entry.price %>₽</a
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#buy"
+                  style="border-radius: 10px"
                 >
+                  Купить <%= entry.price %>₽
+                </button>
+                <!-- Модальное окно не через include(), потому что «entry is not defined» -->
+
+                <!-- Начало модального окна -->
+                <div class="modal fade" id="buy" tabindex="-1"  aria-labelledby="buyModal"  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content" style="border-radius: 20px">
+                      <div class="modal-header">
+                        <h5 class="modal-title fs-5" id="buyModal">Купить «<%= entry.title %>»</h5>
+                        <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div style="margin: 0 auto; max-width: 400px"">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <td style="width: 140px">
+                                  <div style="width: 140px; height: 140px">
+                                    <img
+                                      src="./uploads/tracks/<%= entry.cover_name %>"
+                                      alt="Track cover"
+                                      style="
+                                      width: 100%;
+                                      height: 100%;
+                                      border-radius: 20px;
+                                      object-fit: cover;
+                                      "
+                                    />
+                                  </div>
+                                </td>
+                                <td>
+                                  <h3 style="font-weight: 600; font-size: 35px"><%= entry.title %></h3>
+                                  <h5 style="font-size: 25px"><%= entry.author %></h5>
+                                  <p class="card-text">
+                                    Теги (Жанр, BPM, тональность): <br />
+                                    <%= entry.genre %>, <%= entry.bpm %> BPM, <%= entry.tone %>
+                                  </p>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <audio
+                            controls="controls"
+                            src="/uploads/tracks/<%= entry.audiofile_name %>"
+                            style="width: 100%; border-radius: 0 0 20px 20px"
+                          ></audio>
+                        </div>
+                        <% if (locals.user) { %>
+                        <a href="/uploads/tracks/<%= entry.audiofile_name %>" class="btn btn-success" style="border-radius: 10px" download="<%= entry.audiofile_name %>">
+                          Купить <%= entry.price %>₽
+                        </a>
+                        <% } else { %>
+                          <button
+                            type="button"
+                            class="btn btn-success"
+                            data-bs-toggle="modal"
+                            data-bs-target="#login"
+                            style="border-radius: 10px"
+                          >
+                            Купить <%= entry.price %>₽
+                          </button>
+                        <% } %>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Конец модального окна -->
+
               </td>
             </tr>
           </tbody>

@@ -3620,3 +3620,24 @@
   level: 'error',
   timestamp: '2024-05-07T20:57:41.047Z'
 }
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:249\n' +
+    '    247|                   Купить <%= entry.price %>₽\r\n' +
+    '    248|                 </button>\r\n' +
+    " >> 249|                 <%- include('./partials/tracks/buyModal'); -%>\r\n" +
+    '    250|               </td>\r\n' +
+    '    251|             </tr>\r\n' +
+    '    252|           </tbody>\r\n' +
+    '\n' +
+    'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\tracks\\buyModal.ejs:12\n' +
+    '    10|       <div class="modal-header">\r\n' +
+    '    11|         <h5 class="modal-title fs-5" id="buyModal">\r\n' +
+    ' >> 12|           Купить «<%= entry.title %>»\r\n' +
+    '    13|         </h5>\r\n' +
+    '    14|         <button\r\n' +
+    '    15|           type="button"\r\n' +
+    '\n' +
+    'entry is not defined',
+  level: 'error',
+  timestamp: '2024-05-07T21:29:56.240Z'
+}

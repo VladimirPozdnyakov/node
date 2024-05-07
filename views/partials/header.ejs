@@ -14,7 +14,7 @@
       <span class="name"><%= user.name %> </span>
       <% if (locals.role === 'admin') { %>
       <a href="/admin">
-        <button type="button" class="btn btn-light">
+        <button type="button" class="btn btn-light" style="border-radius: 10px">
           Панель администратора
         </button>
       </a>
@@ -24,13 +24,12 @@
         class="btn btn-info"
         data-bs-toggle="modal"
         data-bs-target="#new"
+        style="border-radius: 10px"
       >
         Выложить бит
       </button>
       <% } %>
-      <a href="/logout">
-        <button type="button" class="btn btn-secondary">Выйти</button>
-      </a>
+      <a href="/logout" class="btn btn-secondary"> Выйти </a>
     </div>
     <% } else { %>
     <div class="" id="header">
@@ -40,6 +39,7 @@
         class="btn btn-outline-dark"
         data-bs-toggle="modal"
         data-bs-target="#login"
+        style="border-radius: 10px"
       >
         Войти
       </button>
@@ -48,6 +48,7 @@
         class="btn btn-outline-dark"
         data-bs-toggle="modal"
         data-bs-target="#register"
+        style="border-radius: 10px"
       >
         Зарегистрироваться
       </button>
