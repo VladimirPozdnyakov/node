@@ -10,7 +10,7 @@ function list(req, res, next) {
 
     res.render("entries", {
       title: "Главная страница",
-      email: req.session.email,
+      name: req.session.name,
       role: req.session.role,
       entries: entries,
     });

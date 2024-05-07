@@ -3519,3 +3519,99 @@
   level: 'error',
   timestamp: '2024-05-06T15:07:36.949Z'
 }
+{
+  message: 'Ошибка ввода пароля или почты',
+  level: 'error',
+  timestamp: '2024-05-07T19:30:58.163Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'user')",
+  level: 'error',
+  timestamp: '2024-05-07T19:35:48.302Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'user')",
+  level: 'error',
+  timestamp: '2024-05-07T19:35:59.424Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:55\n' +
+    '    53|                 <div style="display: flex">\r\n' +
+    '    54|                   <h3 style="font-weight: 600"><%= entry.title %></h3>\r\n' +
+    " >> 55|                   <% if (email === entry.author || role === 'admin') { %>\r\n" +
+    '    56|                   <a\r\n' +
+    '    57|                     data-bs-toggle="modal"\r\n' +
+    '    58|                     data-bs-target="#edit<%=entry.id %>"\r\n' +
+    '\n' +
+    'email is not defined',
+  level: 'error',
+  timestamp: '2024-05-07T19:38:53.813Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:55\n' +
+    '    53|                 <div style="display: flex">\r\n' +
+    '    54|                   <h3 style="font-weight: 600"><%= entry.title %></h3>\r\n' +
+    " >> 55|                   <% if (email === entry.author || role === 'admin') { %>\r\n" +
+    '    56|                   <a\r\n' +
+    '    57|                     data-bs-toggle="modal"\r\n' +
+    '    58|                     data-bs-target="#edit<%=entry.id %>"\r\n' +
+    '\n' +
+    'email is not defined',
+  level: 'error',
+  timestamp: '2024-05-07T19:42:39.995Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'user')",
+  level: 'error',
+  timestamp: '2024-05-07T19:59:21.571Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'user')",
+  level: 'error',
+  timestamp: '2024-05-07T19:59:25.442Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'user')",
+  level: 'error',
+  timestamp: '2024-05-07T20:12:32.018Z'
+}
+{
+  message: 'Ошибка в работе sql-операции delete',
+  level: 'error',
+  timestamp: '2024-05-07T20:48:16.286Z'
+}
+{
+  message: "Cannot read properties of undefined (reading '0')",
+  level: 'error',
+  timestamp: '2024-05-07T20:48:16.289Z'
+}
+{
+  message: "Can't add new command when connection is in closed state",
+  level: 'error',
+  timestamp: '2024-05-07T20:48:16.386Z'
+}
+{
+  message: "Can't add new command when connection is in closed state",
+  level: 'error',
+  timestamp: '2024-05-07T20:48:16.388Z'
+}
+{
+  message: "Can't add new command when connection is in closed state",
+  level: 'error',
+  timestamp: '2024-05-07T20:48:16.414Z'
+}
+{
+  message: "Can't add new command when connection is in closed state",
+  level: 'error',
+  timestamp: '2024-05-07T20:48:16.417Z'
+}
+{
+  message: "Can't add new command when connection is in closed state",
+  level: 'error',
+  timestamp: '2024-05-07T20:48:16.432Z'
+}
+{
+  message: "Can't add new command when connection is in closed state",
+  level: 'error',
+  timestamp: '2024-05-07T20:48:16.433Z'
+}

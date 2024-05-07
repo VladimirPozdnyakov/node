@@ -13,9 +13,18 @@ function passportFunctionGithub(passport) {
         return user.username ? user.username : "github.email@gmail.com";
       }
     };
+    const name = function () {
+      if (user.provider == "google") {
+        return user.displayName;
+      } else if (user.provider == "yandex") {
+        return user.displayName;
+      } else if (user.provider == "github") {
+        return user.username ? user.username : "github.email@gmail.com";
+      }
+    };
     const newUser = {
       id: user.id,
-      name: user.username,
+      name: name(),
       email: email(),
     };
     return doneGT(null, newUser);

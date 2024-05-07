@@ -1,17 +1,18 @@
 import connection from "../models/db.js";
 import logger from "../logger/index.js";
-import multer from "multer";
+import fs from "fs";
+import path from "path";
 
 const sql =
-  "CREATE TABLE IF NOT EXISTS tracks( id INT PRIMARY KEY AUTO_INCREMENT, cover_name VARCHAR(255) NOT NULL, audiofile_name VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, genre VARCHAR(50) NOT NULL, bpm DECIMAL(5, 0) NOT NULL, tone VARCHAR(7) NOT NULL, author VARCHAR(255) DEFAULT 'guest')";
+  "CREATE TABLE IF NOT EXISTS tracks( id INT PRIMARY KEY AUTO_INCREMENT, cover_name VARCHAR(255) NOT NULL, audiofile_name VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, genre VARCHAR(50) NOT NULL, bpm DECIMAL(5, 0) NOT NULL, tone VARCHAR(7) NOT NULL, author VARCHAR(255) NOT NULL)";
 
 connection.query(sql, console.log);
 
 const addTrack = (req, res) => {
   const { title, genre, bpm, tone } = req.body;
-  const author = req.session.email
-    ? req.session.email
-    : req.session.passport.user.email;
+  const author = req.session.name
+    ? req.session.name
+    : req.session.passport.user.name;
   const cover = req.files[0];
   const audiofile = req.files[1];
 
@@ -78,9 +79,31 @@ const updateTrack = (req, res) => {
 
 const deleteTrack = (req, res) => {
   connection.query(
-    "DELETE FROM tracks WHERE id = ?",
+    "SELECT cover_name, audiofile_name FROM tracks WHERE id = ?",
     [req.params.id],
     (err, result) => {
+      const track = result[0];
+      const coverPath = path.join("./public/uploads/tracks/", track.cover_name);
+      const audioPath = path.join(
+        "./public/uploads/tracks/",
+        track.audiofile_name
+      );
+      fs.unlink(coverPath, (err) => {
+        if (err) {
+          console.error(`Ошибка удаления файла: ${coverPath}`);
+        }
+      });
+      fs.unlink(audioPath, (err) => {
+        if (err) {
+          console.error(`Ошибка удаления файла: ${audioPath}`);
+        }
+      });
+    }
+  );
+  connection.query(
+    "DELETE FROM tracks WHERE id = ?",
+    [req.params.id],
+    (err) => {
       if (err) {
         logger.error("Ошибка в работе sql-операции delete");
         console.log(err.message);

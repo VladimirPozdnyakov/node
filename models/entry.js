@@ -2,7 +2,7 @@ import connection from "./db.js";
 
 // Создание таблицы, если её нет
 const sql =
-  "CREATE TABLE IF NOT EXISTS users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL, password VARCHAR(50), role VARCHAR(50) DEFAULT 'user')";
+  "CREATE TABLE IF NOT EXISTS users (id INT AUTO_INCREMENT PRIMARY KEY UNIQUE, name VARCHAR(255) NOT NULL UNIQUE, email VARCHAR(255) NOT NULL, password VARCHAR(50) NOT NULL, role VARCHAR(50) NOT NULL DEFAULT 'customer')";
 
 connection.query(sql, (err) => {
   if (err) {

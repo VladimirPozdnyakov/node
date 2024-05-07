@@ -9,6 +9,7 @@ export default (req, res, next) => {
   } else if (req.session.passport) {
     req.user = res.locals.user = req.session.passport.user;
     req.session.email = req.session.passport.user.email;
+    req.session.name = req.session.passport.user.name;
     next();
   } else {
     return next();

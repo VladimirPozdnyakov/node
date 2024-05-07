@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
     <style>
-      body {
+      * {
         font-family: "Roboto Condensed";
       }
       .navbar-expand-lg {
@@ -35,8 +35,8 @@
         <table class="table">
           <tbody>
             <tr>
-              <td style="width: 150px">
-                <div style="width: 150px; height: 150px">
+              <td style="width: 160px">
+                <div style="width: 160px; height: 160px">
                   <img
                     src="./uploads/tracks/<%= entry.cover_name %>"
                     alt="Track cover"
@@ -51,8 +51,8 @@
               </td>
               <td style="width: 60%">
                 <div style="display: flex">
-                  <h4 style="font-weight: 600"><%= entry.title %></h4>
-                  <% if (email === entry.author || role === 'admin') { %>
+                  <h3 style="font-weight: 600"><%= entry.title %></h3>
+                  <% if (name === entry.author || role === 'admin') { %>
                   <a
                     data-bs-toggle="modal"
                     data-bs-target="#edit<%=entry.id %>"

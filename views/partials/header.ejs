@@ -11,7 +11,7 @@
     <% if (locals.user) { %>
     <div id="header">
       <%# Меню пользователей, выполнивших вход%>
-      <span class="name"><%= user.email %> </span>
+      <span class="name"><%= user.name %> </span>
       <% if (locals.role === 'admin') { %>
       <a href="/admin">
         <button type="button" class="btn btn-light">
