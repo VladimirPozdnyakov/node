@@ -8,7 +8,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title fs-5" id="registerModal">Зарегистрироваться</h5>
+        <h5 class="fs-5" id="registerModal">Регистрация</h5>
         <button
           type="button"
           class="btn-close"
@@ -17,8 +17,8 @@
         ></button>
       </div>
       <div class="modal-body">
-        <p style="margin: 0 0 20px auto">————————————Соцсети————————————</p>
-        <div class="container row socials">
+        <!-- Socials -->
+        <div class="container row socials" style="text-align: center">
           <div class="yandex col">
             <a href="/auth/yandex">
               <i class="fa-brands fa-yandex fa-2xl" style="color: #000000"></i>
@@ -35,13 +35,14 @@
             </a>
           </div>
         </div>
+        <!-- Form -->
         <form
           action="/register"
           class="container"
           id="registerForm"
           method="post"
         >
-          <p style="margin: 30px auto">————————————Или—————————————</p>
+          <hr />
           <div class="row my-3">
             <div class="col-sm-5 сol-12">
               <div class="form-floating">
@@ -50,14 +51,14 @@
                   type="text"
                   class="form-control"
                   id="floatingTextarea"
-                  placeholder="Ник"
+                  placeholder="Никнейм"
                 />
-                <label for="floatingTextarea">Ник</label>
+                <label for="floatingTextarea">Никнейм</label>
               </div>
             </div>
           </div>
           <div class="row my-3">
-            <div class="col-sm-8 col-12">
+            <div class="col-sm-6 col-12">
               <div class="form-floating">
                 <input
                   type="email"
@@ -92,6 +93,18 @@
             </div>
           </div>
         </form>
+        <div>
+          <hr />
+          <p>
+            Уже есть аккаунт?
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#login"
+              style="color: blue; cursor: pointer"
+              >Войдите</a
+            >
+          </p>
+        </div>
       </div>
     </div>
   </div>

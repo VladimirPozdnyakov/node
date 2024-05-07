@@ -8,7 +8,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title fs-5" id="loginModal">Вход</h5>
+        <h5 class="fs-5" id="loginModal">Вход</h5>
         <button
           type="button"
           class="btn-close"
@@ -17,8 +17,8 @@
         ></button>
       </div>
       <div class="modal-body">
-        <p style="margin: 0 0 20px auto">————————————Соцсети————————————</p>
-        <div class="container row socials">
+        <!-- Socials -->
+        <div class="row socials" style="text-align: center">
           <div class="yandex col">
             <a href="/auth/yandex">
               <i class="fa-brands fa-yandex fa-2xl" style="color: #000000"></i>
@@ -35,10 +35,11 @@
             </a>
           </div>
         </div>
+        <!-- Form -->
         <form action="/login" method="post">
-          <p style="margin: 30px auto">—————————————Или—————————————</p>
+          <hr />
           <div class="row my-3">
-            <div class="col-sm-8 col-10">
+            <div class="col-sm-6 col-10">
               <div class="form-floating mb-3">
                 <input
                   name="loginForm[email]"
@@ -52,7 +53,7 @@
             </div>
           </div>
           <div class="row my-3">
-            <div class="col-sm-6 col-12">
+            <div class="col-sm-5 col-12">
               <div class="form-floating">
                 <input
                   name="loginForm[password]"
@@ -72,15 +73,16 @@
           </div>
         </form>
         <div>
-          <p>—————————————————————————————</p>
-          <button
-            type="button"
-            class="btn btn-outline-dark"
-            data-bs-toggle="modal"
-            data-bs-target="#register"
-          >
-            Зарегистрироваться на сайте
-          </button>
+          <hr />
+          <p>
+            Ещё нет аккаунта?
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#register"
+              style="color: blue; cursor: pointer"
+              >Зарегистрируйтесь</a
+            >
+          </p>
         </div>
       </div>
     </div>

@@ -12,7 +12,7 @@
       .navbar-expand-lg {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         border-radius: 20px;
-        transition: box-shadow 0.25s;
+        transition: box-shadow 0.2s;
       }
       .navbar-expand-lg:hover {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -24,8 +24,15 @@
     <div class="container">
       <h1 class="text-center">Каталог битов</h1>
       <% entries.tracks.forEach((entry)=>{ %>
-      <div class="track">
-        <table class="table" style="margin: 0 auto; max-width: 1000px">
+      <div
+        class="track"
+        style="
+          margin: 0 auto;
+          max-width: 1000px;
+          background-color: rgb(255, 145, 0);
+        "
+      >
+        <table class="table">
           <tbody>
             <tr>
               <td style="width: 150px">
@@ -57,7 +64,7 @@
                       style="color: #000000"
                     ></i>
                   </button>
-                  <!-- Модальное окно не через include, потому что «entry is not defined» -->
+                  <!-- Модальное окно не через include(), потому что «entry is not defined» -->
 
                   <!-- Начало модального окна -->
                   <div
