@@ -3615,3 +3615,8 @@
   level: 'error',
   timestamp: '2024-05-07T20:48:16.433Z'
 }
+{
+  message: 'Ошибка ввода пароля или почты',
+  level: 'error',
+  timestamp: '2024-05-07T20:57:41.047Z'
+}

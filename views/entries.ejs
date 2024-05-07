@@ -140,7 +140,7 @@
                               </div>
                             </div>
                             <div class="row my-3">
-                              <div class="col-sm-7 col-12">
+                              <div class="col-sm-6 col-12">
                                 <div class="form-floating mb-3">
                                   <select
                                     name="tone"
@@ -181,6 +181,21 @@
                             </div>
                             <div class="row my-3">
                               <div class="col-sm-6 col-12">
+                                <div class="form-floating mb-3">
+                                  <input
+                                    name="price"
+                                    type="number"
+                                    class="form-control"
+                                    id="price"
+                                    placeholder="Price"
+                                    value="<%=entry.price %>"
+                                  />
+                                  <label for="price">Цена ₽</label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row my-3">
+                              <div class="col-sm-6 col-12">
                                 <button type="submit" class="btn btn-success">
                                   Изменить
                                 </button>
@@ -213,7 +228,9 @@
                 ></audio>
               </td>
               <td align="center" valign="middle">
-                <a href="#" class="btn btn-primary">Купить</a>
+                <a href="#" class="btn btn-primary"
+                  >Купить <%= entry.price %>₽</a
+                >
               </td>
             </tr>
           </tbody>
