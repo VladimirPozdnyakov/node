@@ -8,7 +8,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <script src="/bootstrap.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
     <style>
+      body {
+        font-family: "Roboto Condensed";
+      }
       .navbar-expand-lg {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         border-radius: 20px;
@@ -24,14 +31,7 @@
     <div class="container">
       <h1 class="text-center">Каталог битов</h1>
       <% entries.tracks.forEach((entry)=>{ %>
-      <div
-        class="track"
-        style="
-          margin: 0 auto;
-          max-width: 1000px;
-          background-color: rgb(255, 145, 0);
-        "
-      >
+      <div class="track" style="margin: 0 auto; max-width: 1000px">
         <table class="table">
           <tbody>
             <tr>
@@ -53,17 +53,17 @@
                 <div style="display: flex">
                   <h4 style="font-weight: 600"><%= entry.title %></h4>
                   <% if (email === entry.author || role === 'admin') { %>
-                  <button
-                    type="button"
-                    class="btn btn-light"
+                  <a
                     data-bs-toggle="modal"
                     data-bs-target="#edit<%=entry.id %>"
+                    style="cursor: pointer"
                   >
+                    ㅤ
                     <i
                       class="fa-sharp fa-solid fa-pen"
                       style="color: #000000"
                     ></i>
-                  </button>
+                  </a>
                   <!-- Модальное окно не через include(), потому что «entry is not defined» -->
 
                   <!-- Начало модального окна -->
