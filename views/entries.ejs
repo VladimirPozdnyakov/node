@@ -265,7 +265,7 @@
                   type="button"
                   class="btn btn-primary"
                   data-bs-toggle="modal"
-                  data-bs-target="#buy"
+                  data-bs-target="#buy<%= entry.id %>"
                   style="border-radius: 10px"
                 >
                   Купить <%= entry.price %>₽
@@ -273,7 +273,7 @@
                 <!-- Модальное окно не через include(), потому что «entry is not defined» -->
 
                 <!-- Начало модального окна -->
-                <div class="modal fade" id="buy" tabindex="-1"  aria-labelledby="buyModal"  aria-hidden="true">
+                <div class="modal fade" id="buy<%= entry.id %>" tabindex="-1"  aria-labelledby="buyModal"  aria-hidden="true">
                   <div class="modal-dialog">
                     <div class="modal-content" style="border-radius: 20px">
                       <div class="modal-header">
