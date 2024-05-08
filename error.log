@@ -3641,3 +3641,78 @@
   level: 'error',
   timestamp: '2024-05-07T21:29:56.240Z'
 }
+{
+  message: "Can't add new command when connection is in closed state",
+  level: 'error',
+  timestamp: '2024-05-08T20:46:45.627Z'
+}
+{
+  message: "Can't add new command when connection is in closed state",
+  level: 'error',
+  timestamp: '2024-05-08T20:46:45.630Z'
+}
+{
+  message: "Can't add new command when connection is in closed state",
+  level: 'error',
+  timestamp: '2024-05-08T20:46:45.706Z'
+}
+{
+  message: "Can't add new command when connection is in closed state",
+  level: 'error',
+  timestamp: '2024-05-08T20:46:45.707Z'
+}
+{
+  message: "Can't add new command when connection is in closed state",
+  level: 'error',
+  timestamp: '2024-05-08T20:46:45.731Z'
+}
+{
+  message: "Can't add new command when connection is in closed state",
+  level: 'error',
+  timestamp: '2024-05-08T20:46:45.733Z'
+}
+{
+  message: "Can't add new command when connection is in closed state",
+  level: 'error',
+  timestamp: '2024-05-08T20:46:45.749Z'
+}
+{
+  message: "Can't add new command when connection is in closed state",
+  level: 'error',
+  timestamp: '2024-05-08T20:46:45.750Z'
+}
+{
+  message: 'Error',
+  level: 'error',
+  timestamp: '2024-05-08T20:46:54.765Z'
+}
+{
+  message: 'Error',
+  level: 'error',
+  timestamp: '2024-05-08T21:19:20.319Z'
+}
+{
+  message: 'connect ETIMEDOUT',
+  level: 'error',
+  timestamp: '2024-05-08T21:19:20.324Z'
+}
+{
+  message: 'connect ETIMEDOUT',
+  level: 'error',
+  timestamp: '2024-05-08T21:19:20.332Z'
+}
+{
+  message: 'Error',
+  level: 'error',
+  timestamp: '2024-05-08T21:19:34.641Z'
+}
+{
+  message: 'Error',
+  level: 'error',
+  timestamp: '2024-05-08T21:20:02.017Z'
+}
+{
+  message: 'Error',
+  level: 'error',
+  timestamp: '2024-05-08T21:21:33.741Z'
+}
