@@ -25,36 +25,15 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       }
     </style>
-    <script>
-      window.onload = function () {
-        let _currentAudioPlayer = null;
-
-        function playAudio(audioPlayer) {
-          if (_currentAudioPlayer && _currentAudioPlayer !== audioPlayer) {
-            _currentAudioPlayer.pause();
-            _currentAudioPlayer._currentTime = 0;
-          }
-          audioPlayer.play();
-          _currentAudioPlayer = audioPlayer;
-        }
-
-        const audioPlayers = document.querySelectorAll("audio");
-        audioPlayers.forEach(function (audioPlayer) {
-          audioPlayer.addEventListener("click", function () {
-            playAudio(this);
-          });
-        });
-      };
-    </script>
   </head>
   <body>
     <%- include ('./partials/header') %>
     <div class="container">
-      <h1 class="text-center">Каталог битов</h1>
+      <h1 class="text-center" style="padding: 40px">Каталог битов</h1>
       <% entries.tracks.forEach((entry)=>{ %>
       <div class="track" style="margin: 0 auto; max-width: 1000px">
-        <table class="table">
-          <tbody>
+        <table class="table" >
+          <tbody style="border-style: hidden">
             <tr>
               <td style="width: 160px">
                 <div style="width: 160px; height: 160px">
@@ -257,7 +236,7 @@
                   controls="controls"
                   preload="metadata"
                   src="/uploads/tracks/<%= entry.audiofile_name %>"
-                  style="width: 100%; border-radius: 0 0 20px 20px"
+                  style="width: 100%; border-radius: 5px 5px 20px 20px"
                 ></audio>
               </td>
               <td align="center" valign="middle">
@@ -288,7 +267,7 @@
                       <div class="modal-body">
                         <div style="margin: 0 auto; max-width: 400px"">
                           <table class="table">
-                            <tbody>
+                            <tbody style="border-style: hidden">
                               <tr>
                                 <td style="width: 140px">
                                   <div style="width: 140px; height: 140px">
@@ -319,7 +298,7 @@
                             controls="controls"
                             preload="metadata"
                             src="/uploads/tracks/<%= entry.audiofile_name %>"
-                            style="width: 100%; border-radius: 0 0 20px 20px"
+                            style="width: 100%; border-radius: 5px 5px 20px 20px"
                           ></audio>
                         </div>
                         <% if (locals.user) { %>

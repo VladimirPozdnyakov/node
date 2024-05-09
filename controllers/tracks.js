@@ -41,19 +41,6 @@ const addTrack = (req, res) => {
   );
 };
 
-const getTracks = (callback) => {
-  const query = "SELECT * FROM tracks ORDER BY id DESC";
-  connection.query(query, (error, results) => {
-    if (error) {
-      logger.error("Error", error.message);
-      return callback(error, null);
-    }
-
-    callback(null, results);
-    logger.info("Успешно выполнена операция получения треков");
-  });
-};
-
 const updateTrack = (req, res) => {
   const { title, genre, bpm, tone, price } = req.body;
 
@@ -117,7 +104,6 @@ const deleteTrack = (req, res) => {
 
 export default {
   addTrack,
-  getTracks,
   updateTrack,
   deleteTrack,
 };

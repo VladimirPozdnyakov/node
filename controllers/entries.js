@@ -17,22 +17,4 @@ function list(req, res, next) {
   });
 }
 
-function form(req, res) {
-  res.render("post", { title: "Post" });
-}
-
-function submit(req, res, next) {
-  const username = req.user ? req.user.name : null;
-  const {} = req.body.entry;
-  console.log(req.body.entry);
-
-  try {
-    Entry.create({ username });
-    res.redirect("/");
-  } catch (err) {
-    logger.error(`Ошибка: ${err.message}`);
-    return next(err);
-  }
-}
-
-export default { list, form, submit };
+export default { list };

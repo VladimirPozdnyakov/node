@@ -3716,3 +3716,18 @@
   level: 'error',
   timestamp: '2024-05-08T21:21:33.741Z'
 }
+{
+  message: 'Error',
+  level: 'error',
+  timestamp: '2024-05-09T16:35:50.949Z'
+}
+{
+  message: 'window is not defined',
+  level: 'error',
+  timestamp: '2024-05-09T16:36:05.191Z'
+}
+{
+  message: 'document is not defined',
+  level: 'error',
+  timestamp: '2024-05-09T16:36:25.061Z'
+}
