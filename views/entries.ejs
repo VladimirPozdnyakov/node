@@ -24,19 +24,27 @@
       .navbar-expand-lg:hover {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       }
+      .track {
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        transition: box-shadow 0.2s;
+      }
+      .track:hover {
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+      }
     </style>
   </head>
   <body>
     <%- include ('./partials/header') %>
     <div class="container">
-      <h1 class="text-center" style="padding: 40px">Каталог битов</h1>
+      <h1 class="text-center" style="padding-top: 40px">Каталог битов</h1>
       <% entries.tracks.forEach((entry)=>{ %>
-      <div class="track" style="margin: 0 auto; max-width: 1000px">
-        <table class="table" >
-          <tbody style="border-style: hidden">
+      <div class="container track" style="margin: 20px auto; max-width: 1000px">
+        <table class="table table-test" style="border-style: hidden; max-width: 960px; margin: 5px;">
+          <tbody>
             <tr>
               <td style="width: 160px">
-                <div style="width: 160px; height: 160px">
+                <div class="cover" style="width: 160px; height: 160px">
                   <img
                     src="./uploads/tracks/<%= entry.cover_name %>"
                     alt="Track cover"
@@ -266,7 +274,7 @@
                         ></button>
                       </div>
                       <div class="modal-body">
-                        <div style="margin: 0 auto; max-width: 400px"">
+                        <div class="container" style="margin: 0 auto; max-width: 450px"">
                           <table class="table">
                             <tbody style="border-style: hidden">
                               <tr>
