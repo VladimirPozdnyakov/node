@@ -3,7 +3,6 @@ import User from "../models/user.js";
 
 const submit = (req, res, next) => {
   User.authenticate(req.body.loginForm, (err, data) => {
-    //data is user
     if (err) return next(err);
     if (!data) {
       console.log("Почта и/или пароль неверны!");

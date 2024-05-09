@@ -44,7 +44,7 @@
         >
           <hr />
           <div class="row my-3">
-            <div class="col-sm-5 сol-12">
+            <div class="col-sm-7 сol-12">
               <div class="form-floating">
                 <input
                   name="name"
@@ -53,7 +53,7 @@
                   id="floatingTextarea"
                   placeholder="Никнейм"
                 />
-                <label for="floatingTextarea">Никнейм</label>
+                <label for="floatingTextarea">Никнейм (Только латиницей)</label>
               </div>
             </div>
           </div>
@@ -72,7 +72,7 @@
             </div>
           </div>
           <div class="row my-3">
-            <div class="col-sm-5 col-12">
+            <div class="col-sm-6 col-12">
               <div class="form-floating">
                 <input
                   type="password"
@@ -81,7 +81,24 @@
                   id="floatingPassword"
                   placeholder="password"
                 />
-                <label for="floatingPassword">Пароль</label>
+                <label for="floatingPassword">Пароль (Только латиницей)</label>
+              </div>
+            </div>
+          </div>
+          <div class="row my-3">
+            <div class="col-sm-5 col-12">
+              <div class="form-floating">
+                <select
+                  name="role"
+                  type="text"
+                  class="form-control"
+                  id="role"
+                  placeholder="Role"
+                >
+                  <option value="customer">Покупатель</option>
+                  <option value="creator">Креатор</option>
+                </select>
+                <label for="role">Роль</label>
               </div>
             </div>
           </div>

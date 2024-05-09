@@ -15,12 +15,16 @@ class Entry {
 
   static create(data) {
     const sql =
-      "INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, 'user')";
-    connection.query(sql, [data.username, data.email, data.password], (err) => {
-      if (err) {
-        console.log(err);
+      "INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, ?)";
+    connection.query(
+      sql,
+      [data.username, data.email, data.password, data.role],
+      (err) => {
+        if (err) {
+          console.log(err);
+        }
       }
-    });
+    );
   }
 
   static selectAll(cb) {

@@ -7,10 +7,13 @@ const submit = [
   validatePassword,
   (req, res, next) => {
     const email = req.body.email;
-    if (!validator.isEmail(email) || !/@(mail\.ru|yandex\.ru)$/.test(email)) {
-      console.log("Принимаются электронные почты только mail.ru и yandex.ru");
+    if (
+      !validator.isEmail(email) ||
+      !/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$/g.test(email)
+    ) {
+      console.log("Принимаются только валидные электронные почты");
       res.locals.errorMessage.push(
-        "Принимаются электронные почты только mail.ru и yandex.ru"
+        "Принимаются только валидные электронные почты"
       );
       logger.error("Неправильно записан email");
       return res.redirect("/");

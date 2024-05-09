@@ -17,9 +17,9 @@ class User {
 
   static create(dataForm, cb) {
     const sql =
-      "INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, 'user')";
-    const { name, email, password } = dataForm;
-    connection.query(sql, [name, email, password], (err) => {
+      "INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, ?)";
+    const { name, email, password, role } = dataForm;
+    connection.query(sql, [name, email, password, role], (err) => {
       if (err) {
         logger.error("Ошибка создания пользователя");
         console.log(err.message);

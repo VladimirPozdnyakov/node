@@ -3731,3 +3731,88 @@
   level: 'error',
   timestamp: '2024-05-09T16:36:25.061Z'
 }
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:33\n' +
+    '    31|     <div class="container">\r\n' +
+    '    32|       <h1 class="text-center" style="padding: 40px">Каталог битов</h1>\r\n' +
+    ' >> 33|       <% entries.tracks.forEach((entry)=>{ %>\r\n' +
+    '    34|       <div class="track" style="margin: 0 auto; max-width: 1000px">\r\n' +
+    '    35|         <table class="table" >\r\n' +
+    '    36|           <tbody style="border-style: hidden">\r\n' +
+    '\n' +
+    "Cannot read properties of undefined (reading 'tracks')",
+  level: 'error',
+  timestamp: '2024-05-09T16:56:52.297Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:33\n' +
+    '    31|     <div class="container">\r\n' +
+    '    32|       <h1 class="text-center" style="padding: 40px">Каталог битов</h1>\r\n' +
+    ' >> 33|       <% entries.tracks.forEach((entry)=>{ %>\r\n' +
+    '    34|       <div class="track" style="margin: 0 auto; max-width: 1000px">\r\n' +
+    '    35|         <table class="table" >\r\n' +
+    '    36|           <tbody style="border-style: hidden">\r\n' +
+    '\n' +
+    "Cannot read properties of undefined (reading 'tracks')",
+  level: 'error',
+  timestamp: '2024-05-09T16:57:01.210Z'
+}
+{
+  message: 'Error',
+  level: 'error',
+  timestamp: '2024-05-09T16:57:57.710Z'
+}
+{
+  message: 'Error',
+  level: 'error',
+  timestamp: '2024-05-09T16:58:13.204Z'
+}
+{
+  message: 'Error',
+  level: 'error',
+  timestamp: '2024-05-09T16:58:16.977Z'
+}
+{
+  message: 'Error',
+  level: 'error',
+  timestamp: '2024-05-09T17:17:02.310Z'
+}
+{
+  message: "You have tried to call .then(), .catch(), or invoked await on the result of query that is not a promise, which is a programming error. Try calling con.promise().query(), or require('mysql2/promise') instead of 'mysql2' for a promise-compatible version of the query interface. To learn how to use async/await or Promises check out documentation at https://sidorares.github.io/node-mysql2/docs#using-promise-wrapper, or the mysql2 documentation at https://sidorares.github.io/node-mysql2/docs/documentation/promise-wrapper",
+  level: 'error',
+  timestamp: '2024-05-09T17:17:07.737Z'
+}
+{
+  message: 'Error',
+  level: 'error',
+  timestamp: '2024-05-09T17:46:11.136Z'
+}
+{
+  message: 'This socket has been ended by the other party',
+  level: 'error',
+  timestamp: '2024-05-09T17:47:34.876Z'
+}
+{
+  message: 'This socket has been ended by the other party',
+  level: 'error',
+  timestamp: '2024-05-09T17:47:34.885Z'
+}
+{
+  message: 'Ошибка ввода пароля или почты',
+  level: 'error',
+  timestamp: '2024-05-09T17:53:41.603Z'
+}
+{
+  message: 'missing ) after argument list in C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs while compiling ejs\n' +
+    '\n' +
+    'If the above error is not helpful, you may want to try EJS-Lint:\n' +
+    'https://github.com/RyanZim/EJS-Lint\n' +
+    'Or, if you meant to create an async function, pass `async: true` as an option.',
+  level: 'error',
+  timestamp: '2024-05-09T18:21:27.545Z'
+}
+{
+  message: 'Ошибка ввода пароля или почты',
+  level: 'error',
+  timestamp: '2024-05-09T18:23:45.052Z'
+}

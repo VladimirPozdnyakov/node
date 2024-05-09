@@ -150,7 +150,6 @@
                                     class="form-control"
                                     id="tone"
                                     placeholder="Tone"
-                                    value="<%=entry.tone %>"
                                   >
                                     <option value="C">C</option>
                                     <option value="Cm">Cm</option>
@@ -240,6 +239,8 @@
                 ></audio>
               </td>
               <td align="center" valign="middle">
+                <% if (locals.role !== 'creator') { %>
+                <% if (locals.user) { %>
                 <button
                   type="button"
                   class="btn btn-primary"
@@ -301,27 +302,39 @@
                             style="width: 100%; border-radius: 5px 5px 20px 20px"
                           ></audio>
                         </div>
-                        <% if (locals.user) { %>
                         <a href="/uploads/tracks/<%= entry.audiofile_name %>" class="btn btn-success" style="border-radius: 10px" download="<%= entry.audiofile_name %>">
                           Купить <%= entry.price %>₽
                         </a>
-                        <% } else { %>
-                          <button
-                            type="button"
-                            class="btn btn-success"
-                            data-bs-toggle="modal"
-                            data-bs-target="#login"
-                            style="border-radius: 10px"
-                          >
-                            Купить <%= entry.price %>₽
-                          </button>
-                        <% } %>
+
                       </div>
                     </div>
                   </div>
                 </div>
                 <!-- Конец модального окна -->
 
+                <% } else { %>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#login"
+                    style="border-radius: 10px"
+                  >
+                    Купить <%= entry.price %>₽
+                  </button>
+                <% } %>
+                <% } else { %>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#roleIncorrect"
+                  style="border-radius: 10px"
+                >
+                  Купить <%= entry.price %>₽
+                </button>
+                <%- include('./partials/roleIncorrectModal'); -%>
+                <% } %>
               </td>
             </tr>
           </tbody>

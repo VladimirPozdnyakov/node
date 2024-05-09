@@ -18,7 +18,7 @@
           Панель администратора
         </button>
       </a>
-      <% } else { %>
+      <% } else if (locals.role === 'creator') { %>
       <button
         type="button"
         class="btn btn-info"
@@ -29,7 +29,9 @@
         Выложить бит
       </button>
       <% } %>
-      <a href="/logout" class="btn btn-secondary"> Выйти </a>
+      <a href="/logout" class="btn btn-secondary" style="border-radius: 10px">
+        Выйти
+      </a>
     </div>
     <% } else { %>
     <div class="" id="header">
