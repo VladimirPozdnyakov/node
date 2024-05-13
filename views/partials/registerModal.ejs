@@ -44,7 +44,7 @@
                   name="surname"
                   type="text"
                   class="form-control"
-                  id="surnam"
+                  id="surname"
                   placeholder="Фамилия"
                 />
                 <label for="surname">Фамилия</label>
@@ -55,7 +55,7 @@
             <div class="col-sm-7 сol-12">
               <div class="form-floating">
                 <input
-                  name="name"
+                  name="patronymic"
                   type="text"
                   class="form-control"
                   id="patronymic"
@@ -97,7 +97,7 @@
               одной заглавной и строчной букве
             </small>
           </div>
-          <div class="row my-3">
+          <!-- <div class="row my-3">
             <div class="col-sm-6 col-12">
               <div class="form-floating">
                 <input
@@ -111,13 +111,23 @@
                 >
               </div>
             </div>
-          </div>
-          <div class="row my-3" style="margin-left: 0px">
+          </div> -->
+          <div class="form-group">
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="" />
-              <label class="form-check-label" for=""
-                >Я принимаю <a href="#">пользовательское соглашение</a>
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="invalidCheck"
+                required
+              />
+              <label class="form-check-label" for="invalidCheck">
+                Я принимаю <a href="#">пользовательское соглашение</a>
               </label>
+              <div class="invalid-feedback">
+                Вы должны согласиться с
+                <a href="#">пользовательским соглашением</a>
+              </div>
             </div>
           </div>
           <div class="row my-3">

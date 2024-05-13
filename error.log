@@ -3851,3 +3851,48 @@
   level: 'error',
   timestamp: '2024-05-13T08:34:21.032Z'
 }
+{
+  message: 'Ошибка ввода пароля или почты',
+  level: 'error',
+  timestamp: '2024-05-13T08:46:07.802Z'
+}
+{
+  message: 'Ошибка создания пользователя',
+  level: 'error',
+  timestamp: '2024-05-13T08:47:25.741Z'
+}
+{
+  message: "Column count doesn't match value count at row 1",
+  level: 'error',
+  timestamp: '2024-05-13T08:47:25.747Z'
+}
+{
+  message: 'Ошибка создания пользователя',
+  level: 'error',
+  timestamp: '2024-05-13T08:48:04.464Z'
+}
+{
+  message: "Column count doesn't match value count at row 1",
+  level: 'error',
+  timestamp: '2024-05-13T08:48:04.467Z'
+}
+{
+  message: 'Ошибка создания пользователя',
+  level: 'error',
+  timestamp: '2024-05-13T08:48:19.753Z'
+}
+{
+  message: "Unknown column 'surname' in 'field list'",
+  level: 'error',
+  timestamp: '2024-05-13T08:48:19.757Z'
+}
+{
+  message: 'Ошибка создания пользователя',
+  level: 'error',
+  timestamp: '2024-05-13T08:48:38.819Z'
+}
+{
+  message: "Unknown column 'surname' in 'field list'",
+  level: 'error',
+  timestamp: '2024-05-13T08:48:38.822Z'
+}
