@@ -24,7 +24,7 @@ connection.connect((err) => {
   });
 
   sql =
-    "CREATE TABLE IF NOT EXISTS users (id INT AUTO_INCREMENT PRIMARY KEY UNIQUE, name VARCHAR(255) NOT NULL UNIQUE, email VARCHAR(255) NOT NULL, password VARCHAR(50) NOT NULL, role VARCHAR(50) NOT NULL DEFAULT 'customer')";
+    "CREATE TABLE IF NOT EXISTS users1 (id INT AUTO_INCREMENT PRIMARY KEY UNIQUE, name VARCHAR(255) NOT NULL, surname VARCHAR(255) NOT NULL, patronymic VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL, password VARCHAR(50) NOT NULL, role VARCHAR(50) NOT NULL DEFAULT 'user')";
   connection.query(sql, function (err, result) {
     if (err) throw err;
   });

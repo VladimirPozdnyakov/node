@@ -30,10 +30,38 @@
                   name="name"
                   type="text"
                   class="form-control"
-                  id="floatingTextarea"
-                  placeholder="Никнейм"
+                  id="name"
+                  placeholder="Имя"
                 />
-                <label for="floatingTextarea">Никнейм</label>
+                <label for="name">Имя</label>
+              </div>
+            </div>
+          </div>
+          <div class="row my-3">
+            <div class="col-sm-7 сol-12">
+              <div class="form-floating">
+                <input
+                  name="surname"
+                  type="text"
+                  class="form-control"
+                  id="surnam"
+                  placeholder="Фамилия"
+                />
+                <label for="surname">Фамилия</label>
+              </div>
+            </div>
+          </div>
+          <div class="row my-3">
+            <div class="col-sm-7 сol-12">
+              <div class="form-floating">
+                <input
+                  name="name"
+                  type="text"
+                  class="form-control"
+                  id="patronymic"
+                  placeholder="Отчество"
+                />
+                <label for="patronymic">Отчество</label>
               </div>
             </div>
           </div>
@@ -64,22 +92,32 @@
                 <label for="floatingPassword">Пароль</label>
               </div>
             </div>
+            <small id="passwordHelpBlock" class="form-text text-muted">
+              Пароль должен содержать минимум 8 знаков, хотя бы одну цифру и по
+              одной заглавной и строчной букве
+            </small>
           </div>
           <div class="row my-3">
-            <div class="col-sm-5 col-12">
+            <div class="col-sm-6 col-12">
               <div class="form-floating">
-                <select
-                  name="role"
-                  type="text"
+                <input
+                  type="password"
+                  name="password2"
                   class="form-control"
-                  id="role"
-                  placeholder="Role"
+                  id="floatingPassword2"
+                />
+                <label for="floatingPassword2"
+                  >Повторить пароль (не работает)</label
                 >
-                  <option value="customer">Покупатель</option>
-                  <option value="creator">Креатор</option>
-                </select>
-                <label for="role">Роль</label>
               </div>
+            </div>
+          </div>
+          <div class="row my-3" style="margin-left: 0px">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="" />
+              <label class="form-check-label" for=""
+                >Я принимаю <a href="#">пользовательское соглашение</a>
+              </label>
             </div>
           </div>
           <div class="row my-3">
