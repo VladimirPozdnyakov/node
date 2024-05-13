@@ -3821,3 +3821,8 @@
   level: 'error',
   timestamp: '2024-05-09T19:32:56.129Z'
 }
+{
+  message: "Cannot read properties of undefined (reading 'user')",
+  level: 'error',
+  timestamp: '2024-05-13T07:06:32.282Z'
+}

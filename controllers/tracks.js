@@ -4,7 +4,7 @@ import fs from "fs";
 import path from "path";
 
 const sql =
-  "CREATE TABLE IF NOT EXISTS tracks( id INT PRIMARY KEY AUTO_INCREMENT, cover_name VARCHAR(255) NOT NULL, audiofile_name VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, genre VARCHAR(50) NOT NULL, bpm DECIMAL(5, 0) NOT NULL, tone VARCHAR(7) NOT NULL, price VARCHAR(5) NOT NULL, author VARCHAR(255) NOT NULL)";
+  "CREATE TABLE IF NOT EXISTS tracks( id INT PRIMARY KEY AUTO_INCREMENT, cover_name VARCHAR(255) NOT NULL, audiofile_name VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, genre VARCHAR(50) NOT NULL, bpm DECIMAL(5, 0) NOT NULL, tone VARCHAR(7) NOT NULL, price VARCHAR(5) NOT NULL, author VARCHAR(255) NOT NULL, status TINYINT NOT NULL DEFAULT 0)";
 
 connection.query(sql, console.log);
 
