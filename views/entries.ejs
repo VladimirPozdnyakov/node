@@ -258,7 +258,7 @@
                   data-bs-target="#buy<%= entry.id %>"
                   style="border-radius: 10px"
                 >
-                  Купить <%= entry.price %>₽
+                  В резерв
                 </button>
                 <!-- Модальное окно не через include(), потому что «entry is not defined» -->
 
@@ -274,7 +274,7 @@
                     <div class="modal-content" style="border-radius: 20px">
                       <div class="modal-header">
                         <h5 class="modal-title fs-5" id="buyModal">
-                          Купить «<%= entry.title %>»
+                          Поместить предмет коллекции в резерв?
                         </h5>
                         <button
                           type="button"
@@ -321,23 +321,29 @@
                               </tr>
                             </tbody>
                           </table>
-                          <audio
-                            controls="controls"
-                            preload="metadata"
-                            src="/uploads/tracks/<%= entry.audiofile_name %>"
-                            style="
-                              width: 100%;
-                              border-radius: 5px 5px 20px 20px;
-                            "
-                          ></audio>
                         </div>
+                        <audio
+                          controls="controls"
+                          preload="metadata"
+                          src="/uploads/tracks/<%= entry.audiofile_name %>"
+                          style="width: 100%; border-radius: 5px 5px 20px 20px"
+                        ></audio>
+                        <hr />
                         <a
-                          href="/uploads/tracks/<%= entry.audiofile_name %>"
+                          type="submit"
                           class="btn btn-success"
                           style="border-radius: 10px"
-                          download="<%= entry.audiofile_name %>"
                         >
-                          Купить <%= entry.price %>₽
+                          Да
+                        </a>
+                        <a
+                          type="submit"
+                          class="btn btn-danger"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          style="border-radius: 10px"
+                        >
+                          Нет
                         </a>
                       </div>
                     </div>
@@ -353,7 +359,7 @@
                   data-bs-target="#login"
                   style="border-radius: 10px"
                 >
-                  Купить <%= entry.price %>₽
+                  В резерв
                 </button>
                 <% } %> <% } else { %>
                 <button
@@ -363,7 +369,7 @@
                   data-bs-target="#roleIncorrect"
                   style="border-radius: 10px"
                 >
-                  Купить <%= entry.price %>₽
+                  В резерв
                 </button>
                 <%- include('./partials/roleIncorrectModal'); -%> <% } %>
               </td>
