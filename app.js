@@ -9,15 +9,10 @@ import user_session from "./middleware/user_session.js";
 import logger from "./logger/index.js";
 import "dotenv/config.js";
 import cookieParser from "cookie-parser";
-import passport from "passport";
-import passportFunctionGithub from "./middleware/passport_github.js";
-import passportFunctionYandex from "./middleware/passport_yandex.js";
-import passportFunctionGoogle from "./middleware/passport_google.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 const port = process.env.PORT;
-const currentTime = new Date().toLocaleString();
 
 app.set("view engine", "ejs");
 app.set("\views", __dirname + "views");
@@ -49,11 +44,6 @@ app.use(
 app.use(favicon(join(__dirname, "/public/img/logo.ico")));
 app.use(user_session);
 app.use(cookieParser());
-app.use(passport.initialize());
-app.use(passport.session());
-passportFunctionGithub(passport);
-passportFunctionYandex(passport);
-passportFunctionGoogle(passport);
 app.use(myRoutes);
 
 app.listen(port, () => {

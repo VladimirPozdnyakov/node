@@ -11,8 +11,6 @@ connection.query(sql, console.log);
 const addTrack = (req, res) => {
   const { title, genre, bpm, tone, price } = req.body;
   const author = req.session.name
-    ? req.session.name
-    : req.session.passport.user.name;
   const cover = req.files[0];
   const audiofile = req.files[1];
 
