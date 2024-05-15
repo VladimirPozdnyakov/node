@@ -8,7 +8,7 @@
   <div class="modal-dialog">
     <div class="modal-content" style="border-radius: 20px">
       <div class="modal-header">
-        <h5 class="modal-title fs-5" id="newModal">Выложить бит</h5>
+        <h5 class="modal-title fs-5" id="newModal">Выложить пластинку</h5>
         <button
           type="button"
           class="btn-close"
@@ -29,7 +29,7 @@
                 <label for="coverImage">Обложка</label>
                 <input
                   type="file"
-                  class="form-control-file"
+                  class="form-control"
                   id="coverImage"
                   name="coverImage"
                   accept="image/*"
@@ -55,6 +55,20 @@
             <div class="col-sm-6 col-12">
               <div class="form-floating mb-3">
                 <input
+                  name="author"
+                  type="text"
+                  class="form-control"
+                  id="author"
+                  placeholder="author"
+                />
+                <label for="author">Автор</label>
+              </div>
+            </div>
+          </div>
+          <div class="row my-3">
+            <div class="col-sm-6 col-12">
+              <div class="form-floating mb-3">
+                <input
                   name="title"
                   type="text"
                   class="form-control"
@@ -68,81 +82,18 @@
           <div class="row my-3">
             <div class="col-sm-6 col-12">
               <div class="form-floating mb-3">
-                <input
-                  name="genre"
-                  type="text"
-                  class="form-control"
-                  id="genre"
-                  placeholder="Genre"
-                />
-                <label for="genre">Жанр</label>
-              </div>
-            </div>
-          </div>
-          <div class="row my-3">
-            <div class="col-sm-6 col-12">
-              <div class="form-floating mb-3">
-                <input
-                  name="bpm"
-                  type="number"
-                  class="form-control"
-                  id="bpm"
-                  placeholder="Bpm"
-                />
-                <label for="bpm">BPM</label>
-              </div>
-            </div>
-          </div>
-          <div class="row my-3">
-            <div class="col-sm-6 col-12">
-              <div class="form-floating mb-3">
                 <select
-                  name="tone"
+                  name="category"
                   type="text"
                   class="form-control"
-                  id="tone"
-                  placeholder="Tone"
+                  id="category"
+                  placeholder="category"
                 >
-                  <option value="C">C</option>
-                  <option value="Cm">Cm</option>
-                  <option value="C#/Db">C#/Db</option>
-                  <option value="C#m/Dbm">C#m/Dbm</option>
-                  <option value="D">D</option>
-                  <option value="Dm">Dm</option>
-                  <option value="D#/Eb">D#/Eb</option>
-                  <option value="D#m/Ebm">D#m/Ebm</option>
-                  <option value="E">E</option>
-                  <option value="Em">Em</option>
-                  <option value="F">F</option>
-                  <option value="Fm">Fm</option>
-                  <option value="F#/Gb">F#/Gb</option>
-                  <option value="F#m/Gbm">F#m/Gbm</option>
-                  <option value="G">G</option>
-                  <option value="Gm">Gm</option>
-                  <option value="G#/Ab">G#/Ab</option>
-                  <option value="G#m/Abm">G#m/Abm</option>
-                  <option value="A">A</option>
-                  <option value="Am">Am</option>
-                  <option value="A#/Bb">A#/Bb</option>
-                  <option value="A#m/Bbm">A#m/Bbm</option>
-                  <option value="B">B</option>
-                  <option value="Bm">Bm</option>
+                  <option value="Музыка">Музыка</option>
+                  <option value="Стихи">Стихи</option>
+                  <option value="Проза">Проза</option>
                 </select>
-                <label for="tone">Тональность</label>
-              </div>
-            </div>
-          </div>
-          <div class="row my-3">
-            <div class="col-sm-6 col-12">
-              <div class="form-floating mb-3">
-                <input
-                  name="price"
-                  type="number"
-                  class="form-control"
-                  id="price"
-                  placeholder="Price"
-                />
-                <label for="price">Цена ₽</label>
+                <label for="category">Категория</label>
               </div>
             </div>
           </div>

@@ -8,6 +8,13 @@
         style="width: 50px; height: 50px; object-fit: cover"
       />
     </a>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="/about">О нас</a>
+        <a class="nav-link" href="/">Каталог</a>
+        <a class="nav-link" href="/where">Где нас найти?</a>
+      </div>
+    </div>
     <% if (locals.user) { %>
     <div id="header">
       <%# Меню пользователей, выполнивших вход%>
@@ -18,7 +25,6 @@
           Панель администратора
         </button>
       </a>
-      <% } else if (locals.role === 'creator') { %>
       <button
         type="button"
         class="btn btn-info"
@@ -26,8 +32,14 @@
         data-bs-target="#new"
         style="border-radius: 10px"
       >
-        Выложить бит
+        Выложить пластинку
       </button>
+      <% } else if (locals.role === 'user') { %>
+      <a href="/orders">
+        <button type="button" class="btn btn-dark" style="border-radius: 10px">
+          Мои резервы
+        </button>
+      </a>
       <% } %>
       <a href="/logout" class="btn btn-secondary" style="border-radius: 10px">
         Выйти

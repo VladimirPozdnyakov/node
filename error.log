@@ -3901,3 +3901,75 @@
   level: 'error',
   timestamp: '2024-05-13T08:50:08.155Z'
 }
+{
+  message: 'C:\\Users\\pozdn\\Desktop\\Node\\Diplom\\node\\views\\entries.ejs:38\n' +
+    '    36|   </head>\r\n' +
+    '    37|   <body>\r\n' +
+    " >> 38|     <%- include ('./partials/header') %>\r\n" +
+    '    39|     <div class="container">\r\n' +
+    '    40|       <h1 class="text-center" style="padding-top: 40px">Каталог пластинок</h1>\r\n' +
+    '    41|       <% entries.tracks.forEach((entry)=>{ %>\r\n' +
+    '\n' +
+    "Unexpected token 'else' in C:\\Users\\pozdn\\Desktop\\Node\\Diplom\\node\\views\\partials\\header.ejs while compiling ejs\n" +
+    '\n' +
+    'If the above error is not helpful, you may want to try EJS-Lint:\n' +
+    'https://github.com/RyanZim/EJS-Lint\n' +
+    'Or, if you meant to create an async function, pass `async: true` as an option.',
+  level: 'error',
+  timestamp: '2024-05-15T10:16:46.782Z'
+}
+{
+  message: 'C:\\Users\\pozdn\\Desktop\\Node\\Diplom\\node\\views\\entries.ejs:38\n' +
+    '    36|   </head>\r\n' +
+    '    37|   <body>\r\n' +
+    " >> 38|     <%- include ('./partials/header') %>\r\n" +
+    '    39|     <div class="container">\r\n' +
+    '    40|       <h1 class="text-center" style="padding-top: 40px">Каталог пластинок</h1>\r\n' +
+    '    41|       <% entries.tracks.forEach((entry)=>{ %>\r\n' +
+    '\n' +
+    'Could not find matching close tag for "<%".',
+  level: 'error',
+  timestamp: '2024-05-15T10:17:06.273Z'
+}
+{
+  message: 'C:\\Users\\pozdn\\Desktop\\Node\\Diplom\\node\\views\\entries.ejs:41\n' +
+    '    39|     <div class="container">\r\n' +
+    '    40|       <h1 class="text-center" style="padding-top: 40px">Каталог пластинок</h1>\r\n' +
+    ' >> 41|       <% entries.tracks.forEach((entry)=>{ %>\r\n' +
+    '    42|       <div class="container track" style="margin: 20px auto; max-width: 1000px">\r\n' +
+    '    43|         <table\r\n' +
+    '    44|           class="table table-test"\r\n' +
+    '\n' +
+    'C:\\Users\\pozdn\\Desktop\\Node\\Diplom\\node\\views\\partials\\tracks\\newModal.ejs:63\n' +
+    '    61|                   id="author"\r\n' +
+    '    62|                   placeholder="author"\r\n' +
+    ' >> 63|                   value="<%=entry.author %>"\r\n' +
+    '    64|                 />\r\n' +
+    '    65|                 <label for="author">Автор</label>\r\n' +
+    '    66|               </div>\r\n' +
+    '\n' +
+    'entry is not defined',
+  level: 'error',
+  timestamp: '2024-05-15T10:27:24.364Z'
+}
+{
+  message: 'C:\\Users\\pozdn\\Desktop\\Node\\Diplom\\node\\views\\entries.ejs:41\n' +
+    '    39|     <div class="container">\r\n' +
+    '    40|       <h1 class="text-center" style="padding-top: 40px">Каталог пластинок</h1>\r\n' +
+    ' >> 41|       <% entries.tracks.forEach((entry)=>{ %>\r\n' +
+    '    42|       <div class="container track" style="margin: 20px auto; max-width: 1000px">\r\n' +
+    '    43|         <table\r\n' +
+    '    44|           class="table table-test"\r\n' +
+    '\n' +
+    'C:\\Users\\pozdn\\Desktop\\Node\\Diplom\\node\\views\\partials\\tracks\\newModal.ejs:63\n' +
+    '    61|                   id="author"\r\n' +
+    '    62|                   placeholder="author"\r\n' +
+    ' >> 63|                   value="<%=entry.author %>"\r\n' +
+    '    64|                 />\r\n' +
+    '    65|                 <label for="author">Автор</label>\r\n' +
+    '    66|               </div>\r\n' +
+    '\n' +
+    'entry is not defined',
+  level: 'error',
+  timestamp: '2024-05-15T10:28:23.466Z'
+}

@@ -4,18 +4,17 @@ import fs from "fs";
 import path from "path";
 
 const sql =
-  "CREATE TABLE IF NOT EXISTS tracks( id INT PRIMARY KEY AUTO_INCREMENT, cover_name VARCHAR(255) NOT NULL, audiofile_name VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, genre VARCHAR(50) NOT NULL, bpm DECIMAL(5, 0) NOT NULL, tone VARCHAR(7) NOT NULL, price VARCHAR(5) NOT NULL, author VARCHAR(255) NOT NULL, status TINYINT NOT NULL DEFAULT 0)";
+  "CREATE TABLE IF NOT EXISTS tracks1( id INT PRIMARY KEY AUTO_INCREMENT, cover_name VARCHAR(255) NOT NULL, audiofile_name VARCHAR(255) NOT NULL, author VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, category VARCHAR(20) NOT NULL, status TINYINT NOT NULL DEFAULT 0)";
 
 connection.query(sql, console.log);
 
 const addTrack = (req, res) => {
-  const { title, genre, bpm, tone, price } = req.body;
-  const author = req.session.name
+  const { author, title, category } = req.body;
   const cover = req.files[0];
   const audiofile = req.files[1];
 
-  if (!cover || !audiofile || !title || !genre || !bpm || !tone || !price) {
-    logger.error("Не заполнены все поля для выкладывания бита");
+  if (!cover || !audiofile || !author || !title || !category) {
+    logger.error("Не заполнены все поля для выкладывания пластинки");
     return res.redirect("/");
   }
 
@@ -23,33 +22,33 @@ const addTrack = (req, res) => {
   const audiofile_name = audiofile.originalname;
 
   const query =
-    "INSERT INTO tracks (cover_name, audiofile_name, title, genre, bpm, tone, price, author) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+    "INSERT INTO tracks1 (cover_name, audiofile_name, author, title, category) VALUES (?, ?, ?, ?, ?)";
   connection.query(
     query,
-    [cover_name, audiofile_name, title, genre, bpm, tone, price, author],
+    [cover_name, audiofile_name, author, title, category],
     (error) => {
       if (error) {
-        logger.error("Ошибка выкладывания бита", error.message);
+        logger.error("Ошибка выкладывания пластинки", error.message);
         return res.redirect("/");
       }
 
       res.redirect("/");
-      logger.info("Бит выложен by " + author);
+      logger.info("Пластинка выложена");
     }
   );
 };
 
 const updateTrack = (req, res) => {
-  const { title, genre, bpm, tone, price } = req.body;
+  const { author, title, category } = req.body;
 
-  if (!title || !genre || !bpm || !tone || !price) {
-    logger.error("Не заполнены все поля для обновления бита");
+  if (!author || !title || !category) {
+    logger.error("Не заполнены все поля для обновления пластинки");
     return res.redirect("/");
   }
 
   connection.query(
-    "UPDATE tracks SET ? WHERE id = ?",
-    [{ title, genre, bpm, tone, price }, req.params.id],
+    "UPDATE tracks1 SET ? WHERE id = ?",
+    [{ author, title, category }, req.params.id],
     (err, result) => {
       if (err) {
         logger.error("Ошибка в работе sql-операции update");
@@ -64,7 +63,7 @@ const updateTrack = (req, res) => {
 
 const deleteTrack = (req, res) => {
   connection.query(
-    "SELECT cover_name, audiofile_name FROM tracks WHERE id = ?",
+    "SELECT cover_name, audiofile_name FROM tracks1 WHERE id = ?",
     [req.params.id],
     (err, result) => {
       const track = result[0];
@@ -86,7 +85,7 @@ const deleteTrack = (req, res) => {
     }
   );
   connection.query(
-    "DELETE FROM tracks WHERE id = ?",
+    "DELETE FROM tracks1 WHERE id = ?",
     [req.params.id],
     (err) => {
       if (err) {
