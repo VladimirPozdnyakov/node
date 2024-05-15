@@ -102,7 +102,7 @@
                         </div>
                         <div class="modal-body">
                           <form
-                            action="/edit/tracks/<%=entry.id %>"
+                            action="/tracks/<%=entry.id %>/edit"
                             class="container"
                             method="post"
                             enctype="multipart/form-data"
@@ -168,7 +168,7 @@
                             </div>
                           </form>
                           <a
-                            href="/edit/tracks/delete/<%= entry.id %>"
+                            href="/tracks/<%= entry.id %>/delete"
                             style="margin-left: 12px"
                           >
                             <button
@@ -273,22 +273,42 @@
                           style="width: 100%; border-radius: 5px 5px 20px 20px"
                         ></audio>
                         <hr />
-                        <a
-                          type="submit"
-                          class="btn btn-success"
-                          style="border-radius: 10px"
-                        >
-                          Да
-                        </a>
-                        <a
-                          type="submit"
-                          class="btn btn-danger"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                          style="border-radius: 10px"
-                        >
-                          Отмена
-                        </a>
+                        <div style="display: flex">
+                          <form
+                            action="/tracks/<%=entry.id %>/buy"
+                            method="post"
+                          >
+                            <div class="row my-3" style="display: none">
+                              <div class="col-sm-6 col-12">
+                                <div class="form-floating mb-3">
+                                  <input
+                                    name="title"
+                                    type="text"
+                                    class="form-control"
+                                    id="title"
+                                    placeholder="Title"
+                                    value="<%=entry.title %>"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <button
+                              type="submit"
+                              class="btn btn-success"
+                              style="border-radius: 10px"
+                            >
+                              Да
+                            </button>
+                          </form>
+                          <a
+                            class="btn btn-danger"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                            style="border-radius: 10px"
+                          >
+                            Отмена
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>

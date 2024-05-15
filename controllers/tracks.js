@@ -6,7 +6,11 @@ import path from "path";
 const sql =
   "CREATE TABLE IF NOT EXISTS tracks1( id INT PRIMARY KEY AUTO_INCREMENT, cover_name VARCHAR(255) NOT NULL, audiofile_name VARCHAR(255) NOT NULL, author VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, category VARCHAR(20) NOT NULL, status TINYINT NOT NULL DEFAULT 0)";
 
+const sql2 =
+  "CREATE TABLE IF NOT EXISTS orders1( id INT PRIMARY KEY AUTO_INCREMENT, track VARCHAR(255) NOT NULL, customer VARCHAR(255) NOT NULL)";
+
 connection.query(sql, console.log);
+connection.query(sql2, console.log);
 
 const addTrack = (req, res) => {
   const { author, title, category } = req.body;
@@ -34,6 +38,38 @@ const addTrack = (req, res) => {
 
       res.redirect("/");
       logger.info("Пластинка выложена");
+    }
+  );
+};
+
+const buyTrack = (req, res) => {
+  const track = req.body.title;
+  const customer = req.session.name;
+
+  connection.query(
+    "INSERT INTO orders1 (track, customer) VALUES (?, ?)",
+    [track, customer],
+    (err, result) => {
+      if (err) {
+        logger.error("Ошибка во время резервации пластинки");
+        console.log(err.message);
+      } else {
+        logger.info("Успешное выполнение резервации пластинки");
+        return res.redirect("/");
+      }
+    }
+  );
+  const status = 1;
+  connection.query(
+    "UPDATE tracks1 SET ? WHERE id = ?",
+    [{ status }, req.params.id],
+    (err, result) => {
+      if (err) {
+        logger.error("Ошибка в изменении статуса пластинки");
+        console.log(err.message);
+      } else {
+        logger.info("Успешное изменение статуса пластинки");
+      }
     }
   );
 };
@@ -101,6 +137,7 @@ const deleteTrack = (req, res) => {
 
 export default {
   addTrack,
+  buyTrack,
   updateTrack,
   deleteTrack,
 };

@@ -3973,3 +3973,113 @@
   level: 'error',
   timestamp: '2024-05-15T10:28:23.466Z'
 }
+{
+  message: 'Ошибка ввода пароля или почты',
+  level: 'error',
+  timestamp: '2024-05-15T11:26:21.183Z'
+}
+{
+  message: 'entry is not defined',
+  level: 'error',
+  timestamp: '2024-05-15T11:39:19.876Z'
+}
+{
+  message: 'customer is not defined',
+  level: 'error',
+  timestamp: '2024-05-15T11:43:56.737Z'
+}
+{
+  message: 'customer is not defined',
+  level: 'error',
+  timestamp: '2024-05-15T11:44:39.424Z'
+}
+{
+  message: 'Ошибка во время резервации пластинки',
+  level: 'error',
+  timestamp: '2024-05-15T11:44:56.461Z'
+}
+{
+  message: 'Ошибка во время резервации пластинки',
+  level: 'error',
+  timestamp: '2024-05-15T11:46:59.340Z'
+}
+{
+  message: 'Ошибка во время резервации пластинки',
+  level: 'error',
+  timestamp: '2024-05-15T11:47:54.688Z'
+}
+{
+  message: 'Ошибка во время резервации пластинки',
+  level: 'error',
+  timestamp: '2024-05-15T11:55:49.252Z'
+}
+{
+  message: 'Ошибка во время резервации пластинки',
+  level: 'error',
+  timestamp: '2024-05-15T11:56:11.949Z'
+}
+{
+  message: 'Ошибка во время резервации пластинки',
+  level: 'error',
+  timestamp: '2024-05-15T11:56:26.309Z'
+}
+{
+  message: 'Ошибка во время резервации пластинки',
+  level: 'error',
+  timestamp: '2024-05-15T11:57:01.416Z'
+}
+{
+  message: 'Ошибка во время резервации пластинки',
+  level: 'error',
+  timestamp: '2024-05-15T11:58:14.641Z'
+}
+{
+  message: 'Ошибка во время резервации пластинки',
+  level: 'error',
+  timestamp: '2024-05-15T11:59:56.420Z'
+}
+{
+  message: 'Ошибка во время резервации пластинки',
+  level: 'error',
+  timestamp: '2024-05-15T12:03:00.245Z'
+}
+{
+  message: 'Ошибка во время резервации пластинки',
+  level: 'error',
+  timestamp: '2024-05-15T12:03:20.813Z'
+}
+{
+  message: 'Ошибка во время резервации пластинки',
+  level: 'error',
+  timestamp: '2024-05-15T12:04:40.280Z'
+}
+{
+  message: 'Ошибка во время резервации пластинки',
+  level: 'error',
+  timestamp: '2024-05-15T12:04:55.485Z'
+}
+{
+  message: 'Ошибка во время резервации пластинки',
+  level: 'error',
+  timestamp: '2024-05-15T12:07:24.329Z'
+}
+{
+  message: 'Ошибка во время резервации пластинки',
+  level: 'error',
+  timestamp: '2024-05-15T12:12:00.842Z'
+}
+{
+  message: 'Ошибка ввода пароля или почты',
+  level: 'error',
+  timestamp: '2024-05-15T12:19:20.823Z'
+}
+{
+  message: 'Ошибка ввода пароля или почты',
+  level: 'error',
+  timestamp: '2024-05-15T12:20:14.814Z'
+}
+{
+  message: 'Ошибка ввода пароля или почты',
+  level: 'error',
+  timestamp: '2024-05-15T12:20:20.601Z'
+}

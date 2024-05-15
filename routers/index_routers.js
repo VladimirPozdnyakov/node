@@ -34,7 +34,8 @@ router.get("/logout", login.logout);
 
 router.post("/new", upload.any(), tracks.addTrack);
 
-router.post("/edit/tracks/:id", upload.any(), tracks.updateTrack);
-router.get("/edit/tracks/delete/:id", tracks.deleteTrack);
+router.post("/tracks/:id/edit", upload.any(), tracks.updateTrack);
+router.get("/tracks/:id/delete", tracks.deleteTrack);
+router.post("/tracks/:id/buy", tracks.buyTrack);
 
 export default router;
