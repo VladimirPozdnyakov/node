@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="/bootstrap.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Roboto Condensed";
+      }
+      .navbar-expand-lg {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        transition: box-shadow 0.2s;
+      }
+      .navbar-expand-lg:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .track {
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        transition: box-shadow 0.2s;
+      }
+      .track:hover {
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <%- include ('./partials/header') %>
+    <div class="container">
+      <h1 class="text-center" style="padding-top: 40px">Каталог пластинок</h1>
+      <% entries.tracks.forEach((entry)=>{ %> <% if (entry.status == "1" &&
+      entry.orderedBy === user.name ) { %>
+      <div class="container track" style="margin: 20px auto; max-width: 1000px">
+        <table
+          class="table table-test"
+          style="border-style: hidden; max-width: 960px; margin: 5px"
+        >
+          <tbody>
+            <tr>
+              <td style="width: 160px">
+                <div class="cover" style="width: 160px; height: 160px">
+                  <img
+                    src="./uploads/tracks/<%= entry.cover_name %>"
+                    alt="Track cover"
+                    style="
+                      width: 100%;
+                      height: 100%;
+                      border-radius: 20px;
+                      object-fit: cover;
+                    "
+                  />
+                </div>
+              </td>
+              <td style="width: 60%">
+                <div style="display: flex">
+                  <h3 style="font-weight: 600; font-size: 30px">
+                    <%= entry.title %>
+                  </h3>
+                </div>
+                <h5><%= entry.author %></h5>
+                <p class="card-text">Категория: <%= entry.category %></p>
+                <audio
+                  controls="controls"
+                  preload="metadata"
+                  src="/uploads/tracks/<%= entry.audiofile_name %>"
+                  style="width: 100%; border-radius: 5px 5px 20px 20px"
+                ></audio>
+              </td>
+              <td align="center" valign="middle">
+                <% if (locals.user) { %>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#buy<%= entry.id %>"
+                  style="border-radius: 10px"
+                >
+                  Убрать из резерва
+                </button>
+                <!-- Модальное окно не через include(), потому что «entry is not defined» -->
+
+                <!-- Начало модального окна -->
+                <div
+                  class="modal fade"
+                  id="buy<%= entry.id %>"
+                  tabindex="-1"
+                  aria-labelledby="buyModal"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content" style="border-radius: 20px">
+                      <div class="modal-header">
+                        <h5 class="modal-title fs-5" id="buyModal">
+                          Убрать предмет из резерва?
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div
+                          class="container"
+                          style="margin: 0 auto; max-width: 450px"
+                        >
+                          <table class="table">
+                            <tbody style="border-style: hidden">
+                              <tr>
+                                <td style="width: 140px">
+                                  <div style="width: 140px; height: 140px">
+                                    <img
+                                      src="./uploads/tracks/<%= entry.cover_name %>"
+                                      alt="Track cover"
+                                      style="
+                                        width: 100%;
+                                        height: 100%;
+                                        border-radius: 20px;
+                                        object-fit: cover;
+                                      "
+                                    />
+                                  </div>
+                                </td>
+                                <td>
+                                  <h3 style="font-weight: 600; font-size: 35px">
+                                    <%= entry.title %>
+                                  </h3>
+                                  <h5 style="font-size: 25px">
+                                    <%= entry.author %>
+                                  </h5>
+                                  <p class="card-text">
+                                    Категория: <%= entry.category %>
+                                  </p>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <audio
+                          controls="controls"
+                          preload="metadata"
+                          src="/uploads/tracks/<%= entry.audiofile_name %>"
+                          style="width: 100%; border-radius: 5px 5px 20px 20px"
+                        ></audio>
+                        <hr />
+                        <div style="display: flex">
+                          <form
+                            action="/tracks/<%=entry.id %>/removeRezerv"
+                            method="post"
+                          >
+                            <div class="row my-3" style="display: none">
+                              <div class="col-sm-6 col-12">
+                                <div class="form-floating mb-3">
+                                  <input
+                                    name="title"
+                                    type="text"
+                                    class="form-control"
+                                    id="title"
+                                    placeholder="Title"
+                                    value="<%=entry.title %>"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <button
+                              type="submit"
+                              class="btn btn-success"
+                              style="border-radius: 10px"
+                            >
+                              Да
+                            </button>
+                          </form>
+                          <a
+                            class="btn btn-danger"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                            style="border-radius: 10px"
+                          >
+                            Отмена
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Конец модального окна -->
+
+                <% } %>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <% } %> <% }) %> <% if (locals.user) { %> <%-
+      include('./partials/tracks/newModal'); -%> <% } else { %> <%-
+      include('./partials/loginModal'); -%> <%-
+      include('./partials/registerModal'); -%> <% } %>
+    </div>
+    <!-- <%- include ('./partials/footer') %> -->
+  </body>
+</html>

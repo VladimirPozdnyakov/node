@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="/bootstrap.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Roboto Condensed";
+      }
+      .navbar-expand-lg {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        transition: box-shadow 0.2s;
+      }
+      .navbar-expand-lg:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .track {
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        transition: box-shadow 0.2s;
+      }
+      .track:hover {
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <%- include ('./partials/header') %>
+    <div class="container">
+      <h1 class="text-center" style="padding-top: 40px">О нас</h1>
+      <% if (locals.user) { %> <%- include('./partials/tracks/newModal'); -%> <%
+      } else { %> <%- include('./partials/loginModal'); -%> <%-
+      include('./partials/registerModal'); -%> <% } %>
+    </div>
+    <!-- <%- include ('./partials/footer') %> -->
+  </body>
+</html>

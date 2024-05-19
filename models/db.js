@@ -18,13 +18,13 @@ connection.connect((err) => {
   logger.info("Произведено соеденение с базой данных");
 
   let sql =
-    "CREATE TABLE IF NOT EXISTS tracks1( id INT PRIMARY KEY AUTO_INCREMENT, cover_name VARCHAR(255) NOT NULL, audiofile_name VARCHAR(255) NOT NULL, author VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, category VARCHAR(20) NOT NULL, status TINYINT NOT NULL DEFAULT 0)";
+    "CREATE TABLE IF NOT EXISTS tracks1( id INT PRIMARY KEY AUTO_INCREMENT, cover_name VARCHAR(255) NOT NULL, audiofile_name VARCHAR(255) NOT NULL, author VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, category VARCHAR(20) NOT NULL, status TINYINT NOT NULL DEFAULT 0, orderedBy VARCHAR(255))";
   connection.query(sql, function (err, result) {
     if (err) throw err;
   });
 
   sql =
-    "CREATE TABLE IF NOT EXISTS users1 (id INT AUTO_INCREMENT PRIMARY KEY UNIQUE, name VARCHAR(255) NOT NULL, surname VARCHAR(255) NOT NULL, patronymic VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL, password VARCHAR(50) NOT NULL, role VARCHAR(50) NOT NULL DEFAULT 'user')";
+    "CREATE TABLE IF NOT EXISTS users1 (id INT AUTO_INCREMENT PRIMARY KEY UNIQUE, name VARCHAR(255) NOT NULL, surname VARCHAR(255) NOT NULL, patronymic VARCHAR(255), email VARCHAR(255) NOT NULL, password VARCHAR(50) NOT NULL, role VARCHAR(50) NOT NULL DEFAULT 'user')";
   connection.query(sql, function (err, result) {
     if (err) throw err;
   });

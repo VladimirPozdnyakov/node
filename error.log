@@ -4083,3 +4083,291 @@
   level: 'error',
   timestamp: '2024-05-15T12:20:20.601Z'
 }
+{
+  message: 'Ошибка пароля - менее 8 символов',
+  level: 'error',
+  timestamp: '2024-05-19T16:02:02.481Z'
+}
+{
+  message: 'Ошибка пароля - нет хотя бы одной цифры. ',
+  level: 'error',
+  timestamp: '2024-05-19T16:02:02.482Z'
+}
+{
+  message: 'Ошибка пароля - нет хотя бы одной буквы в верхнем регистре. ',
+  level: 'error',
+  timestamp: '2024-05-19T16:02:02.483Z'
+}
+{
+  message: 'Ошибка пароля - нет хотя бы одной буквы в нижнем регистре. ',
+  level: 'error',
+  timestamp: '2024-05-19T16:02:02.484Z'
+}
+{
+  message: 'Неправильно записан email',
+  level: 'error',
+  timestamp: '2024-05-19T16:02:02.485Z'
+}
+{
+  message: 'Ошибка пароля - менее 8 символов',
+  level: 'error',
+  timestamp: '2024-05-19T16:07:54.835Z'
+}
+{
+  message: 'Ошибка пароля - нет хотя бы одной цифры. ',
+  level: 'error',
+  timestamp: '2024-05-19T16:07:54.836Z'
+}
+{
+  message: 'Ошибка пароля - нет хотя бы одной буквы в верхнем регистре. ',
+  level: 'error',
+  timestamp: '2024-05-19T16:07:54.836Z'
+}
+{
+  message: 'Ошибка пароля - нет хотя бы одной буквы в нижнем регистре. ',
+  level: 'error',
+  timestamp: '2024-05-19T16:07:54.837Z'
+}
+{
+  message: 'Неправильно записан email',
+  level: 'error',
+  timestamp: '2024-05-19T16:07:54.837Z'
+}
+{
+  message: 'Ошибка пароля - менее 8 символов',
+  level: 'error',
+  timestamp: '2024-05-19T16:08:02.680Z'
+}
+{
+  message: 'Ошибка пароля - нет хотя бы одной цифры. ',
+  level: 'error',
+  timestamp: '2024-05-19T16:08:02.680Z'
+}
+{
+  message: 'Ошибка пароля - нет хотя бы одной буквы в верхнем регистре. ',
+  level: 'error',
+  timestamp: '2024-05-19T16:08:02.681Z'
+}
+{
+  message: 'Ошибка пароля - нет хотя бы одной буквы в нижнем регистре. ',
+  level: 'error',
+  timestamp: '2024-05-19T16:08:02.681Z'
+}
+{
+  message: 'Неправильно записан email',
+  level: 'error',
+  timestamp: '2024-05-19T16:08:02.681Z'
+}
+{
+  message: 'Ошибка пароля - менее 8 символов',
+  level: 'error',
+  timestamp: '2024-05-19T16:08:14.844Z'
+}
+{
+  message: 'Ошибка пароля - нет хотя бы одной цифры. ',
+  level: 'error',
+  timestamp: '2024-05-19T16:08:14.844Z'
+}
+{
+  message: 'Ошибка пароля - нет хотя бы одной буквы в верхнем регистре. ',
+  level: 'error',
+  timestamp: '2024-05-19T16:08:14.845Z'
+}
+{
+  message: 'Ошибка пароля - нет хотя бы одной буквы в нижнем регистре. ',
+  level: 'error',
+  timestamp: '2024-05-19T16:08:14.845Z'
+}
+{
+  message: 'Неправильно записан email',
+  level: 'error',
+  timestamp: '2024-05-19T16:08:14.845Z'
+}
+{
+  message: 'Error',
+  level: 'error',
+  timestamp: '2024-05-19T16:09:56.844Z'
+}
+{
+  message: 'Error',
+  level: 'error',
+  timestamp: '2024-05-19T16:10:20.042Z'
+}
+{
+  message: 'This socket has been ended by the other party',
+  level: 'error',
+  timestamp: '2024-05-19T16:12:59.749Z'
+}
+{
+  message: 'This socket has been ended by the other party',
+  level: 'error',
+  timestamp: '2024-05-19T16:12:59.759Z'
+}
+{
+  message: "Can't add new command when connection is in closed state",
+  level: 'error',
+  timestamp: '2024-05-19T16:13:04.432Z'
+}
+{
+  message: "Can't add new command when connection is in closed state",
+  level: 'error',
+  timestamp: '2024-05-19T16:13:04.434Z'
+}
+{
+  message: 'Error',
+  level: 'error',
+  timestamp: '2024-05-19T16:13:16.130Z'
+}
+{
+  message: 'This socket has been ended by the other party',
+  level: 'error',
+  timestamp: '2024-05-19T16:13:38.857Z'
+}
+{
+  message: 'This socket has been ended by the other party',
+  level: 'error',
+  timestamp: '2024-05-19T16:13:38.866Z'
+}
+{
+  message: 'Error',
+  level: 'error',
+  timestamp: '2024-05-19T16:15:29.368Z'
+}
+{
+  message: 'Error',
+  level: 'error',
+  timestamp: '2024-05-19T16:19:07.602Z'
+}
+{
+  message: 'Error',
+  level: 'error',
+  timestamp: '2024-05-19T16:19:14.297Z'
+}
+{
+  message: 'Error',
+  level: 'error',
+  timestamp: '2024-05-19T16:19:18.566Z'
+}
+{
+  message: 'Error',
+  level: 'error',
+  timestamp: '2024-05-19T16:19:46.191Z'
+}
+{
+  message: 'Error',
+  level: 'error',
+  timestamp: '2024-05-19T16:21:54.371Z'
+}
+{
+  message: 'Error',
+  level: 'error',
+  timestamp: '2024-05-19T16:24:38.210Z'
+}
+{
+  message: 'This socket has been ended by the other party',
+  level: 'error',
+  timestamp: '2024-05-19T16:24:40.623Z'
+}
+{
+  message: 'This socket has been ended by the other party',
+  level: 'error',
+  timestamp: '2024-05-19T16:24:40.633Z'
+}
+{
+  message: "Can't add new command when connection is in closed state",
+  level: 'error',
+  timestamp: '2024-05-19T16:24:43.181Z'
+}
+{
+  message: "Can't add new command when connection is in closed state",
+  level: 'error',
+  timestamp: '2024-05-19T16:24:43.182Z'
+}
+{
+  message: 'Error',
+  level: 'error',
+  timestamp: '2024-05-19T16:24:45.231Z'
+}
+{
+  message: 'Ошибка ввода пароля или почты',
+  level: 'error',
+  timestamp: '2024-05-19T16:32:09.370Z'
+}
+{
+  message: 'Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2024-05-19T16:34:19.726Z'
+}
+{
+  message: 'Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2024-05-19T16:34:23.150Z'
+}
+{
+  message: 'orderedBy is not defined',
+  level: 'error',
+  timestamp: '2024-05-19T16:58:33.070Z'
+}
+{
+  message: "Unexpected token ')' in C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\admin.ejs while compiling ejs\n" +
+    '\n' +
+    'If the above error is not helpful, you may want to try EJS-Lint:\n' +
+    'https://github.com/RyanZim/EJS-Lint\n' +
+    'Or, if you meant to create an async function, pass `async: true` as an option.',
+  level: 'error',
+  timestamp: '2024-05-19T17:04:58.688Z'
+}
+{
+  message: "Unexpected token ')' in C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\orders.ejs while compiling ejs\n" +
+    '\n' +
+    'If the above error is not helpful, you may want to try EJS-Lint:\n' +
+    'https://github.com/RyanZim/EJS-Lint\n' +
+    'Or, if you meant to create an async function, pass `async: true` as an option.',
+  level: 'error',
+  timestamp: '2024-05-19T17:11:41.900Z'
+}
+{
+  message: "Unexpected token ')' in C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\orders.ejs while compiling ejs\n" +
+    '\n' +
+    'If the above error is not helpful, you may want to try EJS-Lint:\n' +
+    'https://github.com/RyanZim/EJS-Lint\n' +
+    'Or, if you meant to create an async function, pass `async: true` as an option.',
+  level: 'error',
+  timestamp: '2024-05-19T17:11:50.598Z'
+}
+{
+  message: "Unexpected token ')' in C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\orders.ejs while compiling ejs\n" +
+    '\n' +
+    'If the above error is not helpful, you may want to try EJS-Lint:\n' +
+    'https://github.com/RyanZim/EJS-Lint\n' +
+    'Or, if you meant to create an async function, pass `async: true` as an option.',
+  level: 'error',
+  timestamp: '2024-05-19T17:15:08.225Z'
+}
+{
+  message: "Unexpected token ')' in C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\orders.ejs while compiling ejs\n" +
+    '\n' +
+    'If the above error is not helpful, you may want to try EJS-Lint:\n' +
+    'https://github.com/RyanZim/EJS-Lint\n' +
+    'Or, if you meant to create an async function, pass `async: true` as an option.',
+  level: 'error',
+  timestamp: '2024-05-19T17:15:16.868Z'
+}
+{
+  message: 'missing ) after argument list in C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\orders.ejs while compiling ejs\n' +
+    '\n' +
+    'If the above error is not helpful, you may want to try EJS-Lint:\n' +
+    'https://github.com/RyanZim/EJS-Lint\n' +
+    'Or, if you meant to create an async function, pass `async: true` as an option.',
+  level: 'error',
+  timestamp: '2024-05-19T17:17:07.109Z'
+}
+{
+  message: 'missing ) after argument list in C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\orders.ejs while compiling ejs\n' +
+    '\n' +
+    'If the above error is not helpful, you may want to try EJS-Lint:\n' +
+    'https://github.com/RyanZim/EJS-Lint\n' +
+    'Or, if you meant to create an async function, pass `async: true` as an option.',
+  level: 'error',
+  timestamp: '2024-05-19T17:17:12.499Z'
+}

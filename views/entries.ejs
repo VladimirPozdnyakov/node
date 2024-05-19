@@ -38,7 +38,7 @@
     <%- include ('./partials/header') %>
     <div class="container">
       <h1 class="text-center" style="padding-top: 40px">Каталог пластинок</h1>
-      <% entries.tracks.forEach((entry)=>{ %>
+      <% entries.tracks.forEach((entry)=>{ %> <% if (entry.status != "1") { %>
       <div class="container track" style="margin: 20px auto; max-width: 1000px">
         <table
           class="table table-test"
@@ -341,7 +341,7 @@
           </tbody>
         </table>
       </div>
-      <% }) %> <% if (locals.user) { %> <%-
+      <% } %> <% }) %> <% if (locals.user) { %> <%-
       include('./partials/tracks/newModal'); -%> <% } else { %> <%-
       include('./partials/loginModal'); -%> <%-
       include('./partials/registerModal'); -%> <% } %>
