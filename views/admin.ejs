@@ -32,6 +32,17 @@
       .track:hover {
         box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
       }
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 20px 20px 0 0;
+        transition: box-shadow 0.2s;
+      }
+      footer:hover {
+        box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+      }
     </style>
   </head>
   <body>
@@ -329,6 +340,6 @@
       include('./partials/loginModal'); -%> <%-
       include('./partials/registerModal'); -%> <% } %>
     </div>
-    <!-- <%- include ('./partials/footer') %> -->
+    <%- include ('./partials/footer') %>
   </body>
 </html>
