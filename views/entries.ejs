@@ -207,7 +207,7 @@
                 ></audio>
               </td>
               <td align="center" valign="middle">
-                <% if (locals.role !== 'creator') { %> <% if (locals.user) { %>
+                <% if (locals.role !== 'admin') { %> <% if (locals.user) { %>
                 <button
                   type="button"
                   class="btn btn-primary"
@@ -336,17 +336,7 @@
                 >
                   В резерв
                 </button>
-                <% } %> <% } else { %>
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#roleIncorrect"
-                  style="border-radius: 10px"
-                >
-                  В резерв
-                </button>
-                <%- include('./partials/roleIncorrectModal'); -%> <% } %>
+                <% } %> <% } %>
               </td>
             </tr>
           </tbody>

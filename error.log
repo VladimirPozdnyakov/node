@@ -4371,3 +4371,12 @@
   level: 'error',
   timestamp: '2024-05-19T17:17:12.499Z'
 }
+{
+  message: "Unexpected token ')' in C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs while compiling ejs\n" +
+    '\n' +
+    'If the above error is not helpful, you may want to try EJS-Lint:\n' +
+    'https://github.com/RyanZim/EJS-Lint\n' +
+    'Or, if you meant to create an async function, pass `async: true` as an option.',
+  level: 'error',
+  timestamp: '2024-05-19T18:19:18.401Z'
+}
