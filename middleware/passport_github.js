@@ -4,19 +4,12 @@ import "dotenv/config.js";
 
 function passportFunctionGithub(passport) {
   passport.serializeUser(function (user, doneGT) {
-    const email = function () {
-      if (user.provider == "google") {
-        return user.email;
-      } else if (user.provider == "yandex") {
-        return user.emails[0].value;
-      } else if (user.provider == "github") {
-        return user.username ? user.username : "github.email@gmail.com";
-      }
-    };
     const name = function () {
       if (user.provider == "google") {
         return user.displayName;
       } else if (user.provider == "yandex") {
+        return user.displayName;
+      } else if (user.provider == "vkontakte") {
         return user.displayName;
       } else if (user.provider == "github") {
         return user.username ? user.username : "github.email@gmail.com";
@@ -25,7 +18,6 @@ function passportFunctionGithub(passport) {
     const newUser = {
       id: user.id,
       name: name(),
-      email: email(),
     };
     return doneGT(null, newUser);
   });

@@ -4018,3 +4018,16 @@
   level: 'error',
   timestamp: '2024-05-22T17:59:30.495Z'
 }
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\orders.ejs:52\n' +
+    '    50|     <div class="container">\r\n' +
+    '    51|       <h1 class="text-center" style="padding-top: 40px">Мои покупки</h1>\r\n' +
+    ' >> 52|       <% entries.tracks.forEach((entry)=>{ %> <% if (entry.status == "1" &&\r\n' +
+    '    53|       entry.orderedBy === user.name ) { %>\r\n' +
+    '    54|       <div class="container track" style="margin: 20px auto; max-width: 1000px">\r\n' +
+    '    55|         <table\r\n' +
+    '\n' +
+    'user is not defined',
+  level: 'error',
+  timestamp: '2024-05-22T18:03:28.973Z'
+}
