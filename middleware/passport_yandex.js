@@ -21,7 +21,7 @@ function passportFunctionYandex(passport) {
       {
         clientID: process.env.YANDEX_CLIENT_ID,
         clientSecret: process.env.YANDEX_CLIENT_SECRET,
-        callbackURL: "http://127.0.0.1:3000/auth/yandex/callback",
+        callbackURL: "http://127.0.0.1:80/auth/yandex/callback",
       },
       function (accessToken, refreshToken, profile, done) {
         process.nextTick(function () {

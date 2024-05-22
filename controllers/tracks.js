@@ -4,15 +4,17 @@ import fs from "fs";
 import path from "path";
 
 const sql =
-  "CREATE TABLE IF NOT EXISTS tracks( id INT PRIMARY KEY AUTO_INCREMENT, cover_name VARCHAR(255) NOT NULL, audiofile_name VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, genre VARCHAR(50) NOT NULL, bpm DECIMAL(5, 0) NOT NULL, tone VARCHAR(7) NOT NULL, price VARCHAR(5) NOT NULL, author VARCHAR(255) NOT NULL, status TINYINT NOT NULL DEFAULT 0)";
+  "CREATE TABLE IF NOT EXISTS tracks( id INT PRIMARY KEY AUTO_INCREMENT, cover_name VARCHAR(255) NOT NULL, audiofile_name VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, genre VARCHAR(50) NOT NULL, bpm DECIMAL(5, 0) NOT NULL, tone VARCHAR(7) NOT NULL, price VARCHAR(5) NOT NULL, author VARCHAR(255) NOT NULL, status TINYINT NOT NULL DEFAULT 0, orderedBy VARCHAR(255))";
 
 connection.query(sql, console.log);
 
 const addTrack = (req, res) => {
   const { title, genre, bpm, tone, price } = req.body;
+
   const author = req.session.name
     ? req.session.name
     : req.session.passport.user.name;
+
   const cover = req.files[0];
   const audiofile = req.files[1];
 
@@ -37,6 +39,42 @@ const addTrack = (req, res) => {
 
       res.redirect("/");
       logger.info("Бит выложен by " + author);
+    }
+  );
+};
+
+const buyTrack = (req, res) => {
+  const status = 1;
+  const orderedBy = req.session.name;
+  connection.query(
+    "UPDATE tracks SET ? WHERE id = ?",
+    [{ status, orderedBy }, req.params.id],
+    (err, result) => {
+      if (err) {
+        logger.error("Ошибка в изменении статуса бита");
+        console.log(err.message);
+      } else {
+        logger.info("Успешное изменение статуса бита");
+        res.redirect("/");
+      }
+    }
+  );
+};
+
+const removeRezerv = (req, res) => {
+  const status = 0;
+  const orderedBy = "";
+  connection.query(
+    "UPDATE tracks SET ? WHERE id = ?",
+    [{ status, orderedBy }, req.params.id],
+    (err, result) => {
+      if (err) {
+        logger.error("Ошибка в изменении статуса бита");
+        console.log(err.message);
+      } else {
+        logger.info("Успешное изменение статуса бита");
+        res.redirect("/");
+      }
     }
   );
 };
@@ -104,6 +142,8 @@ const deleteTrack = (req, res) => {
 
 export default {
   addTrack,
+  buyTrack,
+  removeRezerv,
   updateTrack,
   deleteTrack,
 };

@@ -32,13 +32,24 @@
       .track:hover {
         box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
       }
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 20px 20px 0 0;
+        transition: box-shadow 0.2s;
+      }
+      footer:hover {
+        box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+      }
     </style>
   </head>
   <body>
     <%- include ('./partials/header') %>
     <div class="container">
       <h1 class="text-center" style="padding-top: 40px">Каталог битов</h1>
-      <% entries.tracks.forEach((entry)=>{ %>
+      <% entries.tracks.forEach((entry)=>{ %> <% if (entry.status != "1") { %>
       <div class="container track" style="margin: 20px auto; max-width: 1000px">
         <table
           class="table table-test"
@@ -117,6 +128,7 @@
                                     id="title"
                                     placeholder="Title"
                                     value="<%=entry.title %>"
+                                    required
                                   />
                                   <label for="title">Название</label>
                                 </div>
@@ -132,6 +144,7 @@
                                     id="genre"
                                     placeholder="Genre"
                                     value="<%=entry.genre %>"
+                                    required
                                   />
                                   <label for="genre">Жанр</label>
                                 </div>
@@ -147,6 +160,7 @@
                                     id="bpm"
                                     placeholder="Bpm"
                                     value="<%=entry.bpm %>"
+                                    required
                                   />
                                   <label for="bpm">BPM</label>
                                 </div>
@@ -161,6 +175,7 @@
                                     class="form-control"
                                     id="tone"
                                     placeholder="Tone"
+                                    required
                                   >
                                     <option value="C">C</option>
                                     <option value="Cm">Cm</option>
@@ -201,6 +216,7 @@
                                     id="price"
                                     placeholder="Price"
                                     value="<%=entry.price %>"
+                                    required
                                   />
                                   <label for="price">Цена ₽</label>
                                 </div>
@@ -250,7 +266,18 @@
                 ></audio>
               </td>
               <td align="center" valign="middle">
-                <% if (locals.role !== 'creator') { %> <% if (locals.user) { %>
+                <% if (locals.user) { %> <% if (name !== entry.author) { %> <%
+                if (role === "admin") { %>
+                <a
+                  href="/uploads/tracks/<%= entry.audiofile_name %>"
+                  class="btn btn-primary"
+                  style="border-radius: 10px"
+                  download="<%= entry.audiofile_name %>"
+                >
+                  Скачать бит
+                </a>
+                <hr />
+                <% } %>
                 <button
                   type="button"
                   class="btn btn-primary"
@@ -330,15 +357,36 @@
                               border-radius: 5px 5px 20px 20px;
                             "
                           ></audio>
+                          <hr />
                         </div>
-                        <a
-                          href="/uploads/tracks/<%= entry.audiofile_name %>"
-                          class="btn btn-success"
-                          style="border-radius: 10px"
-                          download="<%= entry.audiofile_name %>"
-                        >
-                          Купить <%= entry.price %>₽
-                        </a>
+                        <div style="display: flex">
+                          <form
+                            action="/tracks/<%=entry.id %>/buy"
+                            method="post"
+                          >
+                            <div class="row my-3" style="display: none">
+                              <div class="col-sm-6 col-12">
+                                <div class="form-floating mb-3">
+                                  <input
+                                    name="title"
+                                    type="text"
+                                    class="form-control"
+                                    id="title"
+                                    placeholder="Title"
+                                    value="<%=entry.title %>"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <button
+                              type="submit"
+                              class="btn btn-success"
+                              style="border-radius: 10px"
+                            >
+                              Купить <%= entry.price %>₽
+                            </button>
+                          </form>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -346,16 +394,15 @@
                 <!-- Конец модального окна -->
 
                 <% } else { %>
-                <button
-                  type="button"
+                <a
+                  href="/uploads/tracks/<%= entry.audiofile_name %>"
                   class="btn btn-primary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#login"
                   style="border-radius: 10px"
+                  download="<%= entry.audiofile_name %>"
                 >
-                  Купить <%= entry.price %>₽
-                </button>
-                <% } %> <% } else { %>
+                  Скачать бит
+                </a>
+                <hr />
                 <button
                   type="button"
                   class="btn btn-primary"
@@ -365,7 +412,17 @@
                 >
                   Купить <%= entry.price %>₽
                 </button>
-                <%- include('./partials/roleIncorrectModal'); -%> <% } %>
+                <%- include('./partials/roleIncorrectModal'); -%> <% } %> <% }
+                else { %><button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#login"
+                  style="border-radius: 10px"
+                >
+                  Купить <%= entry.price %>₽
+                </button>
+                <% } %> <% } %>
               </td>
             </tr>
           </tbody>
@@ -376,5 +433,6 @@
       include('./partials/loginModal'); -%> <%-
       include('./partials/registerModal'); -%> <% } %>
     </div>
+    <%- include ('./partials/footer') %>
   </body>
 </html>

@@ -18,6 +18,15 @@
           Панель администратора
         </button>
       </a>
+      <button
+        type="button"
+        class="btn btn-info"
+        data-bs-toggle="modal"
+        data-bs-target="#new"
+        style="border-radius: 10px"
+      >
+        Выложить бит
+      </button>
       <% } else if (locals.role === 'creator') { %>
       <button
         type="button"
@@ -28,6 +37,17 @@
       >
         Выложить бит
       </button>
+      <a href="/orders">
+        <button type="button" class="btn btn-dark" style="border-radius: 10px">
+          Мои покупки
+        </button>
+      </a>
+      <% } else { %>
+      <a href="/orders">
+        <button type="button" class="btn btn-dark" style="border-radius: 10px">
+          Мои покупки
+        </button>
+      </a>
       <% } %>
       <a href="/logout" class="btn btn-secondary" style="border-radius: 10px">
         Выйти

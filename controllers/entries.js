@@ -9,7 +9,7 @@ function list(req, res, next) {
     }
 
     res.render("entries", {
-      title: "Главная страница",
+      title: "Каталог",
       name: req.session.name,
       role: req.session.role,
       entries: entries,
@@ -17,4 +17,36 @@ function list(req, res, next) {
   });
 }
 
-export default { list };
+function orders(req, res, next) {
+  Entry.selectAll((err, entries) => {
+    if (err) {
+      logger.error(err.message);
+      return next(err);
+    }
+
+    res.render("orders", {
+      title: "Мои покупки",
+      name: req.session.name,
+      role: req.session.role,
+      entries: entries,
+    });
+  });
+}
+
+function admin(req, res, next) {
+  Entry.selectAll((err, entries) => {
+    if (err) {
+      logger.error(err.message);
+      return next(err);
+    }
+
+    res.render("admin", {
+      title: "Панель администратора",
+      name: req.session.name,
+      role: req.session.role,
+      entries: entries,
+    });
+  });
+}
+
+export default { list, orders, admin };

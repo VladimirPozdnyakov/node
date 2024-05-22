@@ -28,6 +28,10 @@ router.use(favicon(__dirname + "/favicon.ico"));
 
 router.get("/", entries.list);
 
+router.get("/orders", entries.orders);
+
+router.get("/admin", entries.admin);
+
 router.post("/register", register.submit);
 
 router.post("/login", login.submit);
@@ -38,6 +42,8 @@ router.post("/new", upload.any(), tracks.addTrack);
 
 router.post("/edit/tracks/:id", upload.any(), tracks.updateTrack);
 router.get("/edit/tracks/delete/:id", tracks.deleteTrack);
+router.post("/tracks/:id/buy", tracks.buyTrack);
+router.post("/tracks/:id/removeRezerv", tracks.removeRezerv);
 
 router.get(
   "/auth/yandex",

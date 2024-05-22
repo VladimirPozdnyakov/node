@@ -3826,3 +3826,195 @@
   level: 'error',
   timestamp: '2024-05-13T07:06:32.282Z'
 }
+{
+  message: 'Failed to lookup view "orders" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
+  level: 'error',
+  timestamp: '2024-05-22T16:38:43.322Z'
+}
+{
+  message: 'Failed to lookup view "orders" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
+  level: 'error',
+  timestamp: '2024-05-22T16:39:13.799Z'
+}
+{
+  message: 'Failed to lookup view "orders" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
+  level: 'error',
+  timestamp: '2024-05-22T16:39:23.773Z'
+}
+{
+  message: 'Failed to lookup view "orders" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
+  level: 'error',
+  timestamp: '2024-05-22T16:39:41.250Z'
+}
+{
+  message: 'Failed to lookup view "orders" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
+  level: 'error',
+  timestamp: '2024-05-22T16:40:32.119Z'
+}
+{
+  message: 'Failed to lookup view "orders" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
+  level: 'error',
+  timestamp: '2024-05-22T16:40:44.677Z'
+}
+{
+  message: 'Failed to lookup view "orders" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
+  level: 'error',
+  timestamp: '2024-05-22T16:41:58.772Z'
+}
+{
+  message: 'Failed to lookup view "admin" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
+  level: 'error',
+  timestamp: '2024-05-22T16:42:15.661Z'
+}
+{
+  message: 'Failed to lookup view "admin" in views directory "C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views"',
+  level: 'error',
+  timestamp: '2024-05-22T16:42:18.783Z'
+}
+{
+  message: 'Ошибка пароля - менее 8 символов',
+  level: 'error',
+  timestamp: '2024-05-22T16:50:51.065Z'
+}
+{
+  message: 'Ошибка пароля - нет хотя бы одной цифры. ',
+  level: 'error',
+  timestamp: '2024-05-22T16:50:51.066Z'
+}
+{
+  message: 'Ошибка пароля - нет хотя бы одной буквы в верхнем регистре. ',
+  level: 'error',
+  timestamp: '2024-05-22T16:50:51.067Z'
+}
+{
+  message: 'Ошибка пароля - нет хотя бы одной буквы в нижнем регистре. ',
+  level: 'error',
+  timestamp: '2024-05-22T16:50:51.067Z'
+}
+{
+  message: 'Неправильно записан email',
+  level: 'error',
+  timestamp: '2024-05-22T16:50:51.069Z'
+}
+{
+  message: 'Не заполнены все поля для выкладывания бита',
+  level: 'error',
+  timestamp: '2024-05-22T16:51:43.050Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:49\n' +
+    '    47|   </head>\r\n' +
+    '    48|   <body>\r\n' +
+    " >> 49|     <%- include ('./partials/header') %>\r\n" +
+    '    50|     <div class="container">\r\n' +
+    '    51|       <h1 class="text-center" style="padding-top: 40px">Каталог битов</h1>\r\n' +
+    '    52|       <% entries.tracks.forEach((entry)=>{ %>\r\n' +
+    '\n' +
+    "Unexpected token 'else' in C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\header.ejs while compiling ejs\n" +
+    '\n' +
+    'If the above error is not helpful, you may want to try EJS-Lint:\n' +
+    'https://github.com/RyanZim/EJS-Lint\n' +
+    'Or, if you meant to create an async function, pass `async: true` as an option.',
+  level: 'error',
+  timestamp: '2024-05-22T16:55:19.712Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:49\n' +
+    '    47|   </head>\r\n' +
+    '    48|   <body>\r\n' +
+    " >> 49|     <%- include ('./partials/header') %>\r\n" +
+    '    50|     <div class="container">\r\n' +
+    '    51|       <h1 class="text-center" style="padding-top: 40px">Каталог битов</h1>\r\n' +
+    '    52|       <% entries.tracks.forEach((entry)=>{ %>\r\n' +
+    '\n' +
+    "Unexpected token 'else' in C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\header.ejs while compiling ejs\n" +
+    '\n' +
+    'If the above error is not helpful, you may want to try EJS-Lint:\n' +
+    'https://github.com/RyanZim/EJS-Lint\n' +
+    'Or, if you meant to create an async function, pass `async: true` as an option.',
+  level: 'error',
+  timestamp: '2024-05-22T16:55:21.874Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:49\n' +
+    '    47|   </head>\r\n' +
+    '    48|   <body>\r\n' +
+    " >> 49|     <%- include ('./partials/header') %>\r\n" +
+    '    50|     <div class="container">\r\n' +
+    '    51|       <h1 class="text-center" style="padding-top: 40px">Каталог битов</h1>\r\n' +
+    '    52|       <% entries.tracks.forEach((entry)=>{ %>\r\n' +
+    '\n' +
+    "Unexpected token 'else' in C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\partials\\header.ejs while compiling ejs\n" +
+    '\n' +
+    'If the above error is not helpful, you may want to try EJS-Lint:\n' +
+    'https://github.com/RyanZim/EJS-Lint\n' +
+    'Or, if you meant to create an async function, pass `async: true` as an option.',
+  level: 'error',
+  timestamp: '2024-05-22T16:55:39.779Z'
+}
+{
+  message: 'author is not defined',
+  level: 'error',
+  timestamp: '2024-05-22T17:25:20.785Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'user')",
+  level: 'error',
+  timestamp: '2024-05-22T17:25:58.563Z'
+}
+{
+  message: 'author is not defined',
+  level: 'error',
+  timestamp: '2024-05-22T17:26:32.424Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'user')",
+  level: 'error',
+  timestamp: '2024-05-22T17:27:47.249Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'user')",
+  level: 'error',
+  timestamp: '2024-05-22T17:27:52.382Z'
+}
+{
+  message: 'author is not defined',
+  level: 'error',
+  timestamp: '2024-05-22T17:30:00.043Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'user')",
+  level: 'error',
+  timestamp: '2024-05-22T17:30:29.152Z'
+}
+{
+  level: 'error',
+  message: 'Ошибка выкладывания бита',
+  timestamp: '2024-05-22T17:32:44.620Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\entries.ejs:412\n' +
+    '    410|                   Купить <%= entry.price %>₽\r\n' +
+    '    411|                 </button>\r\n' +
+    " >> 412|                 <%- include('./partials/tracks/roleIncorrectModal'); -%> <% } %>\r\n" +
+    '    413|                 <% } else { %><button\r\n' +
+    '    414|                   type="button"\r\n' +
+    '    415|                   class="btn btn-primary"\r\n' +
+    '\n' +
+    'Could not find the include file "./partials/tracks/roleIncorrectModal"',
+  level: 'error',
+  timestamp: '2024-05-22T17:39:01.456Z'
+}
+{
+  message: 'C:\\Users\\Fox\\Documents\\_Диплом\\Проект на Node.js (Диплом)\\views\\orders.ejs:52\n' +
+    '    50|     <div class="container">\r\n' +
+    '    51|       <h1 class="text-center" style="padding-top: 40px">Мои покупки</h1>\r\n' +
+    ' >> 52|       <% entries.tracks.forEach((entry)=>{ %> <% if (entry.status == "1" &&\r\n' +
+    '    53|       entry.orderedBy === user.name ) { %>\r\n' +
+    '    54|       <div class="container track" style="margin: 20px auto; max-width: 1000px">\r\n' +
+    '    55|         <table\r\n' +
+    '\n' +
+    'user is not defined',
+  level: 'error',
+  timestamp: '2024-05-22T17:59:30.495Z'
+}
