@@ -34,7 +34,7 @@
       }
       footer {
         position: absolute;
-        bottom: 0;
+        bottom: -20px;
         width: 100%;
         box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
         border-radius: 20px 20px 0 0;
@@ -48,7 +48,7 @@
   <body>
     <%- include ('./partials/header') %>
     <div class="container">
-      <h1 class="text-center" style="padding-top: 40px">
+      <h1 class="text-center" style="padding-top: 100px">
         Панель администратора
       </h1>
       <% entries.tracks.forEach((entry)=>{ %>
@@ -377,21 +377,27 @@
                               </div>
                             </div>
                             <button
+                              style="
+                                position: relative;
+                                margin-left: 380%;
+                                border-radius: 10px;
+                              "
                               type="submit"
                               class="btn btn-success"
-                              style="border-radius: 10px"
                             >
                               Да
                             </button>
                           </form>
-                          <a
-                            class="btn btn-danger"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                            style="border-radius: 10px"
-                          >
-                            Отмена
-                          </a>
+                          <div class="container">
+                            <a
+                              style="position: relative; border-radius: 10px"
+                              class="btn btn-danger"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              Отмена
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>

@@ -70,7 +70,7 @@ console.log("переход на " + app.get("env"));
 if (app.get("env") != "development") {
   app.use((err, req, res, next) => {
     // err.status = 400;
-    res.render("error.ejs", { error: err.message, status: err.status });
+    res.render("error", { error: err.message, status: err.status });
     logger.error(err.message);
   });
 } else {

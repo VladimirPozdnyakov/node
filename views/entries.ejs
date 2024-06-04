@@ -34,7 +34,7 @@
       }
       footer {
         position: absolute;
-        bottom: 0;
+        bottom: -20px;
         width: 100%;
         box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
         border-radius: 20px 20px 0 0;
@@ -48,7 +48,7 @@
   <body>
     <%- include ('./partials/header') %>
     <div class="container">
-      <h1 class="text-center" style="padding-top: 40px">Каталог битов</h1>
+      <h1 class="text-center" style="padding-top: 100px">Каталог битов</h1>
       <% entries.tracks.forEach((entry)=>{ %> <% if (entry.status != "1") { %>
       <div class="container track" style="margin: 20px auto; max-width: 1000px">
         <table
@@ -378,13 +378,18 @@
                                 </div>
                               </div>
                             </div>
-                            <button
-                              type="submit"
-                              class="btn btn-success"
-                              style="border-radius: 10px"
+                            <div
+                              class="container"
+                              style="position: relative; margin-left: 110%"
                             >
-                              Купить <%= entry.price %>₽
-                            </button>
+                              <button
+                                type="submit"
+                                class="btn btn-success"
+                                style="border-radius: 10px"
+                              >
+                                Купить <%= entry.price %>₽
+                              </button>
+                            </div>
                           </form>
                         </div>
                       </div>

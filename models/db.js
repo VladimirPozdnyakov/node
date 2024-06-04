@@ -4,7 +4,7 @@ import logger from "../logger/index.js";
 
 // Создание подключения к БД
 const connection = mysql2.createConnection({
-  host: "sql11.freemysqlhosting.net", // Имя хоста БД
+  host: "sql7.freemysqlhosting.net", // Имя хоста БД
   port: "3306", // Порт хоста ДБ
   user: process.env.MYSQL_USER, // Имя пользователя БД
   password: process.env.MYSQL_PASSWORD, // Пароль пользователя БД
