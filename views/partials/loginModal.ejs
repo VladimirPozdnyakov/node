@@ -35,11 +35,20 @@
             </a>
           </div>
         </div>
+        <hr />
         <!-- Form -->
-        <form action="/login" method="post">
-          <hr />
+        <form
+          action="/login"
+          method="post"
+          style="
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            background: rgb(250, 250, 250);
+          "
+        >
           <div class="row my-3">
-            <div class="col-sm-6 col-10">
+            <div>
               <div class="form-floating mb-3">
                 <input
                   name="loginForm[email]"
@@ -47,6 +56,7 @@
                   class="form-control"
                   id="floatingInput"
                   placeholder="name@example.com"
+                  style="border-radius: 15px"
                   required
                 />
                 <label for="floatingInput">Электронная почта</label>
@@ -54,7 +64,7 @@
             </div>
           </div>
           <div class="row my-3">
-            <div class="col-sm-5 col-12">
+            <div>
               <div class="form-floating">
                 <input
                   name="loginForm[password]"
@@ -62,6 +72,7 @@
                   class="form-control"
                   id="floatingPassword"
                   placeholder="password"
+                  style="border-radius: 15px"
                   required
                 />
                 <label for="floatingPassword">Пароль</label>
@@ -69,14 +80,20 @@
             </div>
           </div>
           <div class="row my-3">
-            <div class="col-sm-6 col-12">
-              <button type="submit" class="btn btn-success">Войти</button>
+            <div style="margin-left: 18%">
+              <button
+                type="submit"
+                class="btn btn-primary"
+                style="width: 59%; border-radius: 15px"
+              >
+                Войти
+              </button>
             </div>
           </div>
         </form>
         <div>
           <hr />
-          <p>
+          <p style="margin-left: 22%">
             Ещё нет аккаунта?
             <a
               data-bs-toggle="modal"

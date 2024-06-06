@@ -14,10 +14,12 @@
     <% if (locals.user) { %>
     <div id="header">
       <%# Меню пользователей, выполнивших вход%>
-      <span class="name"><%= user.name %> </span>
+      <span class="name" style="font-size: x-large; font-weight: 600"
+        ><%= user.name %>
+      </span>
       <% if (locals.role === 'admin') { %>
       <a href="/admin">
-        <button type="button" class="btn btn-dark" style="border-radius: 10px">
+        <button type="button" class="btn btn-dark" style="border-radius: 15px">
           Панель администратора
         </button>
       </a>
@@ -26,7 +28,7 @@
         class="btn btn-info"
         data-bs-toggle="modal"
         data-bs-target="#new"
-        style="border-radius: 10px"
+        style="border-radius: 15px"
       >
         Выложить бит
       </button>
@@ -36,23 +38,23 @@
         class="btn btn-info"
         data-bs-toggle="modal"
         data-bs-target="#new"
-        style="border-radius: 10px"
+        style="border-radius: 15px"
       >
         Выложить бит
       </button>
       <a href="/orders">
-        <button type="button" class="btn btn-dark" style="border-radius: 10px">
+        <button type="button" class="btn btn-dark" style="border-radius: 15px">
           Мои покупки
         </button>
       </a>
       <% } else { %>
       <a href="/orders">
-        <button type="button" class="btn btn-dark" style="border-radius: 10px">
+        <button type="button" class="btn btn-dark" style="border-radius: 15px">
           Мои покупки
         </button>
       </a>
       <% } %>
-      <a href="/logout" class="btn btn-secondary" style="border-radius: 10px">
+      <a href="/logout" class="btn btn-secondary" style="border-radius: 15px">
         Выйти
       </a>
     </div>
@@ -64,7 +66,7 @@
         class="btn btn-outline-dark"
         data-bs-toggle="modal"
         data-bs-target="#login"
-        style="border-radius: 10px"
+        style="border-radius: 15px"
       >
         Войти
       </button>
@@ -73,7 +75,7 @@
         class="btn btn-outline-dark"
         data-bs-toggle="modal"
         data-bs-target="#register"
-        style="border-radius: 10px"
+        style="border-radius: 15px"
       >
         Зарегистрироваться
       </button>

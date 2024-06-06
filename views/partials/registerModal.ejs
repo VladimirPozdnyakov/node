@@ -35,16 +35,22 @@
             </a>
           </div>
         </div>
+        <hr />
         <!-- Form -->
         <form
           action="/register"
           class="container"
           id="registerForm"
           method="post"
+          style="
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            background: rgb(250, 250, 250);
+          "
         >
-          <hr />
           <div class="row my-3">
-            <div class="col-sm-7 сol-12">
+            <div>
               <div class="form-floating">
                 <input
                   name="name"
@@ -52,6 +58,7 @@
                   class="form-control"
                   id="floatingTextarea"
                   placeholder="Никнейм"
+                  style="border-radius: 15px"
                   required
                 />
                 <label for="floatingTextarea">Никнейм</label>
@@ -59,7 +66,7 @@
             </div>
           </div>
           <div class="row my-3">
-            <div class="col-sm-6 col-12">
+            <div>
               <div class="form-floating">
                 <input
                   type="email"
@@ -67,6 +74,7 @@
                   id="floatingInput"
                   name="email"
                   placeholder="name@example.com"
+                  style="border-radius: 15px"
                   required
                 />
                 <label for="floatingInput">Электронная почта</label>
@@ -74,7 +82,7 @@
             </div>
           </div>
           <div class="row my-3">
-            <div class="col-sm-6 col-12">
+            <div>
               <div class="form-floating">
                 <input
                   type="password"
@@ -82,6 +90,7 @@
                   class="form-control"
                   id="floatingPassword"
                   placeholder="password"
+                  style="border-radius: 15px"
                   required
                 />
                 <label for="floatingPassword">Пароль</label>
@@ -89,7 +98,7 @@
             </div>
           </div>
           <div class="row my-3">
-            <div class="col-sm-5 col-12">
+            <div>
               <div class="form-floating">
                 <select
                   name="role"
@@ -97,6 +106,7 @@
                   class="form-control"
                   id="role"
                   placeholder="Role"
+                  style="border-radius: 15px"
                   required
                 >
                   <option value="customer">Покупатель</option>
@@ -107,8 +117,12 @@
             </div>
           </div>
           <div class="row my-3">
-            <div class="col-sm-6 col-12">
-              <button type="submit" class="btn btn-success">
+            <div style="margin-left: 18%">
+              <button
+                type="submit"
+                class="btn btn-primary"
+                style="width: 60%; border-radius: 15px"
+              >
                 Зарегистрироваться
               </button>
             </div>
@@ -116,7 +130,7 @@
         </form>
         <div>
           <hr />
-          <p>
+          <p style="margin-left: 30%">
             Уже есть аккаунт?
             <a
               data-bs-toggle="modal"

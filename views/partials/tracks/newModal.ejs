@@ -24,7 +24,7 @@
           enctype="multipart/form-data"
         >
           <div class="row my-3">
-            <div class="col-sm-7 col-12">
+            <div>
               <div class="form-group">
                 <label for="coverImage">Обложка</label>
                 <input
@@ -33,13 +33,14 @@
                   id="coverImage"
                   name="coverImage"
                   accept="image/*"
+                  style="border-radius: 15px"
                   required
                 />
               </div>
             </div>
           </div>
           <div class="row my-3">
-            <div class="col-sm-7 col-12">
+            <div>
               <div class="form-group">
                 <label for="audioFile">Аудиофайл</label>
                 <input
@@ -48,13 +49,14 @@
                   id="audioFile"
                   name="audioFile"
                   accept="audio/*"
+                  style="border-radius: 15px"
                   required
                 />
               </div>
             </div>
           </div>
           <div class="row my-3">
-            <div class="col-sm-6 col-12">
+            <div>
               <div class="form-floating mb-3">
                 <input
                   name="title"
@@ -62,6 +64,7 @@
                   class="form-control"
                   id="title"
                   placeholder="Title"
+                  style="border-radius: 15px"
                   required
                 />
                 <label for="title">Название</label>
@@ -69,7 +72,7 @@
             </div>
           </div>
           <div class="row my-3">
-            <div class="col-sm-6 col-12">
+            <div>
               <div class="form-floating mb-3">
                 <input
                   name="genre"
@@ -77,6 +80,7 @@
                   class="form-control"
                   id="genre"
                   placeholder="Genre"
+                  style="border-radius: 15px"
                   required
                 />
                 <label for="genre">Жанр</label>
@@ -84,7 +88,7 @@
             </div>
           </div>
           <div class="row my-3">
-            <div class="col-sm-6 col-12">
+            <div>
               <div class="form-floating mb-3">
                 <input
                   name="bpm"
@@ -92,6 +96,7 @@
                   class="form-control"
                   id="bpm"
                   placeholder="Bpm"
+                  style="border-radius: 15px"
                   required
                 />
                 <label for="bpm">BPM</label>
@@ -99,7 +104,7 @@
             </div>
           </div>
           <div class="row my-3">
-            <div class="col-sm-6 col-12">
+            <div>
               <div class="form-floating mb-3">
                 <select
                   name="tone"
@@ -107,6 +112,7 @@
                   class="form-control"
                   id="tone"
                   placeholder="Tone"
+                  style="border-radius: 15px"
                   required
                 >
                   <option value="C">C</option>
@@ -139,7 +145,7 @@
             </div>
           </div>
           <div class="row my-3">
-            <div class="col-sm-6 col-12">
+            <div>
               <div class="form-floating mb-3">
                 <input
                   name="price"
@@ -147,6 +153,7 @@
                   class="form-control"
                   id="price"
                   placeholder="Price"
+                  style="border-radius: 15px"
                   required
                 />
                 <label for="price">Цена ₽</label>
@@ -154,8 +161,14 @@
             </div>
           </div>
           <div class="row my-3">
-            <div class="col-sm-6 col-12">
-              <button type="submit" class="btn btn-success">Выложить</button>
+            <div style="margin-left: 18%">
+              <button
+                type="submit"
+                class="btn btn-primary"
+                style="width: 59%; border-radius: 15px"
+              >
+                Выложить
+              </button>
             </div>
           </div>
         </form>
